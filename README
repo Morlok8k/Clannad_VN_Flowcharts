@@ -5,10 +5,16 @@ This project is to create 100% absolute correct flowcharts of the Clannad Visual
 I am using Graphviz's "Dot" to make my graphs.
 http://www.graphviz.org/
 
-Currently, Clannad's graphs are in seperate graphs, but once completed, will be combined.
+Currently, Clannad's graphs are in seperate graphs, but once completed, will be combined.  (Its easier to work on them this way...)
 Tomoyo After will remain a seperate graph, as it is a seperate game.
 
 I welcome collaboration... (it's a lot of work!)
+
+
+=====
+I suggest viewing "Clannad_VN_Flowchart_AfterStory.jpg" to get a feel of the results, as it is the most complete.
+=====
+
 
 
 Status:
@@ -24,3 +30,16 @@ Morlok8k
 
 Thanks to:
 
+Key, for making Clannad
+
+The Walkthroughs:
+http://soukyuu.emevas.net/CLANNAD_guide.html
+http://www.gamefaqs.com/pc/921463-clannad/faqs/61132
+
+The Translators:
+http://www.baka-tsuki.org/project/index.php?title=Clannad
+http://clannad.game-maps.net/download.php
+http://doki.co/2013/03/24/tomoyo-after-english-patch-v1-1/
+
+And... interestingly enough, AT&T, for creating Graphviz (and making it open source!)
+http://www.graphviz.org/
