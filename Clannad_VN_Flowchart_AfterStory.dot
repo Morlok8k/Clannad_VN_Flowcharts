@@ -1,0 +1,334 @@
+
+// http://www.graphviz.org/content/node-shapes
+// http://www.graphviz.org/content/color-names#brewer
+
+// clannad SEEN files:
+// http://www.baka-tsuki.org/project/index.php?title=Clannad:SEEN6803
+
+// walkthroughs:
+// http://soukyuu.emevas.net/CLANNAD_guide.html
+// http://www.gamefaqs.com/pc/921463-clannad/faqs/61132
+
+
+
+// The Definitive Clannad Visual Novel Flowchart
+digraph Clannad{
+    graph [ label = "\n\n\n\nThe Definitive Clannad Visual Novel Flowchart\nMorlok8k, Version 0.1, March 2013" ];
+
+// AFTER STORY
+    AF_Start [label = "Afterstory Start\nMonday, April 5th, 2004"];
+    AF_MAY5 [shape = box, label = "Wednesday, May 5th, 2004"];
+    AF_Start -> AF_MAY5 [color = cornflowerblue, label = "Blue:\nMain Storyline\n(First playthrough)"];
+    AF_Start -> AF_MAY5 [color = red, label = "Red:\nAkio's Path"];
+    AF_Start -> AF_MAY5 [color = green, label = "Green:\nMain Storyline\n(True Ending)"];
+    
+    AF_MAY5_q1 [shape = Mrecord, label = "<a1>Calm myself down|<a2> Be serious, so that I won't get caught"];
+    AF_MAY5 -> AF_MAY5_q1:a1 [color = cornflowerblue];
+    AF_MAY5 -> AF_MAY5_q1:a1 [color = red];
+    AF_MAY5 -> AF_MAY5_q1:a1 [color = green];
+    AF_MAY5 -> AF_MAY5_q1:a2;
+
+    AF_MAY6 [shape = box, label = "May 6th, 2004"];
+    AF_MAY5_q1:a1 -> AF_MAY6 [color = cornflowerblue];
+    AF_MAY5_q1:a1 -> AF_MAY6 [color = red];
+    AF_MAY5_q1:a1 -> AF_MAY6 [color = green];
+    AF_MAY5_q1:a2 -> AF_MAY6;
+
+
+    AF_MAY6_q1 [shape = Mrecord, label = "<a1>Sure|<a2>Well, beyond words..."];
+    AF_MAY6 -> AF_MAY6_q1:a1 [color = cornflowerblue];
+    AF_MAY6 -> AF_MAY6_q1:a1 [color = red];
+    AF_MAY6 -> AF_MAY6_q1:a1 [color = green];
+    AF_MAY6 -> AF_MAY6_q1:a2;
+
+    AF_MAY6_q2 [shape = Mrecord, label = "<a1>Something perverted...|<a2>No, words are enough"];
+    AF_MAY6_q1:a2 -> AF_MAY6_q2;
+
+    AF_MAY9 [shape = box, label = "May 9th, 2004"];
+    AF_MAY6_q1:a1 -> AF_MAY9 [color = cornflowerblue];
+    AF_MAY6_q1:a1 -> AF_MAY9 [color = red];
+    AF_MAY6_q1:a1 -> AF_MAY9 [color = green];
+    AF_MAY6_q2:a1 -> AF_MAY9;
+    AF_MAY6_q2:a2 -> AF_MAY9;
+
+    AF_MAY9_q1 [shape = Mrecord, label = "<a1>Fix the misunderstanding|<a2>Let them think what they like"];
+    AF_MAY9 -> AF_MAY9_q1:a1 [color = cornflowerblue];
+    AF_MAY9 -> AF_MAY9_q1:a1 [color = green];
+    AF_MAY9 -> AF_MAY9_q1:a2 [color = red, label = "* Akio Flag *", fontcolor = red];
+
+    AF_MAY9_q2 [shape = Mrecord, label = "<a1>Remain silent|<a2>Deny it"];
+    AF_MAY9_q1:a1 -> AF_MAY9_q2:a1 [color = cornflowerblue];
+    AF_MAY9_q1:a1 -> AF_MAY9_q2:a1 [color = green];
+    AF_MAY9_q1:a1 -> AF_MAY9_q2:a2;
+    AF_MAY9_q1:a2 -> AF_MAY9_q2:a1;
+    AF_MAY9_q1:a2 -> AF_MAY9_q2:a2 [color = red];
+
+    AF_MAY12 [shape = box, label = "May 12th, 2004"];
+    AF_MAY9_q2:a1 -> AF_MAY12 [color = cornflowerblue];
+    AF_MAY9_q2:a1 -> AF_MAY12 [color = green];
+    AF_MAY9_q2:a2 -> AF_MAY12 [color = red];
+
+    AF_MAY12_q1 [shape = Mrecord, label = "<a1>Watch TV|<a2>Fish through the drawers"];
+    AF_MAY12 -> AF_MAY12_q1:a1 [color = cornflowerblue];
+    AF_MAY12 -> AF_MAY12_q1:a1 [color = red];
+    AF_MAY12 -> AF_MAY12_q1:a1 [color = green];
+    AF_MAY12 -> AF_MAY12_q1:a2;
+
+    AF_MAY13 [shape = box, label = "May 13th, 2004"];
+    AF_MAY12_q1:a1 -> AF_MAY13 [color = cornflowerblue];
+    AF_MAY12_q1:a1 -> AF_MAY13 [color = red];
+    AF_MAY12_q1:a1 -> AF_MAY13 [color = green];
+    AF_MAY12_q1:a2 -> AF_MAY13;
+
+    AF_MAY13_q1 [shape = Mrecord, label = "<a1>School Foundation Day|<a2>Cow Chasing Festival|<a3>Naked Apron Day"];
+    AF_MAY13 -> AF_MAY13_q1:a1 [color = cornflowerblue];
+    AF_MAY13 -> AF_MAY13_q1:a1 [color = red];
+    AF_MAY13 -> AF_MAY13_q1:a1 [color = green];
+    AF_MAY13 -> AF_MAY13_q1:a2;
+    AF_MAY13 -> AF_MAY13_q1:a3;
+    AF_MAY13_q2 [shape = Mrecord, label = "<a1>Mock examinations|<a2>Cow Chasing Festival|<a3>Naked Apron Day"];
+    AF_MAY13_q1:a1 -> AF_MAY13_q2:a1 [color = cornflowerblue];
+    AF_MAY13_q1:a1 -> AF_MAY13_q2:a1 [color = red];
+    AF_MAY13_q1:a1 -> AF_MAY13_q2:a1 [color = green];
+    AF_MAY13_q1:a1 -> AF_MAY13_q2:a2;
+    AF_MAY13_q1:a1 -> AF_MAY13_q2:a3;
+    AF_MAY13_q1:a2 -> AF_MAY13_q3:a1;
+    AF_MAY13_q1:a2 -> AF_MAY13_q3:a1;
+    AF_MAY13_q1:a2 -> AF_MAY13_q3:a3;
+    AF_MAY13_q3 [shape = Mrecord, label = "<a1>Mock examinations|<a2>Dango Chasing Festival|<a3>Naked Apron Day"];
+    AF_MAY13_q1:a2 -> AF_MAY13_q3:a2;
+
+    AF_MAY16 [shape = box, label = "May 16th, 2004"];
+    AF_MAY13_q2:a1 -> AF_MAY16 [color = cornflowerblue];
+    AF_MAY13_q2:a1 -> AF_MAY16 [color = red];
+    AF_MAY13_q2:a1 -> AF_MAY16 [color = green];
+    AF_MAY13_q3:a1 -> AF_MAY16;
+    AF_MAY13_q2:a2 -> AF_MAY16;
+    AF_MAY13_q3:a2 -> AF_MAY16;
+    AF_MAY13_q1:a3 -> AF_MAY16;
+    AF_MAY13_q2:a3 -> AF_MAY16;
+    AF_MAY13_q3:a3 -> AF_MAY16;
+
+    AF_MAY16_q1 [shape = Mrecord, label = "<a1>I guess its' fine|<a2>Forget it"];
+    AF_MAY16 -> AF_MAY16_q1:a1 [color = cornflowerblue];
+    AF_MAY16 -> AF_MAY16_q1:a1 [color = red];
+    AF_MAY16 -> AF_MAY16_q1:a1 [color = green];
+    AF_MAY16 -> AF_MAY16_q1:a2;
+    AF_JUNE1 [shape = box, label = "Cohabitation\n(Early June 2004)"];
+
+    // Starting with June, dates are not displayed in game.
+    // so, days are given in a numerical order, even if it isn't the next day...
+
+    AF_MAY16_q1:a1 -> AF_JUNE1 [color = cornflowerblue];
+    AF_MAY16_q1:a1 -> AF_JUNE1 [color = red];
+    AF_MAY16_q1:a1 -> AF_JUNE1 [color = green];
+    AF_MAY16_q1:a2 -> AF_JUNE1;
+
+    AF_JUNE1_q1 [shape = Mrecord, label = "<a1>Not that I can't, but it's impossible|<a2>Guess we'll have to..."];
+    AF_JUNE1 -> AF_JUNE1_q1:a1 [color = cornflowerblue];
+    AF_JUNE1 -> AF_JUNE1_q1:a1 [color = green];
+    AF_JUNE1 -> AF_JUNE1_q1:a2 [color = red];
+
+    AF_AKIO [shape = box, label = "Akio's Path"]
+    AF_JUNE1_q1:a2 -> AF_AKIO [color = red label = "Only if Akio's flag = true", fontcolor = red];
+
+    AF_JUNE2 [shape = box, label = "Sanae\n(Mid-June 2004)"];
+    AF_JUNE1_q1:a1 -> AF_JUNE2 [color = cornflowerblue];
+    AF_JUNE1_q1:a1 -> AF_JUNE2 [color = green];
+    AF_JUNE1_q1:a2 -> AF_JUNE2;
+    AF_JUNE2_q1 [shape = Mrecord, label = "<a1>Yeah|<a2>Not Exactly..."];
+    AF_JUNE2 -> AF_JUNE2_q1:a1 [color = cornflowerblue];
+    AF_JUNE2 -> AF_JUNE2_q1:a1 [color = green];
+    AF_JUNE2 -> AF_JUNE2_q1:a2;
+
+    SANAE_LIGHT [shape = doublecircle, label = "Furukawa Sanae's\nOrb of Light"]
+    AF_JUNE2_q1:a1 -> SANAE_LIGHT [color = cornflowerblue];
+    AF_JUNE2_q1:a1 -> SANAE_LIGHT [color = green];
+    AF_JUNE2_q1:a2 -> SANAE_LIGHT;
+
+    AF_JUNE3 [shape = box, label = "Cohabitation\n(Late-June 2004)"];
+    SANAE_LIGHT -> AF_JUNE3 [color = cornflowerblue];
+    SANAE_LIGHT -> AF_JUNE3 [color = green];
+
+    AF_JUNE3_q1 [shape = Mrecord, label = "<a1>Answer honestly|<a2>Cover it up"];
+    AF_JUNE3 -> AF_JUNE3_q1:a1 [color = cornflowerblue];
+    AF_JUNE3 -> AF_JUNE3_q1:a1 [color = green];
+    AF_JUNE3 -> AF_JUNE3_q1:a2;
+
+    AF_JUNE3_q2 [shape = Mrecord, label = "<a1>Change the channel|<a2>Sing"];
+    AF_JUNE3_q1:a1 -> AF_JUNE3_q2:a1;
+    AF_JUNE3_q1:a1 -> AF_JUNE3_q2:a2 [color = cornflowerblue];
+    AF_JUNE3_q1:a1 -> AF_JUNE3_q2:a2 [color = green];
+
+
+
+
+    //main path (blue)
+    AF_JUNE3_q3 [shape = Mrecord, label = "<a1>Agree|<a2>Ask him what happened afterward"];
+
+    AF_JUNE3_q2:a2 -> AF_JUNE3_q3:a2 [color = cornflowerblue];
+    AF_JUNE3_q2:a2 -> AF_JUNE3_q3:a2 [color = green];
+    AF_JUNE3_q2:a2 -> AF_JUNE3_q3:a1;
+
+    AF_YOSHINO_FLAG [label = "* Yoshino Flag *"];
+
+
+    AF_JUNE4_q1 [shape = Mrecord, label = "<a1>Wait until the day after tomorrow, then go with her|<a2>Send Nagisa there"];
+    
+    AF_JUNE3_q3:a2 -> AF_YOSHINO_FLAG [color = cornflowerblue];
+    AF_JUNE3_q3:a2 -> AF_YOSHINO_FLAG [color = green];
+    //AF_JUNE3_q3:a2 -> AF_YOSHINO_FLAG;
+    
+    AF_YOSHINO_FLAG -> AF_JUNE4_q1:a2 [color = cornflowerblue];
+    AF_YOSHINO_FLAG -> AF_JUNE4_q1:a2 [color = green];
+    AF_YOSHINO_FLAG -> AF_JUNE4_q1:a1;
+
+    AF_JULY [shape = box, label = "July 2004"];
+    AF_JULY1_q1 [shape = Mrecord, label = "<a1>.........|<a2>You are"];
+
+    AF_JUNE3_q1:a2 -> AF_JULY; //[style = dashed];
+    AF_JUNE3_q2:a1 -> AF_JULY; //[style = dashed];
+    AF_JUNE3_q3:a1 -> AF_JULY; //[style = dashed];
+    //removed dashes, as yoshinos orb seems optional... to the extent of getting a premature end...
+
+    AF_JUNE4_q1:a2 -> AF_JULY [color = cornflowerblue];
+    AF_JUNE4_q1:a2 -> AF_JULY [color = green];
+    AF_JUNE4_q1:a1 -> AF_JULY;
+
+    AF_JULY -> AF_JULY1_q1:a2;
+    AF_JULY -> AF_JULY1_q1:a1 [color = cornflowerblue];
+    AF_JULY -> AF_JULY1_q1:a1 [color = green];
+
+    AF_JULY2_q1 [shape = Mrecord, label = "<a1>Throw a punch|<a2>Deal with it"];  //TODO: finish
+    AF_JULY1_q1:a1 -> AF_JULY2_q1:a2 [color = cornflowerblue];
+    AF_JULY1_q1:a1 -> AF_JULY2_q1:a2 [color = green];
+    AF_JULY1_q1:a1 -> AF_JULY2_q1:a1;
+
+    JOB_OFFER [shape = box, label = "New Job Offer"];
+    AF_JULY3_q1 [shape = Mrecord, label = "<a1>Be nice and watch TV|<a2>Hug her from behind"];
+    AF_JULY2_q1:a2 -> JOB_OFFER [color = cornflowerblue];
+    AF_JULY2_q1:a2 -> JOB_OFFER [color = green];
+    AF_JULY2_q1:a1 -> JOB_OFFER [style = dashed];  // queue Premature end...
+
+    JOB_OFFER -> AF_JULY3_q1:a1 [color = cornflowerblue];
+    JOB_OFFER -> AF_JULY3_q1:a1 [color = green];
+    AF_JULY1_q1:a2 -> JOB_OFFER [style = dashed];  // queue Premature end...
+    JOB_OFFER -> AF_JULY3_q1:a2;
+
+    AF_JULY3_q2 [shape = Mrecord, label = "<a1>Embrace her more strongly|<a2>I'll probably in the way, so remain like this"];
+    AF_JULY3_q1:a2 -> AF_JULY3_q2:a1;
+    AF_JULY3_q1:a2 -> AF_JULY3_q2:a2;
+
+    AF_JULY3_q3 [shape = Mrecord, label = "<a1>Check|<a2>That would most certainly be rude"];
+    AF_JULY3_q2:a1 -> AF_JULY3_q3:a1;
+    AF_JULY3_q2:a1 -> AF_JULY3_q3:a2;
+
+    AF_YOSHINO [shape = box, label = "Yoshino Yusuke's\nflag checkpoint"];
+
+    YOSHINO_LIGHT [shape = doublecircle, label = "Yoshino Yusuke's\nOrb of Light"]
+    
+    AF_JULY3_q1:a1 -> AF_YOSHINO [color = cornflowerblue];
+    AF_YOSHINO -> YOSHINO_LIGHT [color = cornflowerblue];
+    AF_JULY3_q1:a1 -> AF_YOSHINO [color = green];
+    AF_YOSHINO -> YOSHINO_LIGHT [color = green];
+
+    AF_SUMMER_BREAK [shape = box, label = "Summer Break"];
+    AF_JULY3_q2:a2 -> AF_YOSHINO;
+    AF_JULY3_q3:a1 -> AF_YOSHINO;
+    AF_JULY3_q3:a2 -> AF_YOSHINO;
+    YOSHINO_LIGHT -> AF_SUMMER_BREAK [color = cornflowerblue];
+    YOSHINO_LIGHT -> AF_SUMMER_BREAK [color = green];
+    AF_YOSHINO -> AF_SUMMER_BREAK [label = "Yoshino's\nflag\n= false"];
+
+    AF_JULY4_q1 [shape = Mrecord, label = "<a1>Pop's treasured porn book|<a2>Sanae-san's underwear|<a3>Don’t want either"];
+    AF_SUMMER_BREAK -> AF_JULY4_q1:a1;
+    AF_SUMMER_BREAK -> AF_JULY4_q1:a2;
+    AF_SUMMER_BREAK -> AF_JULY4_q1:a3 [color = cornflowerblue];
+    AF_SUMMER_BREAK -> AF_JULY4_q1:a3 [color = green];
+
+    SUMMER_END [shape = box, label = "End of Summer 2004\nthrough\nDecember 2004"];
+    AF_JULY4_q1:a1 -> SUMMER_END;
+    AF_JULY4_q1:a2 -> SUMMER_END;
+    AF_JULY4_q1:a3 -> SUMMER_END [color = cornflowerblue];
+    AF_JULY4_q1:a3 -> SUMMER_END [color = green];
+
+    AF_PREMATURE_END [style = dashed, label = "Premature End\nDashed lines mean something required was skipped..."];
+    SUMMER_END -> AF_PREMATURE_END [style = dashed];
+
+    AF_DEC1_q1 [shape = Mrecord, label = "<a1>Continue looking on|<a2>I should stop this soon"];
+    //AF_DEC1_q1:a2 [shape = diamond, label = ""];
+    SUMMER_END -> AF_DEC1_q1:a1 [color = cornflowerblue];
+    SUMMER_END -> AF_DEC1_q1:a2 [color = green];
+
+    AF_DEC1_q2 [shape = Mrecord, label = "<a1>I am|<a2>I’m not"];
+    AF_DEC1_q1:a1 -> AF_DEC1_q2:a2 [color = cornflowerblue];
+    AF_DEC1_q1:a1 -> AF_DEC1_q2:a1;
+
+    //spring 2005 - fever lets up, "custom" grad ceremony
+    AF_SPRING05 [shape = box, label = "Spring 2005"];
+    AF_DEC1_q2:a2 -> AF_SPRING05 [color = cornflowerblue];
+    AF_DEC1_q2:a1 -> AF_SPRING05;
+    AF_DEC1_q1:a2 -> AF_SPRING05 [color = green];
+
+    main9_q1 [shape = Mrecord, label = "<a1>Help him with it|<a2>Run for it"];
+    AF_SPRING05 -> main9_q1:a1 [color = cornflowerblue];
+    AF_SPRING05 -> main9_q1:a2 [color = green];
+
+    AF_SUMMER05 [shape = box, label = "Summer 2005"];
+    main9_q1:a1 -> AF_SUMMER05 [color = cornflowerblue];
+    main9_q1:a2 -> AF_SUMMER05 [color = green];
+
+    AF_USHIO_BIRTH [shape = box, label = "Ushio's Birth\nSpring 2006"];
+    AF_SUMMER05 -> AF_USHIO_BIRTH [color = cornflowerblue];
+    AF_SUMMER05 -> AF_USHIO_BIRTH [color = green];
+
+    //Storyline splits here
+    af_split1 [shape = Mrecord, label = "<a1>Call out|<a2>Don't call out."];
+    AF_USHIO_BIRTH -> af_split1:a1 [color = green, label = "True end has\nbeen seen before"];
+    AF_USHIO_BIRTH -> af_split1:a2;
+
+    //True Ending
+    AF_TRUE_END [label = "True End"];
+    AF_USHIO_BIRTH -> AF_TRUE_END [color = green, label = "First playthough\nof true end", fontcolor = green];
+    af_split1:a1 -> AF_TRUE_END [color = green];
+
+
+    //Main storyline
+    af_split1:a2 -> NAOYUKI_LIGHT;
+    NAOYUKI_LIGHT [shape = doublecircle, label = "Okazaki Naoyuki's\nOrb of Light"]
+    AF_USHIO_BIRTH -> NAOYUKI_LIGHT [color = cornflowerblue, label = "First playthough", fontcolor = cornflowerblue];
+
+    main10_q1 [shape = Mrecord, label = "<a1>Do I go to look, or,|<a2>Do I wait here."];
+    NAOYUKI_LIGHT -> main10_q1:a1 [color = cornflowerblue];
+    NAOYUKI_LIGHT -> main10_q1:a2;
+
+    FUKO_LIGHT [shape = doublecircle, label = "Ibuki Fuko's\nOrb of Light"]
+    main10_q1:a1 -> FUKO_LIGHT [color = cornflowerblue];
+    KOUKO_LIGHT [shape = doublecircle, label = "Ibuki Kouko's\nOrb of Light"]
+    FUKO_LIGHT -> KOUKO_LIGHT [color = cornflowerblue];
+
+    USHIO_BAD_END [label = "Main AfterStory End"];
+    KOUKO_LIGHT -> USHIO_BAD_END [color = cornflowerblue];
+    main10_q1:a2 -> USHIO_BAD_END;
+
+
+
+    //Akio's path (red)
+    AF_AKIO_q1 [shape = Mrecord, label = "<a1>About Pops|<a2>About something perverted"];
+    //AF_AKIO_q1 [shape = diamond, label = "About something perverted"];
+    AF_AKIO_q2 [shape = Mrecord, label = "<a1>Hug her|<a2>Say good morning"];
+    //AF_AKIO_q2 [shape = diamond, label = "Say good morning"];
+    AF_AKIO -> AF_AKIO_q1:a1 [color = red];
+    AF_AKIO -> AF_AKIO_q1:a2;
+    AF_AKIO_q1:a1 -> AF_AKIO_q2:a1 [color = red];
+    AF_AKIO_q1:a1 -> AF_AKIO_q2:a2;
+    AF_AKIO_q1:a2 -> AF_AKIO_q2:a1;
+    AF_AKIO_q1:a2 -> AF_AKIO_q2:a2;
+    AF_AKIO_LIGHT [shape = doublecircle, label = "Furukawa Akio's's\nOrb of Light"]
+    AF_AKIO_q2:a1 -> AF_AKIO_LIGHT [color = red];
+    AF_AKIO_q2:a2 -> AF_AKIO_LIGHT;
+    AF_AKIO_END [label = "Akio's End"];
+    AF_AKIO_LIGHT -> AF_AKIO_END [color = red];
+
+
+}

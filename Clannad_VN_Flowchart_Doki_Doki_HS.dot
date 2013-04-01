@@ -1,0 +1,60 @@
+
+// http://www.graphviz.org/content/node-shapes
+// http://www.graphviz.org/content/color-names#brewer
+
+// clannad SEEN files:
+// http://www.baka-tsuki.org/project/index.php?title=Clannad:SEEN6803
+
+// walkthroughs:
+// http://soukyuu.emevas.net/CLANNAD_guide.html
+// http://www.gamefaqs.com/pc/921463-clannad/faqs/61132
+
+
+
+// The Definitive Clannad Visual Novel Flowchart
+digraph Clannad{
+    graph [ label = "\n\n\n\nThe Definitive Clannad Visual Novel Flowchart\nMorlok8k, Version 0.1, March 2013" ];
+
+    //Doki Doki High School
+    //TODO: actually play Doki Doki HS!
+    doki_start [label = "Doki Doki High School\nMinigame\nStart"];
+    doki_game_over [label = "Game Over"];
+    doki_the_end [label = "The End"];
+    doki_finished [label = "Game Finished"];
+    doki_q1 [shape = Mrecord, label = "<a1>Confess to her|<a2>See her leave"];
+    doki_q2 [shape = Mrecord, label = "<a1>Confess to her|<a2>Watch her in silence"];
+    doki_q3 [shape = Mrecord, label = "<a1>Watch her leave|<a2>Confess to her"];
+    doki_q4 [shape = Mrecord, label = "<a1>Hug her|<a2>Shrug off her"];
+    doki_q5 [shape = Mrecord, label = "<a1>Run away alone|<a2>Run with Steve"];
+    doki_q6 [shape = Mrecord, label = "<a1>Leave it to Steve|<a2>Fight yourself"];
+    doki_q7 [shape = Mrecord, label = "<a1>Don't Open|<a2>Open"];
+    doki_q8 [shape = Mrecord, label = "<a1>Walk Forward|<a2>Walk left|<a3>Walk right"];
+    doki_q9 [shape = Mrecord, label = "<a1>Hug him|<a2>Shrug him off"];
+    doki_q10 [shape = Mrecord, label = "<a1>Act together|<a2>Shrug her off"];
+    doki_start -> doki_q1;
+    doki_q1:a2 -> doki_q2;
+    doki_q2:a2 -> doki_q3;
+    doki_q3:a2 -> doki_q4;
+    doki_q4:a2 -> doki_q5;
+    doki_q5:a2 -> doki_q6;
+    doki_q6:a2 -> doki_q7;
+    doki_q7:a1 -> doki_q8;
+    doki_q7:a2 -> doki_q9;
+    doki_q8:a2 -> doki_the_end;
+    doki_q9:a2 -> doki_q10;
+    doki_q10:a2 -> doki_finished;
+    doki_q1:a1 -> doki_game_over [color = red];
+    doki_q2:a1 -> doki_game_over [color = red];
+    doki_q3:a1 -> doki_game_over [color = red];
+    doki_q4:a1 -> doki_game_over [color = red];
+    doki_q5:a1 -> doki_game_over [color = red];
+    doki_q6:a1 -> doki_game_over [color = red];
+    doki_q8:a1 -> doki_game_over [color = red];
+    doki_q8:a3 -> doki_game_over [color = red];
+    doki_q9:a1 -> doki_game_over [color = red];
+    doki_q10:a1 -> doki_game_over [color = red];
+
+
+
+
+}

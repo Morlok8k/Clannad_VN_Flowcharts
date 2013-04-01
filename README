@@ -1,0 +1,26 @@
+Clannad_VN_Flowcharts
+
+This project is to create 100% absolute correct flowcharts of the Clannad Visual Novel (and Tomoyo After)
+
+I am using Graphviz's "Dot" to make my graphs.
+http://www.graphviz.org/
+
+Currently, Clannad's graphs are in seperate graphs, but once completed, will be combined.
+Tomoyo After will remain a seperate graph, as it is a seperate game.
+
+I welcome collaboration... (it's a lot of work!)
+
+
+Status:
+Clannad's School Life has much work to be done.
+Clannad's Afterstory is functionally complete, though more detail could be added.
+Doki Doki High School minigame is complete.
+Tomoyo After is partially completed.
+
+
+Creators:
+Morlok8k
+
+
+Thanks to:
+

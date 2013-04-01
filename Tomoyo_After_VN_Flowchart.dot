@@ -1,0 +1,298 @@
+
+// http://www.graphviz.org/content/node-shapes
+// http://www.graphviz.org/content/color-names#brewer
+
+// clannad SEEN files:
+// http://www.baka-tsuki.org/project/index.php?title=Clannad:SEEN6803
+
+// walkthroughs:
+// http://soukyuu.emevas.net/CLANNAD_guide.html
+// http://www.gamefaqs.com/pc/921463-clannad/faqs/61132
+
+
+
+// The Definitive Clannad Visual Novel Flowchart
+digraph Clannad{
+    graph [ label = "\n\n\n\nThe Definitive Tomoyo After Visual Novel Flowchart\nMorlok8k, Version 0.1, March 2013" ];
+
+
+    Note [label = "Note:\nThis is for the original Tomoyo After VN (for the PC)\nThis is based off of \"Tomoyo After - English Patch v1.1\"\nThe Memorial Edition is said to have more paths, though I haven't played it."];
+
+//Tomoyo After
+
+//start
+
+
+    Start [label = "Tomoyo After\nStart"];
+
+    //June 28
+    JUN_28 [shape = box, label = "Monday, June 28th, 2004"];
+
+    Start -> JUN_28 [color = green]    //END1
+    Start -> JUN_28 [color = blue]    //END2
+    Start -> JUN_28 [color = red]    //BAD_END
+
+    TA_1 [shape = Mrecord, label = "<a>...I'll be fixated on her breath.|<aa>...I'll kiss her normally."];
+    JUN_28 -> TA_1:a [color = green]    //END1
+    JUN_28 -> TA_1:a [color = blue]    //END2
+    JUN_28 -> TA_1:aa [color = red]    //BAD_END
+
+
+    //June 29
+    JUN_29 [shape = box, label = "Tuesday, June 29th, 2004"];
+    TA_1:a -> JUN_29 [color = green]    //END1
+    TA_1:a -> JUN_29 [color = blue]    //END2
+    TA_1:aa -> JUN_29 [color = red]    //BAD_END
+
+    TA_2 [shape = Mrecord, label = "<a>Use your socks.|<aa>"];
+    JUN_29 -> TA_2:a [color = green]    //END1
+    JUN_29 -> TA_2:a [color = blue]    //END2
+    JUN_29 -> TA_2:a [color = red]    //BAD_END
+
+    TA_3 [shape = Mrecord, label = "<a>It makes me want more.|<aa>"];
+    TA_2:a -> TA_3:a [color = green]    //END1
+    TA_2:a -> TA_3:a [color = blue]    //END2
+    TA_2:a -> TA_3:a [color = red]    //BAD_END
+
+    TA_4 [shape = Mrecord, label = "<a>It makes me want more.|<aa>I'll cum at this rate."];
+    TA_3:a -> TA_4:a [color = green]    //END1
+    TA_3:a -> TA_4:a [color = blue]    //END2
+    TA_3:a -> TA_4:aa [color = red]    //BAD_END
+
+
+    //July 07
+    JUL_7 [shape = box, label = "Wednesday, July 7th, 2004"];
+    TA_4:a -> JUL_7 [color = green]    //END1
+    TA_4:a -> JUL_7 [color = blue]    //END2
+    TA_4:aa -> JUL_7 [color = red]    //BAD_END
+
+    TA_5 [shape = Mrecord, label = "<a>Check Tomo's luggage.|<aa>Check Tomoyo's underwear."];
+    JUL_7 -> TA_5:a [color = green]    //END1
+    JUL_7 -> TA_5:a [color = blue]    //END2
+    JUL_7 -> TA_5:aa [color = red]    //BAD_END
+
+
+    //July 09
+    JUL_9 [shape = box, label = "Friday, July 9th, 2004"];
+    TA_5:a -> JUL_9 [color = green]    //END1
+    TA_5:a -> JUL_9 [color = blue]    //END2
+    TA_5:aa -> JUL_9 [color = red]    //BAD_END
+
+    TA_6 [shape = Mrecord, label = "<a>Am in front of the apartment|<aa>"];
+    JUL_9 -> TA_6:a [color = green]    //END1
+    JUL_9 -> TA_6:a [color = blue]    //END2
+    JUL_9 -> TA_6:a [color = red]    //BAD_END
+
+    TA_7 [shape = Mrecord, label = "<a>I'll search for her.|<aa>"];
+    TA_6:a -> TA_7:a [color = green]    //END1
+    TA_6:a -> TA_7:a [color = blue]    //END2
+    TA_6:a -> TA_7:a [color = red]    //BAD_END
+
+
+    //July 10
+    JUL_10 [shape = box, label = "Saturday, July 10th, 2004"];
+    TA_7:a -> JUL_10 [color = green]    //END1
+    TA_7:a -> JUL_10 [color = blue]    //END2
+    TA_7:a -> JUL_10 [color = red]    //BAD_END
+
+    TA_8 [shape = Mrecord, label = "<a>Endure it silently.|<aa>"];
+    JUL_10 -> TA_8:a [color = green]    //END1
+    JUL_10 -> TA_8:a [color = blue]    //END2
+    JUL_10 -> TA_8:a [color = red]    //BAD_END
+
+
+    //July 11
+    JUL_11 [shape = box, label = "Sunday, July 11th, 2004"];
+    TA_8:a -> JUL_11 [color = green]    //END1
+    TA_8:a -> JUL_11 [color = blue]    //END2
+    TA_8:a -> JUL_11 [color = red]    //BAD_END
+
+    TA_9 [shape = Mrecord, label = "<a>Tone it down and have sex with Tomoyo while Tomo sleeps.|<aa>To have sex with Tomoyo from behind while she cooks."];
+    JUL_11 -> TA_9:a [color = green]    //END1
+    JUL_11 -> TA_9:a [color = blue]    //END2
+    JUL_11 -> TA_9:aa [color = red]    //BAD_END
+
+
+    //July 14
+    JUL_14 [shape = box, label = "Wednesday, July 14th, 2004"];
+    TA_9:a -> JUL_14 [color = green]    //END1
+    TA_9:a -> JUL_14 [color = blue]    //END2
+    TA_9:aa -> JUL_14 [color = red]    //BAD_END
+
+    TA_10 [shape = Mrecord, label = "<a>Study|<aa>"];
+    JUL_14 -> TA_10:a [color = green]    //END1
+    JUL_14 -> TA_10:a [color = blue]    //END2
+    JUL_14 -> TA_10:a [color = red]    //BAD_END
+
+    TA_11 [shape = Mrecord, label = "<a>Continue studying.|<aa>"];
+    TA_10:a -> TA_11:a [color = green]    //END1
+    TA_10:a -> TA_11:a [color = blue]    //END2
+    TA_10:a -> TA_11:a [color = red]    //BAD_END
+
+    TA_12 [shape = Mrecord, label = "<a>Go to where the fireworks are.|<aa>"];
+    TA_11:a -> TA_12:a [color = green]    //END1
+    TA_11:a -> TA_12:a [color = blue]    //END2
+    TA_11:a -> TA_12:a [color = red]    //BAD_END
+
+    TA_13 [shape = Mrecord, label = "<a>A substitute for Tomoyo.|<aa>"];
+    TA_12:a -> TA_13:a [color = green]    //END1
+    TA_12:a -> TA_13:a [color = blue]    //END2
+    TA_12:a -> TA_13:a [color = red]    //BAD_END
+
+
+    //July 15
+    JUL_15 [shape = box, label = "Thursday, July 15th, 2004"];
+    TA_13:a -> JUL_15 [color = green]    //END1
+    TA_13:a -> JUL_15 [color = blue]    //END2
+    TA_13:a -> JUL_15 [color = red]    //BAD_END
+
+    TA_14 [shape = Mrecord, label = "<a>No way.|<aa>"];
+    JUL_15 -> TA_14:a [color = green]    //END1
+    JUL_15 -> TA_14:a [color = blue]    //END2
+    JUL_15 -> TA_14:a [color = red]    //BAD_END
+
+    TA_15 [shape = Mrecord, label = "<a>Study.|<aa>"];
+    TA_14:a -> TA_15:a [color = green]    //END1
+    TA_14:a -> TA_15:a [color = blue]    //END2
+    TA_14:a -> TA_15:a [color = red]    //BAD_END
+
+    TA_16 [shape = Mrecord, label = "<a>Do it|<aa>Don't"];
+    TA_15:a -> TA_16:a [color = green]    //END1
+    TA_15:a -> TA_16:a [color = blue]    //END2
+    TA_15:a -> TA_16:aa [color = red]    //BAD_END
+
+
+    //July 16
+    JUL_16 [shape = box, label = "Friday, July 16th, 2004"];
+    TA_16:a -> JUL_16 [color = green]    //END1
+    TA_16:a -> JUL_16 [color = blue]    //END2
+    TA_16:aa -> JUL_16 [color = red]    //BAD_END
+
+    TA_17 [shape = Mrecord, label = "<a>Study|<aa>"];
+    JUL_16 -> TA_17:a [color = green]    //END1
+    JUL_16 -> TA_17:a [color = blue]    //END2
+    JUL_16 -> TA_17:a [color = red]    //BAD_END
+
+    TA_18 [shape = Mrecord, label = "<a>Don't work on it together|<aa>"];
+    TA_17:a -> TA_18:a [color = green]    //END1
+    TA_17:a -> TA_18:a [color = blue]    //END2
+    TA_17:a -> TA_18:a [color = red]    //BAD_END
+
+    TA_19 [shape = Mrecord, label = "<a>Sub in for Kanako|<aa>"];
+    TA_18:a -> TA_19:a [color = green]    //END1
+    TA_18:a -> TA_19:a [color = blue]    //END2
+    TA_18:a -> TA_19:a [color = red]    //BAD_END
+
+
+    //July 20
+    JUL_20 [shape = box, label = "Tuesday, July 20th, 2004"];
+
+
+    TA_20 [shape = Mrecord, label = "<a>Find another way.|<aa>"];
+    TA_19:a -> TA_20:a [color = green]    //END1
+    TA_19:a -> TA_20:a [color = blue]    //END2
+    TA_19:a -> TA_20:a [color = red]    //BAD_END
+
+
+    //July 21
+    TA_21 [shape = Mrecord, label = "<a>Keep trying.|<aa>"];
+    TA_20:a -> TA_21:a [color = green]    //END1
+    TA_20:a -> TA_21:a [color = blue]    //END2
+    TA_20:a -> TA_21:a [color = red]    //BAD_END
+
+
+    //July 23
+    TA_22 [shape = Mrecord, label = "<a>Go out|<aa>"];
+    TA_21:a -> TA_22:a [color = green]    //END1
+    TA_21:a -> TA_22:a [color = blue]    //END2
+    TA_21:a -> TA_22:a [color = red]    //BAD_END
+
+
+    //August 10
+    TA_23 [shape = Mrecord, label = "<a>Tomoyo, Kanako, and I will go.|<aa>"];
+    TA_22:a -> TA_23:a [color = green]    //END1
+    TA_22:a -> TA_23:a [color = blue]    //END2
+    TA_22:a -> TA_23:a [color = red]    //BAD_END
+
+
+    //August 11
+    TA_24 [shape = Mrecord, label = "<a>Acknowledge her joke.|<aa>Ignore her lame joke."];
+    TA_23:a -> TA_24:a [color = green]    //END1
+    TA_23:a -> TA_24:a [color = blue]    //END2
+    TA_23:a -> TA_24:aa [color = red]    //BAD_END
+
+
+    //August 12
+    TA_25 [shape = Mrecord, label = "<a>Build a school.|<aa>"];
+    TA_24:a -> TA_25:a [color = green]    //END1
+    TA_24:a -> TA_25:a [color = blue]    //END2
+    TA_24:aa -> TA_25:a [color = red]    //BAD_END
+
+
+    //August 14
+    TA_26 [shape = Mrecord, label = "<a>Refuse it.|<aa>Pursue her body."];
+    TA_25:a -> TA_26:a [color = green]    //END1
+    TA_25:a -> TA_26:aa [color = blue]    //END2
+    TA_25:a -> TA_26:aa [color = red]    //BAD_END
+
+
+
+
+
+    END1_END [label = "First Ending"];
+    TA_26:a -> END1_END [color = green]    //END1
+
+    END2_END [label = "Second Ending"];
+    TA_26:aa -> END2_END [color = blue]    //END2
+
+    BAD_END [label = "Bad End"];
+    TA_26:aa -> BAD_END [color = red]    //END2
+
+/*
+-----June 28
+   
+-----June 29
+   Use your socks.
+   ★It makes me want more.
+   ★I'll cum at this rate.
+-----July 07
+   Check Tomoyo's underwear.
+-----July 09
+   Am in front of the supermarket.
+   I'll search for her.
+-----July 10
+   Endure it silently.
+-----July 11
+   To have sex with Tomoyo from behind while she cooks.
+-----July 14
+   Study
+   Continue studying.
+   Go to where the fireworks are.
+   A substitute for Tomoyo.
+-----July 15
+   No way.
+   Study
+   Don't
+-----July 16
+   Study
+   Don't work on it together
+   Sub in for Kanako
+-----July 20
+   Find another way.
+-----July 21
+   Keep trying.
+-----July 23
+   Go out
+-----August 10
+   Tomoyo, Kanako, and I will go.
+-----August 11
+   Ignore her lame joke.
+-----August 12
+   Build a school.
+-----August 14
+   Pursue her body.
+*/
+
+
+
+}
