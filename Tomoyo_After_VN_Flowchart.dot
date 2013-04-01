@@ -69,9 +69,9 @@ digraph Clannad{
 
     //July 07
     JUL_7 [shape = box, label = "Wednesday, July 7th, 2004"];
-    TA_4:a -> JUL_7 [color = green];    //END1
-    TA_4:a -> JUL_7 [color = blue];    //END2
-    TA_4:aa -> JUL_7 [color = red];    //BAD_END
+    TA_4:a2 -> JUL_7 [color = green];    //END1
+    TA_4:a2 -> JUL_7 [color = blue];    //END2
+    TA_4:a1 -> JUL_7 [color = red];    //BAD_END
     TA_2a:a1 -> JUL_7;
     TA_2a:a2 -> JUL_7;
 

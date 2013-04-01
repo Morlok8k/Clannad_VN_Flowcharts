@@ -236,12 +236,12 @@ digraph Clannad{
     
     
     
-    
+    Start0 [label = "Temporary Start marker"];
     
     
     
     Fuko_1 [shape = Mrecord, label = "<a>Don't do anything"];
-    Fuko_0:a -> Fuko_1:a [color = darkolivegreen];    //Fuko
+    Start0 -> Fuko_1:a [color = darkolivegreen];    //Fuko
     
     Fuko_2 [shape = Mrecord, label = "<a>Ignore her"];
     Fuko_1:a -> Fuko_2:a [color = darkolivegreen];    //Fuko
@@ -446,9 +446,9 @@ digraph Clannad{
     
     
     Kyou_Ryou_1 [shape = Mrecord, label = "<a>"];
-    Kyou_Ryou_0:a -> Kyou_Ryou_1:a [color = darkorchid];    //Kyou
-    Kyou_Ryou_0:a -> Kyou_Ryou_1:a [color = midnightblue];    //Ryou
-    Kyou_Ryou_0:a -> Kyou_Ryou_1:a [color = cadetblue];    //Kappei
+    Start0 -> Kyou_Ryou_1:a [color = darkorchid];    //Kyou
+    Start0 -> Kyou_Ryou_1:a [color = midnightblue];    //Ryou
+    Start0 -> Kyou_Ryou_1:a [color = cadetblue];    //Kappei
     
     Kyou_Ryou_2 [shape = Mrecord, label = "<a>"];
     Kyou_Ryou_1:a -> Kyou_Ryou_2:a [color = darkorchid];    //Kyou
@@ -728,7 +728,7 @@ Introduce him to an inn.
     
     
     Misae_1 [shape = Mrecord, label = "<a>"];
-    Misae_0:a -> Misae_1:a [color = gold];    //Misae
+    Start0 -> Misae_1:a [color = gold];    //Misae
     
     Misae_2 [shape = Mrecord, label = "<a>"];
     Misae_1:a -> Misae_2:a [color = gold];    //Misae
@@ -825,7 +825,7 @@ That you have a nice blanket odor
     
     
     Koumura_1 [shape = Mrecord, label = "<a>"];
-    Koumura_0:a -> Koumura_1:a [color = seagreen];    //Koumura
+    Start0 -> Koumura_1:a [color = seagreen];    //Koumura
     
     Koumura_2 [shape = Mrecord, label = "<a>"];
     Koumura_1:a -> Koumura_2:a [color = seagreen];    //Koumura
@@ -1090,7 +1090,7 @@ Let Kyou make the last move
     
     
     Yukine_1 [shape = Mrecord, label = "<a>"];
-    Yukine_0:a -> Yukine_1:a [color = violet];    //Yukine
+    Start0 -> Yukine_1:a [color = violet];    //Yukine
     
     Yukine_2 [shape = Mrecord, label = "<a>"];
     Yukine_1:a -> Yukine_2:a [color = violet];    //Yukine
@@ -1227,7 +1227,7 @@ Let her sleep
     
     
     Kotomi_1 [shape = Mrecord, label = "<a>"];
-    Kotomi_0:a -> Kotomi_1:a [color = limegreen];    //Kotomi
+    Start0 -> Kotomi_1:a [color = limegreen];    //Kotomi
     
     Kotomi_2 [shape = Mrecord, label = "<a>"];
     Kotomi_1:a -> Kotomi_2:a [color = limegreen];    //Kotomi
@@ -1396,7 +1396,7 @@ Persevere
     
     
     Mei_1 [shape = Mrecord, label = "<a>"];
-    Mei_0:a -> Mei_1:a [color = darkorange];    //Mei
+    Start0 -> Mei_1:a [color = darkorange];    //Mei
     
     Mei_2 [shape = Mrecord, label = "<a>"];
     Mei_1:a -> Mei_2:a [color = darkorange];    //Mei
@@ -1497,7 +1497,7 @@ It's fine to watch from a distance, isn't it?
     
     
     Nagisa_1 [shape = Mrecord, label = "<a>"];
-    Nagisa_0:a -> Nagisa_1:a [color = firebrick];    //Nagisa
+    Start0 -> Nagisa_1:a [color = firebrick];    //Nagisa
     
     Nagisa_2 [shape = Mrecord, label = "<a>"];
     Nagisa_1:a -> Nagisa_2:a [color = firebrick];    //Nagisa
@@ -1784,7 +1784,7 @@ Yell
     
     
     BAD_END_1 [shape = Mrecord, label = "<a>"];
-    BAD_END_0:a -> BAD_END_1:a [color = yellowgreen];    //BAD_END
+    Start0 -> BAD_END_1:a [color = yellowgreen];    //BAD_END
 
     BAD_END_2 [shape = Mrecord, label = "<a>"];
     BAD_END_1:a -> BAD_END_2:a [color = yellowgreen];    //BAD_END
