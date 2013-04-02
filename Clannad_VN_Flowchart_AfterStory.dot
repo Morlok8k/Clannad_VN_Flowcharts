@@ -1,19 +1,25 @@
-
-// http://www.graphviz.org/content/node-shapes
-// http://www.graphviz.org/content/color-names#brewer
-
-// clannad SEEN files:
-// http://www.baka-tsuki.org/project/index.php?title=Clannad:SEEN6803
-
-// walkthroughs:
-// http://soukyuu.emevas.net/CLANNAD_guide.html
-// http://www.gamefaqs.com/pc/921463-clannad/faqs/61132
-
-
+/*
+#
+#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+#                    Version 2, December 2004
+#
+# Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+#
+# Everyone is permitted to copy and distribute verbatim or modified
+# copies of this license document, and changing it is allowed as long
+# as the name is changed.
+#
+#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+#   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+#
+#  0. You just DO WHAT THE FUCK YOU WANT TO.
+#
+#
+*/
 
 // The Definitive Clannad Visual Novel Flowchart
 digraph Clannad{
-    graph [ label = "\n\n\n\nThe Definitive Clannad Visual Novel Flowchart\nMorlok8k, Version 0.1, March 2013" ];
+    graph [ label = "\n\n\n\nThe Definitive Clannad Visual Novel Flowchart\nby Morlok8k, Version 0.1, April 2013\n--------------------\nCopyright © 2013\nThis work is free. You can redistribute it and/or modify it under the\nterms of the Do What The Fuck You Want To Public License, Version 2,\nas published by Sam Hocevar. See http://www.wtfpl.net/ for more details." ];
 
 // AFTER STORY
     AF_Start [label = "Afterstory Start\nMonday, April 5th, 2004"];
@@ -42,7 +48,8 @@ digraph Clannad{
     AF_MAY6 -> AF_MAY6_q1:a2;
 
     AF_MAY6_q2 [shape = Mrecord, label = "<a1>Something perverted...|<a2>No, words are enough"];
-    AF_MAY6_q1:a2 -> AF_MAY6_q2;
+    AF_MAY6_q1:a2 -> AF_MAY6_q2:a1;
+    AF_MAY6_q1:a2 -> AF_MAY6_q2:a2;
 
     AF_MAY9 [shape = box, label = "May 9th, 2004"];
     AF_MAY6_q1:a1 -> AF_MAY9 [color = cornflowerblue];
@@ -129,8 +136,8 @@ digraph Clannad{
     AF_JUNE1 -> AF_JUNE1_q1:a1 [color = green];
     AF_JUNE1 -> AF_JUNE1_q1:a2 [color = red];
 
-    AF_AKIO [shape = box, label = "Akio's Path"]
-    AF_JUNE1_q1:a2 -> AF_AKIO [color = red label = "Only if Akio's flag = true", fontcolor = red];
+    AF_AKIO [shape = box, label = "Akio's Path"];
+    AF_JUNE1_q1:a2 -> AF_AKIO [color = red, label = "Only if Akio's flag = true", fontcolor = red];
 
     AF_JUNE2 [shape = box, label = "Sanae\n(Mid-June 2004)"];
     AF_JUNE1_q1:a1 -> AF_JUNE2 [color = cornflowerblue];
@@ -141,7 +148,7 @@ digraph Clannad{
     AF_JUNE2 -> AF_JUNE2_q1:a1 [color = green];
     AF_JUNE2 -> AF_JUNE2_q1:a2;
 
-    SANAE_LIGHT [shape = doublecircle, label = "Furukawa Sanae's\nOrb of Light"]
+    SANAE_LIGHT [shape = doublecircle, label = "Furukawa Sanae's\nOrb of Light"];
     AF_JUNE2_q1:a1 -> SANAE_LIGHT [color = cornflowerblue];
     AF_JUNE2_q1:a1 -> SANAE_LIGHT [color = green];
     AF_JUNE2_q1:a2 -> SANAE_LIGHT;
@@ -225,7 +232,7 @@ digraph Clannad{
 
     AF_YOSHINO [shape = box, label = "Yoshino Yusuke's\nflag checkpoint"];
 
-    YOSHINO_LIGHT [shape = doublecircle, label = "Yoshino Yusuke's\nOrb of Light"]
+    YOSHINO_LIGHT [shape = doublecircle, label = "Yoshino Yusuke's\nOrb of Light"];
     
     AF_JULY3_q1:a1 -> AF_YOSHINO [color = cornflowerblue];
     AF_YOSHINO -> YOSHINO_LIGHT [color = cornflowerblue];
@@ -295,16 +302,16 @@ digraph Clannad{
 
     //Main storyline
     af_split1:a2 -> NAOYUKI_LIGHT;
-    NAOYUKI_LIGHT [shape = doublecircle, label = "Okazaki Naoyuki's\nOrb of Light"]
+    NAOYUKI_LIGHT [shape = doublecircle, label = "Okazaki Naoyuki's\nOrb of Light"];
     AF_USHIO_BIRTH -> NAOYUKI_LIGHT [color = cornflowerblue, label = "First playthough", fontcolor = cornflowerblue];
 
     main10_q1 [shape = Mrecord, label = "<a1>Do I go to look, or,|<a2>Do I wait here."];
     NAOYUKI_LIGHT -> main10_q1:a1 [color = cornflowerblue];
     NAOYUKI_LIGHT -> main10_q1:a2;
 
-    FUKO_LIGHT [shape = doublecircle, label = "Ibuki Fuko's\nOrb of Light"]
+    FUKO_LIGHT [shape = doublecircle, label = "Ibuki Fuko's\nOrb of Light"];
     main10_q1:a1 -> FUKO_LIGHT [color = cornflowerblue];
-    KOUKO_LIGHT [shape = doublecircle, label = "Ibuki Kouko's\nOrb of Light"]
+    KOUKO_LIGHT [shape = doublecircle, label = "Ibuki Kouko's\nOrb of Light"];
     FUKO_LIGHT -> KOUKO_LIGHT [color = cornflowerblue];
 
     USHIO_BAD_END [label = "Main AfterStory End"];
@@ -324,7 +331,7 @@ digraph Clannad{
     AF_AKIO_q1:a1 -> AF_AKIO_q2:a2;
     AF_AKIO_q1:a2 -> AF_AKIO_q2:a1;
     AF_AKIO_q1:a2 -> AF_AKIO_q2:a2;
-    AF_AKIO_LIGHT [shape = doublecircle, label = "Furukawa Akio's's\nOrb of Light"]
+    AF_AKIO_LIGHT [shape = doublecircle, label = "Furukawa Akio's's\nOrb of Light"];
     AF_AKIO_q2:a1 -> AF_AKIO_LIGHT [color = red];
     AF_AKIO_q2:a2 -> AF_AKIO_LIGHT;
     AF_AKIO_END [label = "Akio's End"];
