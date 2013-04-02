@@ -1,13 +1,14 @@
 #!/bin/sh
 
+echo Graphing:
 echo Clannad_VN_Flowchart.dot
-dot -Tjpg Clannad_VN_Flowchart.dot -o Clannad_VN_Flowchart.jpg
+dot -Tpng Clannad_VN_Flowchart.dot -o Clannad_VN_Flowchart.png
 
 echo Clannad_VN_Flowchart_AfterStory.dot
-dot -Tjpg Clannad_VN_Flowchart_AfterStory.dot -o Clannad_VN_Flowchart_AfterStory.jpg
+dot -Tpng Clannad_VN_Flowchart_AfterStory.dot -o Clannad_VN_Flowchart_AfterStory.png
 
 echo Clannad_VN_Flowchart_Doki_Doki_HS.dot
-dot -Tjpg Clannad_VN_Flowchart_Doki_Doki_HS.dot -o Clannad_VN_Flowchart_Doki_Doki_HS.jpg
+dot -Tpng Clannad_VN_Flowchart_Doki_Doki_HS.dot -o Clannad_VN_Flowchart_Doki_Doki_HS.png
 
 echo Tomoyo_After_VN_Flowchart.dot
-dot -Tjpg Tomoyo_After_VN_Flowchart.dot -o Tomoyo_After_VN_Flowchart.jpg
+dot -Tpng Tomoyo_After_VN_Flowchart.dot -o Tomoyo_After_VN_Flowchart.png
