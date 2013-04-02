@@ -100,14 +100,18 @@ digraph Clannad{
     JUL_9 -> TA_6:a2;
     JUL_9 -> TA_6:a3;
 
+    TA_6a [label = "Go to the apartment"];
+    TA_6:a2 -> TA_6a;
+    TA_6:a3 -> TA_6a;
+
+
     TA_7 [shape = Mrecord, label = "<a1>I'll search for her.|<a2>Don't search."];
     TA_6:a1 -> TA_7:a1 [color = green];    //END1
     TA_6:a1 -> TA_7:a1 [color = blue];    //END2
     TA_6:a1 -> TA_7:a1 [color = red];    //BAD_END
-    TA_6:a2 -> TA_7:a1;
-    TA_6:a2 -> TA_7:a2;
-    TA_6:a3 -> TA_7:a1;
-    TA_6:a3 -> TA_7:a2;
+    TA_6a -> TA_7:a1;
+    TA_6a -> TA_7:a2;
+
 
     //July 10
     JUL_10 [shape = box, label = "Saturday, July 10th, 2004"];
@@ -127,59 +131,141 @@ digraph Clannad{
     TA_8:a1 -> JUL_11 [color = blue];    //END2
     TA_8:a1 -> JUL_11 [color = red];    //BAD_END
 
-    TA_9 [shape = Mrecord, label = "<a>Tone it down and have sex with Tomoyo while Tomo sleeps.|<aa>To have sex with Tomoyo from behind while she cooks."];
-    JUL_11 -> TA_9:a [color = green];    //END1
-    JUL_11 -> TA_9:a [color = blue];    //END2
-    JUL_11 -> TA_9:aa [color = red];    //BAD_END
+    JUL_11_mother1 [label = "Visit Tomo's Mom with Tomoyo"];
+    JUL_11_mother2 [label = "Visit Tomo's Mom without Tomoyo"];
+    JUL_11_mother3 [label = "Dont Visit Tomo's Mom"];
+
+    JUL_11 -> JUL_11_mother1 [color = green, group = "JUL_11_mother"];    //END1
+    JUL_11 -> JUL_11_mother1 [color = blue, group = "JUL_11_mother"];    //END2
+    JUL_11 -> JUL_11_mother1 [color = red, group = "JUL_11_mother"];    //BAD_END
+    TA_8:a2 -> JUL_11_mother2 [group = "JUL_11_mother"];
+    TA_7:a2 -> JUL_11_mother3 [group = "JUL_11_mother"];
+
+
+    JUL_11_bp [label = "Bear & Panda fight"];
+    JUL_11_mother1 -> JUL_11_bp [color = green];    //END1
+    JUL_11_mother1 -> JUL_11_bp [color = blue];    //END2
+    JUL_11_mother1 -> JUL_11_bp [color = red];    //BAD_END
+    JUL_11_mother2 -> JUL_11_bp;
+    JUL_11_mother3 -> JUL_11_bp;
+
+
+
+
+    TA_9 [shape = Mrecord, label = "<a1>To have sex with Tomoyo from behind while she cooks.|<a2>Tone it down and have sex with Tomoyo while Tomo sleeps.|<a3>Nothing."];
+    JUL_11_bp -> TA_9:a2 [color = green];    //END1
+    JUL_11_bp -> TA_9:a2 [color = blue];    //END2
+    JUL_11_bp -> TA_9:a1 [color = red];    //BAD_END
+    JUL_11_bp -> TA_9:a3;
 
 
     //July 14
     JUL_14 [shape = box, label = "Wednesday, July 14th, 2004"];
-    TA_9:a -> JUL_14 [color = green];    //END1
-    TA_9:a -> JUL_14 [color = blue];    //END2
-    TA_9:aa -> JUL_14 [color = red];    //BAD_END
+    TA_9:a2 -> JUL_14 [color = green];    //END1
+    TA_9:a2 -> JUL_14 [color = blue];    //END2
+    TA_9:a1 -> JUL_14 [color = red];    //BAD_END
+    TA_9:a3 -> JUL_14;
 
-    TA_10 [shape = Mrecord, label = "<a>Study|<aa>"];
-    JUL_14 -> TA_10:a [color = green];    //END1
-    JUL_14 -> TA_10:a [color = blue];    //END2
-    JUL_14 -> TA_10:a [color = red];    //BAD_END
+    TA_10 [shape = Mrecord, label = "<a1>Talk|<a2>Study"];
+    JUL_14 -> TA_10:a2 [color = green];    //END1
+    JUL_14 -> TA_10:a2 [color = blue];    //END2
+    JUL_14 -> TA_10:a2 [color = red];    //BAD_END
 
-    TA_11 [shape = Mrecord, label = "<a>Continue studying.|<aa>"];
-    TA_10:a -> TA_11:a [color = green];    //END1
-    TA_10:a -> TA_11:a [color = blue];    //END2
-    TA_10:a -> TA_11:a [color = red];    //BAD_END
 
-    TA_12 [shape = Mrecord, label = "<a>Go to where the fireworks are.|<aa>"];
-    TA_11:a -> TA_12:a [color = green];    //END1
-    TA_11:a -> TA_12:a [color = blue];    //END2
-    TA_11:a -> TA_12:a [color = red];    //BAD_END
 
-    TA_13 [shape = Mrecord, label = "<a>A substitute for Tomoyo.|<aa>"];
-    TA_12:a -> TA_13:a [color = green];    //END1
-    TA_12:a -> TA_13:a [color = blue];    //END2
-    TA_12:a -> TA_13:a [color = red];    //BAD_END
+    TA_10_a [shape = Mrecord, label = "<a1>With Tomoyo|<a2>With Takafumi|<a3>With Kanako"];
+    TA_10:a1 -> TA_10_a:a1;
+    TA_10:a1 -> TA_10_a:a2;
+    TA_10:a1 -> TA_10_a:a3;
+    TA_10_a:a1 -> TA_10:a1 [label = "x7"];
+    TA_10_a:a2 -> TA_10:a1 [label = "x5"];
+    TA_10_a:a3 -> TA_10:a1 [label = "x5"];
+    TA_10:a1 -> TA_10:a2;
+
+
+    TA_11 [shape = Mrecord, label = "<a1>Play along.|<a2>Continue studying."];
+    TA_10:a2 -> TA_11:a2 [color = green];    //END1
+    TA_10:a2 -> TA_11:a2 [color = blue];    //END2
+    TA_10:a2 -> TA_11:a2 [color = red];    //BAD_END
+    TA_10:a2 -> TA_11:a1;
+
+    TA_11_a [shape = Mrecord, label = "<a1>People's chin's grow as they get older.|<a2>I caught Mickey Mouse in the sink.|<a3>There are 100 Takafumis."];
+    TA_11:a1 -> TA_11_a:a1;
+    TA_11:a1 -> TA_11_a:a2;
+    TA_11:a1 -> TA_11_a:a3;
+
+    TA_11_b [shape = Mrecord, label = "<a1>I just became God.|<a2>Takafumi just bloomed.|<a3>I can't stop the romance."];
+
+    TA_11_a:a1 -> TA_12:a1
+    TA_11_a:a1 -> TA_12:a2
+
+    TA_11_a:a2 -> TA_11_b:a1
+    TA_11_a:a2 -> TA_11_b:a2
+    TA_11_a:a2 -> TA_11_b:a3
+    TA_11_a:a3 -> TA_11_b:a1
+    TA_11_a:a3 -> TA_11_b:a2
+    TA_11_a:a3 -> TA_11_b:a3
+
+    TA_11_b:a1 -> TA_12:a1
+    TA_11_b:a2 -> TA_12:a1
+    TA_11_b:a3 -> TA_12:a1
+    TA_11_b:a1 -> TA_12:a2
+    TA_11_b:a2 -> TA_12:a2
+    TA_11_b:a3 -> TA_12:a2
+
+
+    TA_12 [shape = Mrecord, label = "<a1>Go to where the fireworks are.|<a2>Ignore the letter."];
+    TA_11:a2 -> TA_12:a1 [color = green];    //END1
+    TA_11:a2 -> TA_12:a1 [color = blue];    //END2
+    TA_11:a2 -> TA_12:a1 [color = red];    //BAD_END
+
+    TA_13 [shape = Mrecord, label = "<a1>A substitute for Tomoyo.|<a2>Just a spectator.|<a3>Saito."];
+    TA_12:a1 -> TA_13:a1 [color = green];    //END1
+    TA_12:a1 -> TA_13:a1 [color = blue];    //END2
+    TA_12:a1 -> TA_13:a1 [color = red];    //BAD_END
 
 
     //July 15
     JUL_15 [shape = box, label = "Thursday, July 15th, 2004"];
-    TA_13:a -> JUL_15 [color = green];    //END1
-    TA_13:a -> JUL_15 [color = blue];    //END2
-    TA_13:a -> JUL_15 [color = red];    //BAD_END
+    TA_13:a1 -> JUL_15 [color = green];    //END1
+    TA_13:a1 -> JUL_15 [color = blue];    //END2
+    TA_13:a1 -> JUL_15 [color = red];    //BAD_END
 
-    TA_14 [shape = Mrecord, label = "<a>No way.|<aa>"];
-    JUL_15 -> TA_14:a [color = green];    //END1
-    JUL_15 -> TA_14:a [color = blue];    //END2
-    JUL_15 -> TA_14:a [color = red];    //BAD_END
+    TA_14 [shape = Mrecord, label = "<a1>Yes.|<a2>No way."];
+    JUL_15 -> TA_14:a2 [color = green];    //END1
+    JUL_15 -> TA_14:a2 [color = blue];    //END2
+    JUL_15 -> TA_14:a2 [color = red];    //BAD_END
 
-    TA_15 [shape = Mrecord, label = "<a>Study.|<aa>"];
-    TA_14:a -> TA_15:a [color = green];    //END1
-    TA_14:a -> TA_15:a [color = blue];    //END2
-    TA_14:a -> TA_15:a [color = red];    //BAD_END
+    TA_15 [shape = Mrecord, label = "<a1>Talk.|<a2>Study."];
+    TA_14:a2 -> TA_15:a2 [color = green];    //END1
+    TA_14:a2 -> TA_15:a2 [color = blue];    //END2
+    TA_14:a2 -> TA_15:a2 [color = red];    //BAD_END
+
+    TA_12:a2 -> TA_15:a1;
+    TA_12:a2 -> TA_15:a2;
+    TA_13:a2 -> TA_15:a1;
+    TA_13:a2 -> TA_15:a2;
+    TA_13:a3 -> TA_15:a1;
+    TA_13:a3 -> TA_15:a2;
+
+
+    TA_15_a [shape = Mrecord, label = "<a1>Tomoyo|<a2>Takafumi|<a3>Kanako"];
+    TA_15:a1 -> TA_15_a:a1;
+    TA_15:a1 -> TA_15_a:a2;
+    TA_15:a1 -> TA_15_a:a3;
+    TA_15_a:a1 -> TA_15:a1 [label = "x5"];
+    TA_15_a:a2 -> TA_15:a1 [label = "x5"];
+    TA_15_a:a3 -> TA_15:a1 [label = "x4"];
+    TA_15:a1 -> TA_15:a2;
+
+
+
+
 
     TA_16 [shape = Mrecord, label = "<a>Do it|<aa>Don't"];
-    TA_15:a -> TA_16:a [color = green];    //END1
-    TA_15:a -> TA_16:a [color = blue];    //END2
-    TA_15:a -> TA_16:aa [color = red];    //BAD_END
+    TA_15:a2 -> TA_16:a [color = green];    //END1
+    TA_15:a2 -> TA_16:a [color = blue];    //END2
+    TA_15:a2 -> TA_16:aa [color = red];    //BAD_END
 
 
     //July 16
@@ -188,37 +274,71 @@ digraph Clannad{
     TA_16:a -> JUL_16 [color = blue];    //END2
     TA_16:aa -> JUL_16 [color = red];    //BAD_END
 
-    TA_17 [shape = Mrecord, label = "<a>Study|<aa>"];
-    JUL_16 -> TA_17:a [color = green];    //END1
-    JUL_16 -> TA_17:a [color = blue];    //END2
-    JUL_16 -> TA_17:a [color = red];    //BAD_END
+    TA_17 [shape = Mrecord, label = "<a1>Talk.|<a2>Study."];
+    JUL_16 -> TA_17:a2 [color = green];    //END1
+    JUL_16 -> TA_17:a2 [color = blue];    //END2
+    JUL_16 -> TA_17:a2 [color = red];    //BAD_END
 
-    TA_18 [shape = Mrecord, label = "<a>Don't work on it together|<aa>"];
-    TA_17:a -> TA_18:a [color = green];    //END1
-    TA_17:a -> TA_18:a [color = blue];    //END2
-    TA_17:a -> TA_18:a [color = red];    //BAD_END
+    TA_17_a [shape = Mrecord, label = "<a1>Tomoyo|<a2>Takafumi|<a3>Kanako"];
+    TA_17:a1 -> TA_17_a:a1;
+    TA_17:a1 -> TA_17_a:a2;
+    TA_17:a1 -> TA_17_a:a3;
+    TA_17_a:a1 -> TA_17:a1 [label = "x5"];
+    TA_17_a:a2 -> TA_17:a1 [label = "x5"];
+    TA_17_a:a3 -> TA_17:a1 [label = "x4"];
+    TA_17:a1 -> TA_17:a2;
 
-    TA_19 [shape = Mrecord, label = "<a>Sub in for Kanako|<aa>"];
-    TA_18:a -> TA_19:a [color = green];    //END1
-    TA_18:a -> TA_19:a [color = blue];    //END2
-    TA_18:a -> TA_19:a [color = red];    //BAD_END
+
+    TA_18 [shape = Mrecord, label = "<a1>Work on it together|<a2>Don't work on it together"];
+    TA_17:a2 -> TA_18:a2 [color = green];    //END1
+    TA_17:a2 -> TA_18:a2 [color = blue];    //END2
+    TA_17:a2 -> TA_18:a2 [color = red];    //BAD_END
+
+    TA_18_a [shape = Mrecord, label = "{<a1>Me|<a2>Takafumi}|{<a3>Kanako|<a4>Tomoyo}"];
+    TA_18:a1 -> TA_18_a:a1;
+    TA_18:a1 -> TA_18_a:a2;
+    TA_18:a1 -> TA_18_a:a3;
+
+    TA_18_a:a1 -> TA_18_a:a2;
+    TA_18_a:a1 -> TA_18_a:a3;
+    TA_18_a:a1 -> TA_18_a:a4;
+    TA_18_a:a2 -> TA_18_a:a1;
+    TA_18_a:a2 -> TA_18_a:a3;
+    TA_18_a:a2 -> TA_18_a:a4;
+    TA_18_a:a3 -> TA_18_a:a1;
+    TA_18_a:a3 -> TA_18_a:a2;
+    TA_18_a:a3 -> TA_18_a:a4;
+    TA_18_a:a4 -> TA_18_a:a1;
+    TA_18_a:a4 -> TA_18_a:a2;
+    TA_18_a:a4 -> TA_18_a:a3;
+    
+    TA_18_a -> TA_19:a1;
+    TA_18_a -> TA_19:a2;
+
+    TA_19 [shape = Mrecord, label = "<a1>Sub in for Kanako|<a2>Let Kanako handle him"];
+    TA_18:a2 -> TA_19:a1 [color = green];    //END1
+    TA_18:a2 -> TA_19:a1 [color = blue];    //END2
+    TA_18:a2 -> TA_19:a1 [color = red];    //BAD_END
 
 
     //July 20
     JUL_20 [shape = box, label = "Tuesday, July 20th, 2004"];
 
 
-    TA_20 [shape = Mrecord, label = "<a>Find another way.|<aa>"];
-    TA_19:a -> TA_20:a [color = green];    //END1
-    TA_19:a -> TA_20:a [color = blue];    //END2
-    TA_19:a -> TA_20:a [color = red];    //BAD_END
+    TA_20 [shape = Mrecord, label = "<a1>Ask him directly.|<a2>Find another way."];
+    TA_19:a1 -> TA_20:a2 [color = green];    //END1
+    TA_19:a1 -> TA_20:a2 [color = blue];    //END2
+    TA_19:a1 -> TA_20:a2 [color = red];    //BAD_END
 
+    TA_20_a [shape = Mrecord, label = "<a1>Listen to her advice.|<a2>Ignore her advice."];
+    TA_20:a1 -> TA_20_a:a1;
+    TA_20:a1 -> TA_20_a:a2;
 
     //July 21
     TA_21 [shape = Mrecord, label = "<a>Keep trying.|<aa>"];
-    TA_20:a -> TA_21:a [color = green];    //END1
-    TA_20:a -> TA_21:a [color = blue];    //END2
-    TA_20:a -> TA_21:a [color = red];    //BAD_END
+    TA_20:a2 -> TA_21:a [color = green];    //END1
+    TA_20:a2 -> TA_21:a [color = blue];    //END2
+    TA_20:a2 -> TA_21:a [color = red];    //BAD_END
 
 
     //July 23
