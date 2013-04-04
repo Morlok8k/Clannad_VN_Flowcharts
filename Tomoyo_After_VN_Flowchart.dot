@@ -19,7 +19,7 @@
 
 // The Definitive Tomoyo After Visual Novel Flowchart
 digraph Clannad{
-    graph [ label = "\n\n\n\nThe Definitive Tomoyo After Visual Novel Flowchart\nby Morlok8k, Version 0.1 alpha, April 2013\n--------------------\nCopyright © 2013\nThis work is free. You can redistribute it and/or modify it under the\nterms of the Do What The Fuck You Want To Public License, Version 2,\nas published by Sam Hocevar. See http://www.wtfpl.net/ for more details." ];
+    graph [ label = "\n\n\n\nThe Definitive Tomoyo After Visual Novel Flowchart\nby Morlok8k, Version 0.1 alpha, April 2013\nhttps://github.com/Morlok8k/Clannad_VN_Flowcharts\n--------------------\nCopyright © 2013\nThis work is free. You can redistribute it and/or modify it under the\nterms of the Do What The Fuck You Want To Public License, Version 2,\nas published by Sam Hocevar. See http://www.wtfpl.net/ for more details." ];
 
 
     Note [label = "Note:\nThis is for the original Tomoyo After VN (for the PC)\nThis is based off of \"Tomoyo After - English Patch v1.1\"\nThe Memorial Edition is said to have more paths, though I haven't played it."];
