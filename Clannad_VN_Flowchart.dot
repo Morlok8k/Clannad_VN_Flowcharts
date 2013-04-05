@@ -668,1288 +668,955 @@ digraph Clannad{
     
     
     
-    Misae_1 [shape = Mrecord, label = "<a>"];
+    Misae_1 [shape = Mrecord, label = "<a>Don't do anything"];
     Start0 -> Misae_1:a [color = gold];    //Misae
     
-    Misae_2 [shape = Mrecord, label = "<a>"];
+    Misae_2 [shape = Mrecord, label = "<a>Ignore her"];
     Misae_1:a -> Misae_2:a [color = gold];    //Misae
     
-    Misae_3 [shape = Mrecord, label = "<a>"];
+    Misae_3 [shape = Mrecord, label = "<a>Take the lesson"];
     Misae_2:a -> Misae_3:a [color = gold];    //Misae
     
-    Misae_4 [shape = Mrecord, label = "<a>"];
+    Misae_4 [shape = Mrecord, label = "<a>Go down to the courtyard"];
     Misae_3:a -> Misae_4:a [color = gold];    //Misae
     
-    Misae_5 [shape = Mrecord, label = "<a>"];
+    Misae_5 [shape = Mrecord, label = "<a>Continue talking"];
     Misae_4:a -> Misae_5:a [color = gold];    //Misae
     
-    Misae_6 [shape = Mrecord, label = "<a>"];
+    Misae_6 [shape = Mrecord, label = "<a>See what's going on"];
     Misae_5:a -> Misae_6:a [color = gold];    //Misae
     
-    Misae_7 [shape = Mrecord, label = "<a>"];
+    Misae_7 [shape = Mrecord, label = "<a>Not interested"];
     Misae_6:a -> Misae_7:a [color = gold];    //Misae
     
-    Misae_8 [shape = Mrecord, label = "<a>"];
+    Misae_8 [shape = Mrecord, label = "<a>Don't worry"];
     Misae_7:a -> Misae_8:a [color = gold];    //Misae
     
-    Misae_9 [shape = Mrecord, label = "<a>"];
+    Misae_9 [shape = Mrecord, label = "<a>Talk to her"];
     Misae_8:a -> Misae_9:a [color = gold];    //Misae
     
-    Misae_10 [shape = Mrecord, label = "<a>"];
+    Misae_10 [shape = Mrecord, label = "<a>Stay in class"];
     Misae_9:a -> Misae_10:a [color = gold];    //Misae
     
-    Misae_11 [shape = Mrecord, label = "<a>"];
+    Misae_11 [shape = Mrecord, label = "<a>Waste time outside the school"];
     Misae_10:a -> Misae_11:a [color = gold];    //Misae
     
-    Misae_12 [shape = Mrecord, label = "<a>"];
+    Misae_12 [shape = Mrecord, label = "<a>Talk to her"];
     Misae_11:a -> Misae_12:a [color = gold];    //Misae
     
-    Misae_13 [shape = Mrecord, label = "<a>"];
+    Misae_13 [shape = Mrecord, label = "<a>Try her fortune telling"];
     Misae_12:a -> Misae_13:a [color = gold];    //Misae
     
-    Misae_14 [shape = Mrecord, label = "<a>"];
+    Misae_14 [shape = Mrecord, label = "<a>I guess I'll go back to class"];
     Misae_13:a -> Misae_14:a [color = gold];    //Misae
     
-    Misae_15 [shape = Mrecord, label = "<a>"];
+    Misae_15 [shape = Mrecord, label = "<a>Talk to her"];
     Misae_14:a -> Misae_15:a [color = gold];    //Misae
     
-    Misae_16 [shape = Mrecord, label = "<a>"];
+    Misae_16 [shape = Mrecord, label = "<a>Go straight home"];
     Misae_15:a -> Misae_16:a [color = gold];    //Misae
     
-    Misae_17 [shape = Mrecord, label = "<a>"];
+    Misae_17 [shape = Mrecord, label = "<a>Ignore him"];
     Misae_16:a -> Misae_17:a [color = gold];    //Misae
     
-    Misae_18 [shape = Mrecord, label = "<a>"];
+    Misae_18 [shape = Mrecord, label = "<a>Ask if it's okay to come again"];
     Misae_17:a -> Misae_18:a [color = gold];    //Misae
     
-    Misae_19 [shape = Mrecord, label = "<a>"];
+    Misae_19 [shape = Mrecord, label = "<a>Wake up completely"];
     Misae_18:a -> Misae_19:a [color = gold];    //Misae
     
-    Misae_20 [shape = Mrecord, label = "<a>"];
+    Misae_20 [shape = Mrecord, label = "<a>That you scold"];
     Misae_19:a -> Misae_20:a [color = gold];    //Misae
     
-    Misae_21 [shape = Mrecord, label = "<a>"];
+    Misae_21 [shape = Mrecord, label = "<a>That you worry"];
     Misae_20:a -> Misae_21:a [color = gold];    //Misae
     
-    Misae_22 [shape = Mrecord, label = "<a>"];
+    Misae_22 [shape = Mrecord, label = "<a>That you have a nice blanket odor"];
     Misae_21:a -> Misae_22:a [color = gold];    //Misae
     
-    Misae_23 [shape = Mrecord, label = "<a>"];
-    Misae_22:a -> Misae_23:a [color = gold];    //Misae
-
     Misae_END [label = "Misae's Ending"];
-    Misae_23:a -> Misae_END [color = gold];    //Misae
-    
-/*
--Don't do anything
-Ignore her
-Take the lesson
-Go down to the courtyard
-Continue talking
-See what's going on
-Not interested
-Don't worry
-Talk to her
-Stay in class
-Waste time outside the school
-Talk to her
-Try her fortune telling
-I guess I'll go back to class
-Talk to her
-Go straight home
-Ignore him
-Ask if it's okay to come again
-Wake up completely
-That you scold
-That you worry
-That you have a nice blanket odor
-*/
+    Misae_22:a -> Misae_END [color = gold];    //Misae
     
     
     
     
-    Koumura_1 [shape = Mrecord, label = "<a>"];
+    
+    Koumura_1 [shape = Mrecord, label = "<a>Don't do anything"];
     Start0 -> Koumura_1:a [color = seagreen];    //Koumura
     
-    Koumura_2 [shape = Mrecord, label = "<a>"];
+    Koumura_2 [shape = Mrecord, label = "<a>Ignore her"];
     Koumura_1:a -> Koumura_2:a [color = seagreen];    //Koumura
     
-    Koumura_3 [shape = Mrecord, label = "<a>"];
+    Koumura_3 [shape = Mrecord, label = "<a>Take the lesson"];
     Koumura_2:a -> Koumura_3:a [color = seagreen];    //Koumura
     
-    Koumura_4 [shape = Mrecord, label = "<a>"];
+    Koumura_4 [shape = Mrecord, label = "<a>Go down to the courtyard"];
     Koumura_3:a -> Koumura_4:a [color = seagreen];    //Koumura
     
-    Koumura_5 [shape = Mrecord, label = "<a>"];
+    Koumura_5 [shape = Mrecord, label = "<a>Continue Talking"];
     Koumura_4:a -> Koumura_5:a [color = seagreen];    //Koumura
     
-    Koumura_6 [shape = Mrecord, label = "<a>"];
+    Koumura_6 [shape = Mrecord, label = "<a>See what's going on"];
     Koumura_5:a -> Koumura_6:a [color = seagreen];    //Koumura
     
-    Koumura_7 [shape = Mrecord, label = "<a>"];
+    Koumura_7 [shape = Mrecord, label = "<a>This interests me"];
     Koumura_6:a -> Koumura_7:a [color = seagreen];    //Koumura
     
-    Koumura_8 [shape = Mrecord, label = "<a>"];
+    Koumura_8 [shape = Mrecord, label = "<a>I'm a bit worried"];
     Koumura_7:a -> Koumura_8:a [color = seagreen];    //Koumura
     
-    Koumura_9 [shape = Mrecord, label = "<a>"];
+    Koumura_9 [shape = Mrecord, label = "<a>Talk to her"];
     Koumura_8:a -> Koumura_9:a [color = seagreen];    //Koumura
     
-    Koumura_10 [shape = Mrecord, label = "<a>"];
+    Koumura_10 [shape = Mrecord, label = "<a>Go and see"];
     Koumura_9:a -> Koumura_10:a [color = seagreen];    //Koumura
     
-    Koumura_11 [shape = Mrecord, label = "<a>"];
+    Koumura_11 [shape = Mrecord, label = "<a>Stay in class"];
     Koumura_10:a -> Koumura_11:a [color = seagreen];    //Koumura
     
-    Koumura_12 [shape = Mrecord, label = "<a>"];
+    Koumura_12 [shape = Mrecord, label = "<a>Make haste and buy"];
     Koumura_11:a -> Koumura_12:a [color = seagreen];    //Koumura
     
-    Koumura_13 [shape = Mrecord, label = "<a>"];
+    Koumura_13 [shape = Mrecord, label = "<a>Help her out"];
     Koumura_12:a -> Koumura_13:a [color = seagreen];    //Koumura
     
-    Koumura_14 [shape = Mrecord, label = "<a>"];
+    Koumura_14 [shape = Mrecord, label = "<a>I want to do that."];
     Koumura_13:a -> Koumura_14:a [color = seagreen];    //Koumura
     
-    Koumura_15 [shape = Mrecord, label = "<a>"];
+    Koumura_15 [shape = Mrecord, label = "<a>Go watch"];
     Koumura_14:a -> Koumura_15:a [color = seagreen];    //Koumura
     
-    Koumura_16 [shape = Mrecord, label = "<a>"];
+    Koumura_16 [shape = Mrecord, label = "<a>Go along"];
     Koumura_15:a -> Koumura_16:a [color = seagreen];    //Koumura
     
-    Koumura_17 [shape = Mrecord, label = "<a>"];
+    Koumura_17 [shape = Mrecord, label = "<a>Go with him"];
     Koumura_16:a -> Koumura_17:a [color = seagreen];    //Koumura
     
-    Koumura_18 [shape = Mrecord, label = "<a>"];
+    Koumura_18 [shape = Mrecord, label = "<a>Illustration"];
     Koumura_17:a -> Koumura_18:a [color = seagreen];    //Koumura
     
-    Koumura_19 [shape = Mrecord, label = "<a>"];
+    Koumura_19 [shape = Mrecord, label = "<a>Go out and search"];
     Koumura_18:a -> Koumura_19:a [color = seagreen];    //Koumura
     
-    Koumura_20 [shape = Mrecord, label = "<a>"];
+    Koumura_20 [shape = Mrecord, label = "<a>Peek in the next classroom"];
     Koumura_19:a -> Koumura_20:a [color = seagreen];    //Koumura
     
-    Koumura_21 [shape = Mrecord, label = "<a>"];
+    Koumura_21 [shape = Mrecord, label = "<a>Try and talk to her"];
     Koumura_20:a -> Koumura_21:a [color = seagreen];    //Koumura
     
-    Koumura_22 [shape = Mrecord, label = "<a>"];
+    Koumura_22 [shape = Mrecord, label = "<a>Help him out"];
     Koumura_21:a -> Koumura_22:a [color = seagreen];    //Koumura
     
-    Koumura_23 [shape = Mrecord, label = "<a>"];
+    Koumura_23 [shape = Mrecord, label = "<a>Kick him back"];
     Koumura_22:a -> Koumura_23:a [color = seagreen];    //Koumura
     
-    Koumura_24 [shape = Mrecord, label = "<a>"];
+    Koumura_24 [shape = Mrecord, label = "<a>Let Sunohara try it"];
     Koumura_23:a -> Koumura_24:a [color = seagreen];    //Koumura
     
-    Koumura_25 [shape = Mrecord, label = "<a>"];
+    Koumura_25 [shape = Mrecord, label = "<a>Don't let her run away"];
     Koumura_24:a -> Koumura_25:a [color = seagreen];    //Koumura
     
-    Koumura_26 [shape = Mrecord, label = "<a>"];
+    Koumura_26 [shape = Mrecord, label = "<a>Go into an empty room"];
     Koumura_25:a -> Koumura_26:a [color = seagreen];    //Koumura
     
-    Koumura_27 [shape = Mrecord, label = "<a>"];
+    Koumura_27 [shape = Mrecord, label = "<a>Watch her a little longer"];
     Koumura_26:a -> Koumura_27:a [color = seagreen];    //Koumura
     
-    Koumura_28 [shape = Mrecord, label = "<a>"];
+    Koumura_28 [shape = Mrecord, label = "<a>I guess I'll go back to class"];
     Koumura_27:a -> Koumura_28:a [color = seagreen];    //Koumura
     
-    Koumura_29 [shape = Mrecord, label = "<a>"];
+    Koumura_29 [shape = Mrecord, label = "<a>Help her"];
     Koumura_28:a -> Koumura_29:a [color = seagreen];    //Koumura
     
-    Koumura_30 [shape = Mrecord, label = "<a>"];
+    Koumura_30 [shape = Mrecord, label = "<a>What sort of drama play are you planning?"];
     Koumura_29:a -> Koumura_30:a [color = seagreen];    //Koumura
     
-    Koumura_31 [shape = Mrecord, label = "<a>"];
+    Koumura_31 [shape = Mrecord, label = "<a>Grab Furukawa's hand and run away"];
     Koumura_30:a -> Koumura_31:a [color = seagreen];    //Koumura
     
-    Koumura_32 [shape = Mrecord, label = "<a>"];
+    Koumura_32 [shape = Mrecord, label = "<a>Stop him"];
     Koumura_31:a -> Koumura_32:a [color = seagreen];    //Koumura
     
-    Koumura_33 [shape = Mrecord, label = "<a>"];
+    Koumura_33 [shape = Mrecord, label = "<a>Go and see."];
     Koumura_32:a -> Koumura_33:a [color = seagreen];    //Koumura
     
-    Koumura_34 [shape = Mrecord, label = "<a>"];
+    Koumura_34 [shape = Mrecord, label = "<a>How's Furukawa doing?"];
     Koumura_33:a -> Koumura_34:a [color = seagreen];    //Koumura
     
-    Koumura_35 [shape = Mrecord, label = "<a>"];
+    Koumura_35 [shape = Mrecord, label = "<a>Go there"];
     Koumura_34:a -> Koumura_35:a [color = seagreen];    //Koumura
     
-    Koumura_36 [shape = Mrecord, label = "<a>"];
+    Koumura_36 [shape = Mrecord, label = "<a>Watch a little longer"];
     Koumura_35:a -> Koumura_36:a [color = seagreen];    //Koumura
     
-    Koumura_37 [shape = Mrecord, label = "<a>"];
+    Koumura_37 [shape = Mrecord, label = "<a>Help out"];
     Koumura_36:a -> Koumura_37:a [color = seagreen];    //Koumura
     
-    Koumura_38 [shape = Mrecord, label = "<a>"];
+    Koumura_38 [shape = Mrecord, label = "<a>Look outside the window"];
     Koumura_37:a -> Koumura_38:a [color = seagreen];    //Koumura
     
-    Koumura_39 [shape = Mrecord, label = "<a>"];
+    Koumura_39 [shape = Mrecord, label = "<a>Continue to wait"];
     Koumura_38:a -> Koumura_39:a [color = seagreen];    //Koumura
     
-    Koumura_40 [shape = Mrecord, label = "<a>"];
+    Koumura_40 [shape = Mrecord, label = "<a>Let Furukawa talk with them one more time"];
     Koumura_39:a -> Koumura_40:a [color = seagreen];    //Koumura
     
-    Koumura_41 [shape = Mrecord, label = "<a>"];
+    Koumura_41 [shape = Mrecord, label = "<a>Go there for her"];
     Koumura_40:a -> Koumura_41:a [color = seagreen];    //Koumura
     
-    Koumura_42 [shape = Mrecord, label = "<a>"];
+    Koumura_42 [shape = Mrecord, label = "<a>Walk past"];
     Koumura_41:a -> Koumura_42:a [color = seagreen];    //Koumura
     
-    Koumura_43 [shape = Mrecord, label = "<a>"];
+    Koumura_43 [shape = Mrecord, label = "<a>Magic"];
     Koumura_42:a -> Koumura_43:a [color = seagreen];    //Koumura
     
-    Koumura_44 [shape = Mrecord, label = "<a>"];
+    Koumura_44 [shape = Mrecord, label = "<a>Talk to Fuuko"];
     Koumura_43:a -> Koumura_44:a [color = seagreen];    //Koumura
     
-    Koumura_45 [shape = Mrecord, label = "<a>"];
+    Koumura_45 [shape = Mrecord, label = "<a>Ask the homeroom teacher"];
     Koumura_44:a -> Koumura_45:a [color = seagreen];    //Koumura
     
-    Koumura_46 [shape = Mrecord, label = "<a>"];
+    Koumura_46 [shape = Mrecord, label = "<a>Continue waiting"];
     Koumura_45:a -> Koumura_46:a [color = seagreen];    //Koumura
     
-    Koumura_47 [shape = Mrecord, label = "<a>"];
+    Koumura_47 [shape = Mrecord, label = "<a>Leave it behind"];
     Koumura_46:a -> Koumura_47:a [color = seagreen];    //Koumura
     
-    Koumura_48 [shape = Mrecord, label = "<a>"];
+    Koumura_48 [shape = Mrecord, label = "<a>Don't help him"];
     Koumura_47:a -> Koumura_48:a [color = seagreen];    //Koumura
     
-    Koumura_49 [shape = Mrecord, label = "<a>"];
+    Koumura_49 [shape = Mrecord, label = "<a>No way"];
     Koumura_48:a -> Koumura_49:a [color = seagreen];    //Koumura
     
-    Koumura_50 [shape = Mrecord, label = "<a>"];
+    Koumura_50 [shape = Mrecord, label = "<a>Talk 'round the clock about things she likes"];
     Koumura_49:a -> Koumura_50:a [color = seagreen];    //Koumura
     
-    Koumura_51 [shape = Mrecord, label = "<a>"];
+    Koumura_51 [shape = Mrecord, label = "<a>No, that's wrong"];
     Koumura_50:a -> Koumura_51:a [color = seagreen];    //Koumura
     
-    Koumura_52 [shape = Mrecord, label = "<a>"];
+    Koumura_52 [shape = Mrecord, label = "<a>Sleep"];
     Koumura_51:a -> Koumura_52:a [color = seagreen];    //Koumura
     
-    Koumura_53 [shape = Mrecord, label = "<a>"];
+    Koumura_53 [shape = Mrecord, label = "<a>Talk to her instead"];
     Koumura_52:a -> Koumura_53:a [color = seagreen];    //Koumura
     
-    Koumura_54 [shape = Mrecord, label = "<a>"];
+    Koumura_54 [shape = Mrecord, label = "<a>Embrace her"];
     Koumura_53:a -> Koumura_54:a [color = seagreen];    //Koumura
     
-    Koumura_55 [shape = Mrecord, label = "<a>"];
+    Koumura_55 [shape = Mrecord, label = "<a>Ignore them and continue moving"];
     Koumura_54:a -> Koumura_55:a [color = seagreen];    //Koumura
     
-    Koumura_56 [shape = Mrecord, label = "<a>"];
+    Koumura_56 [shape = Mrecord, label = "<a>Continue searching"];
     Koumura_55:a -> Koumura_56:a [color = seagreen];    //Koumura
     
-    Koumura_57 [shape = Mrecord, label = "<a>"];
+    Koumura_57 [shape = Mrecord, label = "<a>Don't recruit"];
     Koumura_56:a -> Koumura_57:a [color = seagreen];    //Koumura
     
-    Koumura_58 [shape = Mrecord, label = "<a>"];
+    Koumura_58 [shape = Mrecord, label = "<a>Sure"];
     Koumura_57:a -> Koumura_58:a [color = seagreen];    //Koumura
     
-    Koumura_59 [shape = Mrecord, label = "<a>"];
+    Koumura_59 [shape = Mrecord, label = "<a>Yeah"];
     Koumura_58:a -> Koumura_59:a [color = seagreen];    //Koumura
     
-    Koumura_60 [shape = Mrecord, label = "<a>"];
+    Koumura_60 [shape = Mrecord, label = "<a>Search in the new school building"];
     Koumura_59:a -> Koumura_60:a [color = seagreen];    //Koumura
     
-    Koumura_61 [shape = Mrecord, label = "<a>"];
+    Koumura_61 [shape = Mrecord, label = "<a>Search the third floor"];
     Koumura_60:a -> Koumura_61:a [color = seagreen];    //Koumura
     
-    Koumura_62 [shape = Mrecord, label = "<a>"];
+    Koumura_62 [shape = Mrecord, label = "<a>Explain."];
     Koumura_61:a -> Koumura_62:a [color = seagreen];    //Koumura
     
-    Koumura_63 [shape = Mrecord, label = "<a>"];
+    Koumura_63 [shape = Mrecord, label = "<a>Stop her*"];
     Koumura_62:a -> Koumura_63:a [color = seagreen];    //Koumura
     
-    Koumura_64 [shape = Mrecord, label = "<a>"];
+    Koumura_64 [shape = Mrecord, label = "<a>Let Kyou make the last move"];
     Koumura_63:a -> Koumura_64:a [color = seagreen];    //Koumura
     
-    Koumura_65 [shape = Mrecord, label = "<a>"];
-    Koumura_64:a -> Koumura_65:a [color = seagreen];    //Koumura
-    
     Koumura_END [label = "Koumura's Ending"];
-    Koumura_65:a -> Koumura_END [color = seagreen];    //Koumura
-/*
--Don't do anything
-Ignore her
-Take the lesson
-Go down to the courtyard
-Continue Talking
-See what's going on
-This interests me
-I'm a bit worried
-Talk to her
-Go and see
-Stay in class
-Make haste and buy
-Help her out
-I want to do that.
-Go watch
-Go along
-Go with him
-Illustration
-Go out and search
-Peek in the next classroom
-Try and talk to her
-Help him out
-Kick him back
-Let Sunohara try it
-Don't let her run away
-Go into an empty room
-Watch her a little longer
-I guess I'll go back to class
-Help her
-What sort of drama play are you planning?
-Grab Furukawa's hand and run away
-Stop him
-Go and see.
-How's Furukawa doing?
-Go there
-Watch a little longer
-Help out
-Look outside the window
-Continue to wait
-Let Furukawa talk with them one more time
-Go there for her
-Walk past
-Magic
-Talk to Fuuko
-Ask the homeroom teacher
-Continue waiting
-Leave it behind
-Don't help him
-No way
-Talk 'round the clock about things she likes
-No, that's wrong
-Sleep
-Talk to her instead
-Embrace her
-Ignore them and continue moving
-Continue searching
-Don't recruit
-Sure
-Yeah
-Search in the new school building
-Search the third floor
-Explain.
-Stop her*
-Let Kyou make the last move
-*/
+    Koumura_64:a -> Koumura_END [color = seagreen];    //Koumura
     
     
     
     
-    Yukine_1 [shape = Mrecord, label = "<a>"];
+    Yukine_1 [shape = Mrecord, label = "<a>Don't do anything"];
     Start0 -> Yukine_1:a [color = violet];    //Yukine
     
-    Yukine_2 [shape = Mrecord, label = "<a>"];
+    Yukine_2 [shape = Mrecord, label = "<a>Ignore her"];
     Yukine_1:a -> Yukine_2:a [color = violet];    //Yukine
     
-    Yukine_3 [shape = Mrecord, label = "<a>"];
+    Yukine_3 [shape = Mrecord, label = "<a>Take the lesson"];
     Yukine_2:a -> Yukine_3:a [color = violet];    //Yukine
     
-    Yukine_4 [shape = Mrecord, label = "<a>"];
+    Yukine_4 [shape = Mrecord, label = "<a>Ignore her"];
     Yukine_3:a -> Yukine_4:a [color = violet];    //Yukine
     
-    Yukine_5 [shape = Mrecord, label = "<a>"];
+    Yukine_5 [shape = Mrecord, label = "<a>Take refuge"];
     Yukine_4:a -> Yukine_5:a [color = violet];    //Yukine
     
-    Yukine_6 [shape = Mrecord, label = "<a>"];
+    Yukine_6 [shape = Mrecord, label = "<a>Ignore her"];
     Yukine_5:a -> Yukine_6:a [color = violet];    //Yukine
     
-    Yukine_7 [shape = Mrecord, label = "<a>"];
+    Yukine_7 [shape = Mrecord, label = "<a>Stay in class"];
     Yukine_6:a -> Yukine_7:a [color = violet];    //Yukine
     
-    Yukine_8 [shape = Mrecord, label = "<a>"];
+    Yukine_8 [shape = Mrecord, label = "<a>Decline offer"];
     Yukine_7:a -> Yukine_8:a [color = violet];    //Yukine
     
-    Yukine_9 [shape = Mrecord, label = "<a>"];
+    Yukine_9 [shape = Mrecord, label = "<a>Waste time outside the school"];
     Yukine_8:a -> Yukine_9:a [color = violet];    //Yukine
     
-    Yukine_10 [shape = Mrecord, label = "<a>"];
+    Yukine_10 [shape = Mrecord, label = "<a>See her off"];
     Yukine_9:a -> Yukine_10:a [color = violet];    //Yukine
     
-    Yukine_11 [shape = Mrecord, label = "<a>"];
+    Yukine_11 [shape = Mrecord, label = "<a>Let Sunohara try it"];
     Yukine_10:a -> Yukine_11:a [color = violet];    //Yukine
     
-    Yukine_12 [shape = Mrecord, label = "<a>"];
+    Yukine_12 [shape = Mrecord, label = "<a>Head there to sleep"];
     Yukine_11:a -> Yukine_12:a [color = violet];    //Yukine
     
-    Yukine_13 [shape = Mrecord, label = "<a>"];
+    Yukine_13 [shape = Mrecord, label = "<a>Talk to her some more"];
     Yukine_12:a -> Yukine_13:a [color = violet];    //Yukine
     
-    Yukine_14 [shape = Mrecord, label = "<a>"];
+    Yukine_14 [shape = Mrecord, label = "<a>Sleep"];
     Yukine_13:a -> Yukine_14:a [color = violet];    //Yukine
     
-    Yukine_15 [shape = Mrecord, label = "<a>"];
+    Yukine_15 [shape = Mrecord, label = "<a>Go to the old school building"];
     Yukine_14:a -> Yukine_15:a [color = violet];    //Yukine
     
-    Yukine_16 [shape = Mrecord, label = "<a>"];
+    Yukine_16 [shape = Mrecord, label = "<a>To the reference room"];
     Yukine_15:a -> Yukine_16:a [color = violet];    //Yukine
     
-    Yukine_17 [shape = Mrecord, label = "<a>"];
+    Yukine_17 [shape = Mrecord, label = "<a>Go there"];
     Yukine_16:a -> Yukine_17:a [color = violet];    //Yukine
     
-    Yukine_18 [shape = Mrecord, label = "<a>"];
+    Yukine_18 [shape = Mrecord, label = "<a>Watch a little longer"];
     Yukine_17:a -> Yukine_18:a [color = violet];    //Yukine
     
-    Yukine_19 [shape = Mrecord, label = "<a>"];
+    Yukine_19 [shape = Mrecord, label = "<a>Refuse"];
     Yukine_18:a -> Yukine_19:a [color = violet];    //Yukine
     
-    Yukine_20 [shape = Mrecord, label = "<a>"];
+    Yukine_20 [shape = Mrecord, label = "<a>Wake up completely"];
     Yukine_19:a -> Yukine_20:a [color = violet];    //Yukine
     
-    Yukine_21 [shape = Mrecord, label = "<a>"];
+    Yukine_21 [shape = Mrecord, label = "<a>Introduce yourself first"];
     Yukine_20:a -> Yukine_21:a [color = violet];    //Yukine
     
-    Yukine_22 [shape = Mrecord, label = "<a>"];
+    Yukine_22 [shape = Mrecord, label = "<a>Go"];
     Yukine_21:a -> Yukine_22:a [color = violet];    //Yukine
     
-    Yukine_23 [shape = Mrecord, label = "<a>"];
+    Yukine_23 [shape = Mrecord, label = "<a>    Ryou"];
     Yukine_22:a -> Yukine_23:a [color = violet];    //Yukine
     
-    Yukine_24 [shape = Mrecord, label = "<a>"];
+    Yukine_24 [shape = Mrecord, label = "<a>Like having a flashback from a previous volume of a manga"];
     Yukine_23:a -> Yukine_24:a [color = violet];    //Yukine
     
-    Yukine_25 [shape = Mrecord, label = "<a>"];
+    Yukine_25 [shape = Mrecord, label = "<a>Do it"];
     Yukine_24:a -> Yukine_25:a [color = violet];    //Yukine
     
-    Yukine_26 [shape = Mrecord, label = "<a>"];
+    Yukine_26 [shape = Mrecord, label = "<a>Don't take it"];
     Yukine_25:a -> Yukine_26:a [color = violet];    //Yukine
     
-    Yukine_27 [shape = Mrecord, label = "<a>"];
+    Yukine_27 [shape = Mrecord, label = "<a>Do it"];
     Yukine_26:a -> Yukine_27:a [color = violet];    //Yukine
     
-    Yukine_28 [shape = Mrecord, label = "<a>"];
+    Yukine_28 [shape = Mrecord, label = "<a>Try it"];
     Yukine_27:a -> Yukine_28:a [color = violet];    //Yukine
     
-    Yukine_29 [shape = Mrecord, label = "<a>"];
+    Yukine_29 [shape = Mrecord, label = "<a>Or not..."];
     Yukine_28:a -> Yukine_29:a [color = violet];    //Yukine
     
-    Yukine_30 [shape = Mrecord, label = "<a>"];
+    Yukine_30 [shape = Mrecord, label = "<a>Stay like that"];
     Yukine_29:a -> Yukine_30:a [color = violet];    //Yukine
     
-    Yukine_31 [shape = Mrecord, label = "<a>"];
+    Yukine_31 [shape = Mrecord, label = "<a>It's all right"];
     Yukine_30:a -> Yukine_31:a [color = violet];    //Yukine
     
-    Yukine_32 [shape = Mrecord, label = "<a>"];
+    Yukine_32 [shape = Mrecord, label = "<a>Let her sleep"];
     Yukine_31:a -> Yukine_32:a [color = violet];    //Yukine
     
-    Yukine_33 [shape = Mrecord, label = "<a>"];
-    Yukine_32:a -> Yukine_33:a [color = violet];    //Yukine
-
     Yukine_END [label = "Yukine's Ending"];
-    Yukine_33:a -> Yukine_END [color = violet];    //Yukine
-    
-/*
--Don't do anything
-Ignore her
-Take the lesson
-Ignore her
-Take refuge
-Ignore her
-Stay in class
-Decline offer
-Waste time outside the school
-See her off
-Let Sunohara try it
-Head there to sleep
-Talk to her some more
-Sleep
-Go to the old school building
-To the reference room
-Go there
-Watch a little longer
-Refuse
-Wake up completely
-Introduce yourself first
-Go
-    Ryou
-Like having a flashback from a previous volume of a manga
-Do it
-Don't take it
-Do it
-Try it
-Or not...
-Stay like that
-It's all right
-Let her sleep
-*/
+    Yukine_32:a -> Yukine_END [color = violet];    //Yukine
     
     
     
     
-    Kotomi_1 [shape = Mrecord, label = "<a>"];
+    Kotomi_1 [shape = Mrecord, label = "<a>Don't do anything"];
     Start0 -> Kotomi_1:a [color = limegreen];    //Kotomi
     
-    Kotomi_2 [shape = Mrecord, label = "<a>"];
+    Kotomi_2 [shape = Mrecord, label = "<a>Ignore her"];
     Kotomi_1:a -> Kotomi_2:a [color = limegreen];    //Kotomi
     
-    Kotomi_3 [shape = Mrecord, label = "<a>"];
+    Kotomi_3 [shape = Mrecord, label = "<a>Skip Class"];
     Kotomi_2:a -> Kotomi_3:a [color = limegreen];    //Kotomi
     
-    Kotomi_4 [shape = Mrecord, label = "<a>"];
+    Kotomi_4 [shape = Mrecord, label = "<a>Eat something"];
     Kotomi_3:a -> Kotomi_4:a [color = limegreen];    //Kotomi
     
-    Kotomi_5 [shape = Mrecord, label = "<a>"];
+    Kotomi_5 [shape = Mrecord, label = "<a>Go down to the courtyard"];
     Kotomi_4:a -> Kotomi_5:a [color = limegreen];    //Kotomi
     
-    Kotomi_6 [shape = Mrecord, label = "<a>"];
+    Kotomi_6 [shape = Mrecord, label = "<a>Continue talking"];
     Kotomi_5:a -> Kotomi_6:a [color = limegreen];    //Kotomi
     
-    Kotomi_7 [shape = Mrecord, label = "<a>"];
+    Kotomi_7 [shape = Mrecord, label = "<a>See what's going on"];
     Kotomi_6:a -> Kotomi_7:a [color = limegreen];    //Kotomi
     
-    Kotomi_8 [shape = Mrecord, label = "<a>"];
+    Kotomi_8 [shape = Mrecord, label = "<a>Not Interested"];
     Kotomi_7:a -> Kotomi_8:a [color = limegreen];    //Kotomi
     
-    Kotomi_9 [shape = Mrecord, label = "<a>"];
+    Kotomi_9 [shape = Mrecord, label = "<a>Don't worry"];
     Kotomi_8:a -> Kotomi_9:a [color = limegreen];    //Kotomi
     
-    Kotomi_10 [shape = Mrecord, label = "<a>"];
+    Kotomi_10 [shape = Mrecord, label = "<a>Ignore her"];
     Kotomi_9:a -> Kotomi_10:a [color = limegreen];    //Kotomi
     
-    Kotomi_11 [shape = Mrecord, label = "<a>"];
+    Kotomi_11 [shape = Mrecord, label = "<a>Walk past her"];
     Kotomi_10:a -> Kotomi_11:a [color = limegreen];    //Kotomi
     
-    Kotomi_12 [shape = Mrecord, label = "<a>"];
+    Kotomi_12 [shape = Mrecord, label = "<a>Skip class"];
     Kotomi_11:a -> Kotomi_12:a [color = limegreen];    //Kotomi
     
-    Kotomi_13 [shape = Mrecord, label = "<a>"];
+    Kotomi_13 [shape = Mrecord, label = "<a>Go with her"];
     Kotomi_12:a -> Kotomi_13:a [color = limegreen];    //Kotomi
     
-    Kotomi_14 [shape = Mrecord, label = "<a>"];
+    Kotomi_14 [shape = Mrecord, label = "<a>Check to see if the pages have been cut"];
     Kotomi_13:a -> Kotomi_14:a [color = limegreen];    //Kotomi
     
-    Kotomi_15 [shape = Mrecord, label = "<a>"];
+    Kotomi_15 [shape = Mrecord, label = "<a>Waste time outside the school"];
     Kotomi_14:a -> Kotomi_15:a [color = limegreen];    //Kotomi
     
-    Kotomi_16 [shape = Mrecord, label = "<a>"];
+    Kotomi_16 [shape = Mrecord, label = "<a>See her off"];
     Kotomi_15:a -> Kotomi_16:a [color = limegreen];    //Kotomi
     
-    Kotomi_17 [shape = Mrecord, label = "<a>"];
+    Kotomi_17 [shape = Mrecord, label = "<a>Let Sunohara try it"];
     Kotomi_16:a -> Kotomi_17:a [color = limegreen];    //Kotomi
     
-    Kotomi_18 [shape = Mrecord, label = "<a>"];
+    Kotomi_18 [shape = Mrecord, label = "<a>Go to the library"];
     Kotomi_17:a -> Kotomi_18:a [color = limegreen];    //Kotomi
     
-    Kotomi_19 [shape = Mrecord, label = "<a>"];
+    Kotomi_19 [shape = Mrecord, label = "<a>Frighten him"];
     Kotomi_18:a -> Kotomi_19:a [color = limegreen];    //Kotomi
     
-    Kotomi_20 [shape = Mrecord, label = "<a>"];
+    Kotomi_20 [shape = Mrecord, label = "<a>Go inside the library"];
     Kotomi_19:a -> Kotomi_20:a [color = limegreen];    //Kotomi
     
-    Kotomi_21 [shape = Mrecord, label = "<a>"];
+    Kotomi_21 [shape = Mrecord, label = "<a>Say her name"];
     Kotomi_20:a -> Kotomi_21:a [color = limegreen];    //Kotomi
     
-    Kotomi_22 [shape = Mrecord, label = "<a>"];
+    Kotomi_22 [shape = Mrecord, label = "<a>I just can't leave it as it is"];
     Kotomi_21:a -> Kotomi_22:a [color = limegreen];    //Kotomi
     
-    Kotomi_23 [shape = Mrecord, label = "<a>"];
+    Kotomi_23 [shape = Mrecord, label = "<a>Go straight home"];
     Kotomi_22:a -> Kotomi_23:a [color = limegreen];    //Kotomi
     
-    Kotomi_24 [shape = Mrecord, label = "<a>"];
+    Kotomi_24 [shape = Mrecord, label = "<a>Follow her inside"];
     Kotomi_23:a -> Kotomi_24:a [color = limegreen];    //Kotomi
     
-    Kotomi_25 [shape = Mrecord, label = "<a>"];
+    Kotomi_25 [shape = Mrecord, label = "<a>Escort her to her home"];
     Kotomi_24:a -> Kotomi_25:a [color = limegreen];    //Kotomi
     
-    Kotomi_26 [shape = Mrecord, label = "<a>"];
+    Kotomi_26 [shape = Mrecord, label = "<a>Ask her if it's all right for me to be here"];
     Kotomi_25:a -> Kotomi_26:a [color = limegreen];    //Kotomi
     
-    Kotomi_27 [shape = Mrecord, label = "<a>"];
+    Kotomi_27 [shape = Mrecord, label = "<a>Read"];
     Kotomi_26:a -> Kotomi_27:a [color = limegreen];    //Kotomi
     
-    Kotomi_28 [shape = Mrecord, label = "<a>"];
+    Kotomi_28 [shape = Mrecord, label = "<a>Wake up completely"];
     Kotomi_27:a -> Kotomi_28:a [color = limegreen];    //Kotomi
     
-    Kotomi_29 [shape = Mrecord, label = "<a>"];
+    Kotomi_29 [shape = Mrecord, label = "<a>Tell her \"You got it wrong\""];
     Kotomi_28:a -> Kotomi_29:a [color = limegreen];    //Kotomi
     
-    Kotomi_30 [shape = Mrecord, label = "<a>"];
+    Kotomi_30 [shape = Mrecord, label = "<a>Go to the staff room"];
     Kotomi_29:a -> Kotomi_30:a [color = limegreen];    //Kotomi
     
-    Kotomi_31 [shape = Mrecord, label = "<a>"];
+    Kotomi_31 [shape = Mrecord, label = "<a>Wait obediently"];
     Kotomi_30:a -> Kotomi_31:a [color = limegreen];    //Kotomi
     
-    Kotomi_32 [shape = Mrecord, label = "<a>"];
+    Kotomi_32 [shape = Mrecord, label = "<a>Go outside"];
     Kotomi_31:a -> Kotomi_32:a [color = limegreen];    //Kotomi
     
-    Kotomi_33 [shape = Mrecord, label = "<a>"];
+    Kotomi_33 [shape = Mrecord, label = "<a>Help Kotomi"];
     Kotomi_32:a -> Kotomi_33:a [color = limegreen];    //Kotomi
     
-    Kotomi_34 [shape = Mrecord, label = "<a>"];
+    Kotomi_34 [shape = Mrecord, label = "<a>Not right now, but..."];
     Kotomi_33:a -> Kotomi_34:a [color = limegreen];    //Kotomi
     
-    Kotomi_35 [shape = Mrecord, label = "<a>"];
+    Kotomi_35 [shape = Mrecord, label = "<a>I guess this is also fine..."];
     Kotomi_34:a -> Kotomi_35:a [color = limegreen];    //Kotomi
     
-    Kotomi_36 [shape = Mrecord, label = "<a>"];
+    Kotomi_36 [shape = Mrecord, label = "<a>Confess"];
     Kotomi_35:a -> Kotomi_36:a [color = limegreen];    //Kotomi
     
-    Kotomi_37 [shape = Mrecord, label = "<a>"];
+    Kotomi_37 [shape = Mrecord, label = "<a>Why do you ask such a thing?"];
     Kotomi_36:a -> Kotomi_37:a [color = limegreen];    //Kotomi
     
-    Kotomi_38 [shape = Mrecord, label = "<a>"];
+    Kotomi_38 [shape = Mrecord, label = "<a>Continue"];
     Kotomi_37:a -> Kotomi_38:a [color = limegreen];    //Kotomi
     
-    Kotomi_39 [shape = Mrecord, label = "<a>"];
+    Kotomi_39 [shape = Mrecord, label = "<a>Say \"Don't give up\"."];
     Kotomi_38:a -> Kotomi_39:a [color = limegreen];    //Kotomi
     
-    Kotomi_40 [shape = Mrecord, label = "<a>"];
+    Kotomi_40 [shape = Mrecord, label = "<a>Persevere"];
     Kotomi_39:a -> Kotomi_40:a [color = limegreen];    //Kotomi
     
-    Kotomi_41 [shape = Mrecord, label = "<a>"];
-    Kotomi_40:a -> Kotomi_41:a [color = limegreen];    //Kotomi
-    
     Kotomi_END [label = "Kotomi's Good Ending"];
-    Kotomi_41:a -> Kotomi_END [color = limegreen];    //Kotomi
-/*
--Don't do anything
-Ignore her
-Skip Class
-Eat something
-Go down to the courtyard
-Continue talking
-See what's going on
-Not Interested
-Don't worry
-Ignore her
-Walk past her
-Skip class
-Go with her
-Check to see if the pages have been cut
-Waste time outside the school
-See her off
-Let Sunohara try it
-Go to the library
-Frighten him
-Go inside the library
-Say her name
-I just can't leave it as it is
-Go straight home
-Follow her inside
-Escort her to her home
-Ask her if it's all right for me to be here
-Read
-Wake up completely
-Tell her "You got it wrong"
-Go to the staff room
-Wait obediently
-Go outside
-Help Kotomi_
-Not right now, but...
-I guess this is also fine...
-Confess
-Why do you ask such a thing?
-Continue
-Say "Don't give up".
-Persevere
-*/
+    Kotomi_40:a -> Kotomi_END [color = limegreen];    //Kotomi
     
     
     
     
-    Mei_1 [shape = Mrecord, label = "<a>"];
+    Mei_1 [shape = Mrecord, label = "<a>Don't do anything"];
     Start0 -> Mei_1:a [color = darkorange];    //Mei
     
-    Mei_2 [shape = Mrecord, label = "<a>"];
+    Mei_2 [shape = Mrecord, label = "<a>Ignore her"];
     Mei_1:a -> Mei_2:a [color = darkorange];    //Mei
     
-    Mei_3 [shape = Mrecord, label = "<a>"];
+    Mei_3 [shape = Mrecord, label = "<a>Take the lesson"];
     Mei_2:a -> Mei_3:a [color = darkorange];    //Mei
     
-    Mei_4 [shape = Mrecord, label = "<a>"];
+    Mei_4 [shape = Mrecord, label = "<a>Ignore her"];
     Mei_3:a -> Mei_4:a [color = darkorange];    //Mei
     
-    Mei_5 [shape = Mrecord, label = "<a>"];
+    Mei_5 [shape = Mrecord, label = "<a>Take refuge"];
     Mei_4:a -> Mei_5:a [color = darkorange];    //Mei
     
-    Mei_6 [shape = Mrecord, label = "<a>"];
+    Mei_6 [shape = Mrecord, label = "<a>Ignore her"];
     Mei_5:a -> Mei_6:a [color = darkorange];    //Mei
     
-    Mei_7 [shape = Mrecord, label = "<a>"];
+    Mei_7 [shape = Mrecord, label = "<a>Stay in class"];
     Mei_6:a -> Mei_7:a [color = darkorange];    //Mei
     
-    Mei_8 [shape = Mrecord, label = "<a>"];
+    Mei_8 [shape = Mrecord, label = "<a>Waste time outside the school"];
     Mei_7:a -> Mei_8:a [color = darkorange];    //Mei
     
-    Mei_9 [shape = Mrecord, label = "<a>"];
+    Mei_9 [shape = Mrecord, label = "<a>See her off"];
     Mei_8:a -> Mei_9:a [color = darkorange];    //Mei
     
-    Mei_10 [shape = Mrecord, label = "<a>"];
+    Mei_10 [shape = Mrecord, label = "<a>Try her fortune telling"];
     Mei_9:a -> Mei_10:a [color = darkorange];    //Mei
     
-    Mei_11 [shape = Mrecord, label = "<a>"];
+    Mei_11 [shape = Mrecord, label = "<a>I guess I'll go back to class"];
     Mei_10:a -> Mei_11:a [color = darkorange];    //Mei
     
-    Mei_12 [shape = Mrecord, label = "<a>"];
+    Mei_12 [shape = Mrecord, label = "<a>Go straight home"];
     Mei_11:a -> Mei_12:a [color = darkorange];    //Mei
     
-    Mei_13 [shape = Mrecord, label = "<a>"];
+    Mei_13 [shape = Mrecord, label = "<a>Go there"];
     Mei_12:a -> Mei_13:a [color = darkorange];    //Mei
     
-    Mei_14 [shape = Mrecord, label = "<a>"];
+    Mei_14 [shape = Mrecord, label = "<a>Watch a little longer"];
     Mei_13:a -> Mei_14:a [color = darkorange];    //Mei
     
-    Mei_15 [shape = Mrecord, label = "<a>"];
+    Mei_15 [shape = Mrecord, label = "<a>Help out"];
     Mei_14:a -> Mei_15:a [color = darkorange];    //Mei
     
-    Mei_16 [shape = Mrecord, label = "<a>"];
+    Mei_16 [shape = Mrecord, label = "<a>Wake up completely"];
     Mei_15:a -> Mei_16:a [color = darkorange];    //Mei
     
-    Mei_17 [shape = Mrecord, label = "<a>"];
+    Mei_17 [shape = Mrecord, label = "<a>Say, \"Good Day\""];
     Mei_16:a -> Mei_17:a [color = darkorange];    //Mei
     
-    Mei_18 [shape = Mrecord, label = "<a>"];
+    Mei_18 [shape = Mrecord, label = "<a>Say it like Ikkoku Dou"];
     Mei_17:a -> Mei_18:a [color = darkorange];    //Mei
     
-    Mei_19 [shape = Mrecord, label = "<a>"];
+    Mei_19 [shape = Mrecord, label = "<a>Talk to her instead"];
     Mei_18:a -> Mei_19:a [color = darkorange];    //Mei
     
-    Mei_20 [shape = Mrecord, label = "<a>"];
+    Mei_20 [shape = Mrecord, label = "<a>Take responsibility"];
     Mei_19:a -> Mei_20:a [color = darkorange];    //Mei
     
-    Mei_21 [shape = Mrecord, label = "<a>"];
+    Mei_21 [shape = Mrecord, label = "<a>Fujibayashi Sisters"];
     Mei_20:a -> Mei_21:a [color = darkorange];    //Mei
     
-    Mei_22 [shape = Mrecord, label = "<a>"];
+    Mei_22 [shape = Mrecord, label = "<a>Older sister"];
     Mei_21:a -> Mei_22:a [color = darkorange];    //Mei
     
-    Mei_23 [shape = Mrecord, label = "<a>"];
+    Mei_23 [shape = Mrecord, label = "<a>It's fine to watch from a distance, isn't it?"];
     Mei_22:a -> Mei_23:a [color = darkorange];    //Mei
     
-    Mei_24 [shape = Mrecord, label = "<a>"];
-    Mei_23:a -> Mei_24:a [color = darkorange];    //Mei
-    
     Mei_END [label = "Mei's Ending"];
-    Mei_24:a -> Mei_END [color = darkorange];    //Mei
-
-/*
--Don't do anything
-Ignore her
-Take the lesson
-Ignore her
-Take refuge
-Ignore her
-Stay in class
-Waste time outside the school
-See her off
-Try her fortune telling
-I guess I'll go back to class
-Go straight home
-Go there
-Watch a little longer
-Help out
-Wake up completely
-Say, "Good Day"
-Say it like Ikkoku Dou
-Talk to her instead
-Take responsibility
-Fujibayashi Sisters
-Older sister
-It's fine to watch from a distance, isn't it?
-*/
+    Mei_23:a -> Mei_END [color = darkorange];    //Mei
     
     
     
     
-    Nagisa_1 [shape = Mrecord, label = "<a>"];
+    Nagisa_1 [shape = Mrecord, label = "<a>Don't do anything"];
     Start0 -> Nagisa_1:a [color = firebrick];    //Nagisa
     
-    Nagisa_2 [shape = Mrecord, label = "<a>"];
+    Nagisa_2 [shape = Mrecord, label = "<a>Apologize to her"];
     Nagisa_1:a -> Nagisa_2:a [color = firebrick];    //Nagisa
     
-    Nagisa_3 [shape = Mrecord, label = "<a>"];
+    Nagisa_3 [shape = Mrecord, label = "<a>Take the lesson"];
     Nagisa_2:a -> Nagisa_3:a [color = firebrick];    //Nagisa
     
-    Nagisa_4 [shape = Mrecord, label = "<a>"];
+    Nagisa_4 [shape = Mrecord, label = "<a>Go down to the courtyard"];
     Nagisa_3:a -> Nagisa_4:a [color = firebrick];    //Nagisa
     
-    Nagisa_5 [shape = Mrecord, label = "<a>"];
+    Nagisa_5 [shape = Mrecord, label = "<a>Continue talking"];
     Nagisa_4:a -> Nagisa_5:a [color = firebrick];    //Nagisa
     
-    Nagisa_6 [shape = Mrecord, label = "<a>"];
+    Nagisa_6 [shape = Mrecord, label = "<a>See what's going on"];
     Nagisa_5:a -> Nagisa_6:a [color = firebrick];    //Nagisa
     
-    Nagisa_7 [shape = Mrecord, label = "<a>"];
+    Nagisa_7 [shape = Mrecord, label = "<a>This interests me"];
     Nagisa_6:a -> Nagisa_7:a [color = firebrick];    //Nagisa
     
-    Nagisa_8 [shape = Mrecord, label = "<a>"];
+    Nagisa_8 [shape = Mrecord, label = "<a>I'm a bit worried"];
     Nagisa_7:a -> Nagisa_8:a [color = firebrick];    //Nagisa
     
-    Nagisa_9 [shape = Mrecord, label = "<a>"];
+    Nagisa_9 [shape = Mrecord, label = "<a>Talk to her"];
     Nagisa_8:a -> Nagisa_9:a [color = firebrick];    //Nagisa
     
-    Nagisa_10 [shape = Mrecord, label = "<a>"];
+    Nagisa_10 [shape = Mrecord, label = "<a>Talk to the old lady"];
     Nagisa_9:a -> Nagisa_10:a [color = firebrick];    //Nagisa
     
-    Nagisa_11 [shape = Mrecord, label = "<a>"];
+    Nagisa_11 [shape = Mrecord, label = "<a>Forget about it"];
     Nagisa_10:a -> Nagisa_11:a [color = firebrick];    //Nagisa
     
-    Nagisa_12 [shape = Mrecord, label = "<a>"];
+    Nagisa_12 [shape = Mrecord, label = "<a>It's about the girl from yesterday..."];
     Nagisa_11:a -> Nagisa_12:a [color = firebrick];    //Nagisa
     
-    Nagisa_13 [shape = Mrecord, label = "<a>"];
+    Nagisa_13 [shape = Mrecord, label = "<a>Go and see"];
     Nagisa_12:a -> Nagisa_13:a [color = firebrick];    //Nagisa
     
-    Nagisa_14 [shape = Mrecord, label = "<a>"];
+    Nagisa_14 [shape = Mrecord, label = "<a>Stay in class"];
     Nagisa_13:a -> Nagisa_14:a [color = firebrick];    //Nagisa
     
-    Nagisa_15 [shape = Mrecord, label = "<a>"];
+    Nagisa_15 [shape = Mrecord, label = "<a>Help her out"];
     Nagisa_14:a -> Nagisa_15:a [color = firebrick];    //Nagisa
     
-    Nagisa_16 [shape = Mrecord, label = "<a>"];
+    Nagisa_16 [shape = Mrecord, label = "<a>I want to do that."];
     Nagisa_15:a -> Nagisa_16:a [color = firebrick];    //Nagisa
     
-    Nagisa_17 [shape = Mrecord, label = "<a>"];
+    Nagisa_17 [shape = Mrecord, label = "<a>Go watch"];
     Nagisa_16:a -> Nagisa_17:a [color = firebrick];    //Nagisa
     
-    Nagisa_18 [shape = Mrecord, label = "<a>"];
+    Nagisa_18 [shape = Mrecord, label = "<a>Go along"];
     Nagisa_17:a -> Nagisa_18:a [color = firebrick];    //Nagisa
     
-    Nagisa_19 [shape = Mrecord, label = "<a>"];
+    Nagisa_19 [shape = Mrecord, label = "<a>Go with him"];
     Nagisa_18:a -> Nagisa_19:a [color = firebrick];    //Nagisa
     
-    Nagisa_20 [shape = Mrecord, label = "<a>"];
+    Nagisa_20 [shape = Mrecord, label = "<a>Illustration"];
     Nagisa_19:a -> Nagisa_20:a [color = firebrick];    //Nagisa
     
-    Nagisa_21 [shape = Mrecord, label = "<a>"];
+    Nagisa_21 [shape = Mrecord, label = "<a>Go out and search"];
     Nagisa_20:a -> Nagisa_21:a [color = firebrick];    //Nagisa
     
-    Nagisa_22 [shape = Mrecord, label = "<a>"];
+    Nagisa_22 [shape = Mrecord, label = "<a>Peek in the next classroom"];
     Nagisa_21:a -> Nagisa_22:a [color = firebrick];    //Nagisa
     
-    Nagisa_23 [shape = Mrecord, label = "<a>"];
+    Nagisa_23 [shape = Mrecord, label = "<a>Try and talk to her"];
     Nagisa_22:a -> Nagisa_23:a [color = firebrick];    //Nagisa
     
-    Nagisa_24 [shape = Mrecord, label = "<a>"];
+    Nagisa_24 [shape = Mrecord, label = "<a>Help him out"];
     Nagisa_23:a -> Nagisa_24:a [color = firebrick];    //Nagisa
     
-    Nagisa_25 [shape = Mrecord, label = "<a>"];
+    Nagisa_25 [shape = Mrecord, label = "<a>Kick him back"];
     Nagisa_24:a -> Nagisa_25:a [color = firebrick];    //Nagisa
     
-    Nagisa_26 [shape = Mrecord, label = "<a>"];
+    Nagisa_26 [shape = Mrecord, label = "<a>Fortune telling using cards"];
     Nagisa_25:a -> Nagisa_26:a [color = firebrick];    //Nagisa
     
-    Nagisa_27 [shape = Mrecord, label = "<a>"];
+    Nagisa_27 [shape = Mrecord, label = "<a>Don't let her run away"];
     Nagisa_26:a -> Nagisa_27:a [color = firebrick];    //Nagisa
     
-    Nagisa_28 [shape = Mrecord, label = "<a>"];
+    Nagisa_28 [shape = Mrecord, label = "<a>Go into an empty room"];
     Nagisa_27:a -> Nagisa_28:a [color = firebrick];    //Nagisa
     
-    Nagisa_29 [shape = Mrecord, label = "<a>"];
+    Nagisa_29 [shape = Mrecord, label = "<a>Watch her a little longer"];
     Nagisa_28:a -> Nagisa_29:a [color = firebrick];    //Nagisa
     
-    Nagisa_30 [shape = Mrecord, label = "<a>"];
+    Nagisa_30 [shape = Mrecord, label = "<a>I guess I'll go back to class"];
     Nagisa_29:a -> Nagisa_30:a [color = firebrick];    //Nagisa
     
-    Nagisa_31 [shape = Mrecord, label = "<a>"];
+    Nagisa_31 [shape = Mrecord, label = "<a>Help her"];
     Nagisa_30:a -> Nagisa_31:a [color = firebrick];    //Nagisa
     
-    Nagisa_32 [shape = Mrecord, label = "<a>"];
+    Nagisa_32 [shape = Mrecord, label = "<a>What sort of drama play are you planning?"];
     Nagisa_31:a -> Nagisa_32:a [color = firebrick];    //Nagisa
     
-    Nagisa_33 [shape = Mrecord, label = "<a>"];
+    Nagisa_33 [shape = Mrecord, label = "<a>Grab Furukawa's hand and run away"];
     Nagisa_32:a -> Nagisa_33:a [color = firebrick];    //Nagisa
     
-    Nagisa_34 [shape = Mrecord, label = "<a>"];
+    Nagisa_34 [shape = Mrecord, label = "<a>Stop him"];
     Nagisa_33:a -> Nagisa_34:a [color = firebrick];    //Nagisa
     
-    Nagisa_35 [shape = Mrecord, label = "<a>"];
+    Nagisa_35 [shape = Mrecord, label = "<a>Go and see"];
     Nagisa_34:a -> Nagisa_35:a [color = firebrick];    //Nagisa
     
-    Nagisa_36 [shape = Mrecord, label = "<a>"];
+    Nagisa_36 [shape = Mrecord, label = "<a>How's Furukawa doing?"];
     Nagisa_35:a -> Nagisa_36:a [color = firebrick];    //Nagisa
     
-    Nagisa_37 [shape = Mrecord, label = "<a>"];
+    Nagisa_37 [shape = Mrecord, label = "<a>Go there"];
     Nagisa_36:a -> Nagisa_37:a [color = firebrick];    //Nagisa
     
-    Nagisa_38 [shape = Mrecord, label = "<a>"];
+    Nagisa_38 [shape = Mrecord, label = "<a>Watch a little longer"];
     Nagisa_37:a -> Nagisa_38:a [color = firebrick];    //Nagisa
     
-    Nagisa_39 [shape = Mrecord, label = "<a>"];
+    Nagisa_39 [shape = Mrecord, label = "<a>Help out"];
     Nagisa_38:a -> Nagisa_39:a [color = firebrick];    //Nagisa
     
-    Nagisa_40 [shape = Mrecord, label = "<a>"];
+    Nagisa_40 [shape = Mrecord, label = "<a>Look outside the window"];
     Nagisa_39:a -> Nagisa_40:a [color = firebrick];    //Nagisa
     
-    Nagisa_41 [shape = Mrecord, label = "<a>"];
+    Nagisa_41 [shape = Mrecord, label = "<a>Continue to wait"];
     Nagisa_40:a -> Nagisa_41:a [color = firebrick];    //Nagisa
     
-    Nagisa_42 [shape = Mrecord, label = "<a>"];
+    Nagisa_42 [shape = Mrecord, label = "<a>Negotiate with them in Furukawa's place"];
     Nagisa_41:a -> Nagisa_42:a [color = firebrick];    //Nagisa
     
-    Nagisa_43 [shape = Mrecord, label = "<a>"];
+    Nagisa_43 [shape = Mrecord, label = "<a>Talk to Tomoyo"];
     Nagisa_42:a -> Nagisa_43:a [color = firebrick];    //Nagisa
     
-    Nagisa_44 [shape = Mrecord, label = "<a>"];
+    Nagisa_44 [shape = Mrecord, label = "<a>Steal"];
     Nagisa_43:a -> Nagisa_44:a [color = firebrick];    //Nagisa
     
-    Nagisa_45 [shape = Mrecord, label = "<a>"];
+    Nagisa_45 [shape = Mrecord, label = "<a>Talk to Fuuko"];
     Nagisa_44:a -> Nagisa_45:a [color = firebrick];    //Nagisa
     
-    Nagisa_46 [shape = Mrecord, label = "<a>"];
+    Nagisa_46 [shape = Mrecord, label = "<a>Talk to the Fujibayashi sisters"];
     Nagisa_45:a -> Nagisa_46:a [color = firebrick];    //Nagisa
     
-    Nagisa_47 [shape = Mrecord, label = "<a>"];
+    Nagisa_47 [shape = Mrecord, label = "<a>Continue waiting"];
     Nagisa_46:a -> Nagisa_47:a [color = firebrick];    //Nagisa
     
-    Nagisa_48 [shape = Mrecord, label = "<a>"];
+    Nagisa_48 [shape = Mrecord, label = "<a>Keep it and head back"];
     Nagisa_47:a -> Nagisa_48:a [color = firebrick];    //Nagisa
     
-    Nagisa_49 [shape = Mrecord, label = "<a>"];
+    Nagisa_49 [shape = Mrecord, label = "<a>Don't help him"];
     Nagisa_48:a -> Nagisa_49:a [color = firebrick];    //Nagisa
     
-    Nagisa_50 [shape = Mrecord, label = "<a>"];
+    Nagisa_50 [shape = Mrecord, label = "<a>No way"];
     Nagisa_49:a -> Nagisa_50:a [color = firebrick];    //Nagisa
     
-    Nagisa_51 [shape = Mrecord, label = "<a>"];
+    Nagisa_51 [shape = Mrecord, label = "<a>Various unnecessary things we don't need"];
     Nagisa_50:a -> Nagisa_51:a [color = firebrick];    //Nagisa
     
-    Nagisa_52 [shape = Mrecord, label = "<a>"];
+    Nagisa_52 [shape = Mrecord, label = "<a>No, that's wrong"];
     Nagisa_51:a -> Nagisa_52:a [color = firebrick];    //Nagisa
     
-    Nagisa_53 [shape = Mrecord, label = "<a>"];
+    Nagisa_53 [shape = Mrecord, label = "<a>Sleep"];
     Nagisa_52:a -> Nagisa_53:a [color = firebrick];    //Nagisa
     
-    Nagisa_54 [shape = Mrecord, label = "<a>"];
+    Nagisa_54 [shape = Mrecord, label = "<a>Talk to her instead"];
     Nagisa_53:a -> Nagisa_54:a [color = firebrick];    //Nagisa
     
-    Nagisa_55 [shape = Mrecord, label = "<a>"];
+    Nagisa_55 [shape = Mrecord, label = "<a>Embrace her"];
     Nagisa_54:a -> Nagisa_55:a [color = firebrick];    //Nagisa
     
-    Nagisa_56 [shape = Mrecord, label = "<a>"];
+    Nagisa_56 [shape = Mrecord, label = "<a>Ignore them and continue moving"];
     Nagisa_55:a -> Nagisa_56:a [color = firebrick];    //Nagisa
     
-    Nagisa_57 [shape = Mrecord, label = "<a>"];
+    Nagisa_57 [shape = Mrecord, label = "<a>Do it on Monday."];
     Nagisa_56:a -> Nagisa_57:a [color = firebrick];    //Nagisa
     
-    Nagisa_58 [shape = Mrecord, label = "<a>"];
+    Nagisa_58 [shape = Mrecord, label = "<a>Sure"];
     Nagisa_57:a -> Nagisa_58:a [color = firebrick];    //Nagisa
     
-    Nagisa_59 [shape = Mrecord, label = "<a>"];
+    Nagisa_59 [shape = Mrecord, label = "<a>Yeah"];
     Nagisa_58:a -> Nagisa_59:a [color = firebrick];    //Nagisa
     
-    Nagisa_60 [shape = Mrecord, label = "<a>"];
+    Nagisa_60 [shape = Mrecord, label = "<a>Search in the new school building."];
     Nagisa_59:a -> Nagisa_60:a [color = firebrick];    //Nagisa
     
-    Nagisa_61 [shape = Mrecord, label = "<a>"];
+    Nagisa_61 [shape = Mrecord, label = "<a>Search the second floor."];
     Nagisa_60:a -> Nagisa_61:a [color = firebrick];    //Nagisa
     
-    Nagisa_62 [shape = Mrecord, label = "<a>"];
+    Nagisa_62 [shape = Mrecord, label = "<a>It'll work."];
     Nagisa_61:a -> Nagisa_62:a [color = firebrick];    //Nagisa
     
-    Nagisa_63 [shape = Mrecord, label = "<a>"];
+    Nagisa_63 [shape = Mrecord, label = "<a>Doing something stupid."];
     Nagisa_62:a -> Nagisa_63:a [color = firebrick];    //Nagisa
     
-    Nagisa_64 [shape = Mrecord, label = "<a>"];
+    Nagisa_64 [shape = Mrecord, label = "<a>Stop her"];
     Nagisa_63:a -> Nagisa_64:a [color = firebrick];    //Nagisa
     
-    Nagisa_65 [shape = Mrecord, label = "<a>"];
+    Nagisa_65 [shape = Mrecord, label = "<a>I should make the last move"];
     Nagisa_64:a -> Nagisa_65:a [color = firebrick];    //Nagisa
     
-    Nagisa_66 [shape = Mrecord, label = "<a>"];
+    Nagisa_66 [shape = Mrecord, label = "<a>Give her a present."];
     Nagisa_65:a -> Nagisa_66:a [color = firebrick];    //Nagisa
     
-    Nagisa_67 [shape = Mrecord, label = "<a>"];
+    Nagisa_67 [shape = Mrecord, label = "<a>I do"];
     Nagisa_66:a -> Nagisa_67:a [color = firebrick];    //Nagisa
     
-    Nagisa_68 [shape = Mrecord, label = "<a>"];
+    Nagisa_68 [shape = Mrecord, label = "<a>Steal her script"];
     Nagisa_67:a -> Nagisa_68:a [color = firebrick];    //Nagisa
     
-    Nagisa_69 [shape = Mrecord, label = "<a>"];
+    Nagisa_69 [shape = Mrecord, label = "<a>You're a good father"];
     Nagisa_68:a -> Nagisa_69:a [color = firebrick];    //Nagisa
     
-    Nagisa_70 [shape = Mrecord, label = "<a>"];
+    Nagisa_70 [shape = Mrecord, label = "<a>Yell"];
     Nagisa_69:a -> Nagisa_70:a [color = firebrick];    //Nagisa
     
-    Nagisa_71 [shape = Mrecord, label = "<a>"];
-    Nagisa_70:a -> Nagisa_71:a [color = firebrick];    //Nagisa
-
     Nagisa_END [label = "Nagisa's Ending\nContinues in AfterStory"];
-    Nagisa_71:a -> Nagisa_END [color = firebrick];    //Nagisa
-    
-/*
--Don't do anything
-Apologize to her
-Take the lesson
-Go down to the courtyard
-Continue talking
-See what's going on
-This interests me
-I'm a bit worried
-Talk to her
-Talk to the old lady
-Forget about it
-It's about the girl from yesterday...
-Go and see
-Stay in class
-Help her out
-I want to do that.
-Go watch
-Go along
-Go with him
-Illustration
-Go out and search
-Peek in the next classroom
-Try and talk to her
-Help him out
-Kick him back
-Fortune telling using cards
-Don't let her run away
-Go into an empty room
-Watch her a little longer
-I guess I'll go back to class
-Help her
-What sort of drama play are you planning?
-Grab Furukawa's hand and run away
-Stop him
-Go and see
-How's Furukawa doing?
-Go there
-Watch a little longer
-Help out
-Look outside the window
-Continue to wait
-Negotiate with them in Furukawa's place
-Talk to Tomoyo_
-Steal
-Talk to Fuuko
-Talk to the Fujibayashi sisters
-Continue waiting
-Keep it and head back
-Don't help him
-No way
-Various unnecessary things we don't need
-No, that's wrong
-Sleep
-Talk to her instead
-Embrace her
-Ignore them and continue moving
-Do it on Monday.
-Sure
-Yeah
-Search in the new school building.
-Search the second floor.
-It'll work.
-Doing something stupid.
-Stop her
-I should make the last move
-Give her a present.
-I do
-Steal her script
-You're a good father
-Yell
-*/
+    Nagisa_70:a -> Nagisa_END [color = firebrick];    //Nagisa
     
     
-    BAD_END_1 [shape = Mrecord, label = "<a>"];
+    
+    BAD_END_1 [shape = Mrecord, label = "<a>Dub something over it"];
     Start0 -> BAD_END_1:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_2 [shape = Mrecord, label = "<a>"];
+    BAD_END_2 [shape = Mrecord, label = "<a>Say something fitting"];
     BAD_END_1:a -> BAD_END_2:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_3 [shape = Mrecord, label = "<a>"];
+    BAD_END_3 [shape = Mrecord, label = "<a>Ignore her"];
     BAD_END_2:a -> BAD_END_3:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_4 [shape = Mrecord, label = "<a>"];
+    BAD_END_4 [shape = Mrecord, label = "<a>Skip class"];
     BAD_END_3:a -> BAD_END_4:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_5 [shape = Mrecord, label = "<a>"];
+    BAD_END_5 [shape = Mrecord, label = "<a>Eat some"];
     BAD_END_4:a -> BAD_END_5:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_6 [shape = Mrecord, label = "<a>"];
+    BAD_END_6 [shape = Mrecord, label = "<a>Go down to the courtyard"];
     BAD_END_5:a -> BAD_END_6:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_7 [shape = Mrecord, label = "<a>"];
+    BAD_END_7 [shape = Mrecord, label = "<a>Continue talking"];
     BAD_END_6:a -> BAD_END_7:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_8 [shape = Mrecord, label = "<a>"];
+    BAD_END_8 [shape = Mrecord, label = "<a>See what's going on"];
     BAD_END_7:a -> BAD_END_8:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_9 [shape = Mrecord, label = "<a>"];
+    BAD_END_9 [shape = Mrecord, label = "<a>This interests me"];
     BAD_END_8:a -> BAD_END_9:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_10 [shape = Mrecord, label = "<a>"];
+    BAD_END_10 [shape = Mrecord, label = "<a>I'm a bit worried"];
     BAD_END_9:a -> BAD_END_10:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_11 [shape = Mrecord, label = "<a>"];
+    BAD_END_11 [shape = Mrecord, label = "<a>Ignore her"];
     BAD_END_10:a -> BAD_END_11:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_12 [shape = Mrecord, label = "<a>"];
+    BAD_END_12 [shape = Mrecord, label = "<a>Go and see"];
     BAD_END_11:a -> BAD_END_12:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_13 [shape = Mrecord, label = "<a>"];
+    BAD_END_13 [shape = Mrecord, label = "<a>Make haste and buy"];
     BAD_END_12:a -> BAD_END_13:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_14 [shape = Mrecord, label = "<a>"];
+    BAD_END_14 [shape = Mrecord, label = "<a>Help her out"];
     BAD_END_13:a -> BAD_END_14:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_15 [shape = Mrecord, label = "<a>"];
+    BAD_END_15 [shape = Mrecord, label = "<a>I want to do that"];
     BAD_END_14:a -> BAD_END_15:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_16 [shape = Mrecord, label = "<a>"];
+    BAD_END_16 [shape = Mrecord, label = "<a>Go watch"];
     BAD_END_15:a -> BAD_END_16:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_17 [shape = Mrecord, label = "<a>"];
+    BAD_END_17 [shape = Mrecord, label = "<a>Go along"];
     BAD_END_16:a -> BAD_END_17:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_18 [shape = Mrecord, label = "<a>"];
+    BAD_END_18 [shape = Mrecord, label = "<a>Go with him"];
     BAD_END_17:a -> BAD_END_18:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_19 [shape = Mrecord, label = "<a>"];
+    BAD_END_19 [shape = Mrecord, label = "<a>Skip class"];
     BAD_END_18:a -> BAD_END_19:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_20 [shape = Mrecord, label = "<a>"];
+    BAD_END_20 [shape = Mrecord, label = "<a>Go with her"];
     BAD_END_19:a -> BAD_END_20:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_21 [shape = Mrecord, label = "<a>"];
+    BAD_END_21 [shape = Mrecord, label = "<a>Check to see if the pages have been cut"];
     BAD_END_20:a -> BAD_END_21:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_22 [shape = Mrecord, label = "<a>"];
+    BAD_END_22 [shape = Mrecord, label = "<a>Illustration"];
     BAD_END_21:a -> BAD_END_22:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_23 [shape = Mrecord, label = "<a>"];
+    BAD_END_23 [shape = Mrecord, label = "<a>Go out and search"];
     BAD_END_22:a -> BAD_END_23:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_24 [shape = Mrecord, label = "<a>"];
+    BAD_END_24 [shape = Mrecord, label = "<a>Peek in the next classroom"];
     BAD_END_23:a -> BAD_END_24:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_25 [shape = Mrecord, label = "<a>"];
+    BAD_END_25 [shape = Mrecord, label = "<a>Leave her alone"];
     BAD_END_24:a -> BAD_END_25:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_26 [shape = Mrecord, label = "<a>"];
+    BAD_END_26 [shape = Mrecord, label = "<a>Help him out"];
     BAD_END_25:a -> BAD_END_26:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_27 [shape = Mrecord, label = "<a>"];
+    BAD_END_27 [shape = Mrecord, label = "<a>Kick him back"];
     BAD_END_26:a -> BAD_END_27:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_28 [shape = Mrecord, label = "<a>"];
+    BAD_END_28 [shape = Mrecord, label = "<a>Try her fortune telling"];
     BAD_END_27:a -> BAD_END_28:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_29 [shape = Mrecord, label = "<a>"];
+    BAD_END_29 [shape = Mrecord, label = "<a>Go to the library"];
     BAD_END_28:a -> BAD_END_29:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_30 [shape = Mrecord, label = "<a>"];
+    BAD_END_30 [shape = Mrecord, label = "<a>Conceal my presence"];
     BAD_END_29:a -> BAD_END_30:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_31 [shape = Mrecord, label = "<a>"];
+    BAD_END_31 [shape = Mrecord, label = "<a>Go inside the library"];
     BAD_END_30:a -> BAD_END_31:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_32 [shape = Mrecord, label = "<a>"];
+    BAD_END_32 [shape = Mrecord, label = "<a>Say her name"];
     BAD_END_31:a -> BAD_END_32:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_33 [shape = Mrecord, label = "<a>"];
+    BAD_END_33 [shape = Mrecord, label = "<a>I just can't leave it as it is"];
     BAD_END_32:a -> BAD_END_33:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_34 [shape = Mrecord, label = "<a>"];
+    BAD_END_34 [shape = Mrecord, label = "<a>Eat with Kotomi from now on"];
     BAD_END_33:a -> BAD_END_34:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_35 [shape = Mrecord, label = "<a>"];
+    BAD_END_35 [shape = Mrecord, label = "<a>Help her"];
     BAD_END_34:a -> BAD_END_35:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_36 [shape = Mrecord, label = "<a>"];
+    BAD_END_36 [shape = Mrecord, label = "<a>What sort of drama play are you planning?"];
     BAD_END_35:a -> BAD_END_36:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_37 [shape = Mrecord, label = "<a>"];
+    BAD_END_37 [shape = Mrecord, label = "<a>Stop him"];
     BAD_END_36:a -> BAD_END_37:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_38 [shape = Mrecord, label = "<a>"];
+    BAD_END_38 [shape = Mrecord, label = "<a>Go to the old school building"];
     BAD_END_37:a -> BAD_END_38:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_39 [shape = Mrecord, label = "<a>"];
+    BAD_END_39 [shape = Mrecord, label = "<a>To the reference room"];
     BAD_END_38:a -> BAD_END_39:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_40 [shape = Mrecord, label = "<a>"];
+    BAD_END_40 [shape = Mrecord, label = "<a>Leave"];
     BAD_END_39:a -> BAD_END_40:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_41 [shape = Mrecord, label = "<a>"];
+    BAD_END_41 [shape = Mrecord, label = "<a>Ignore her"];
     BAD_END_40:a -> BAD_END_41:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_42 [shape = Mrecord, label = "<a>"];
+    BAD_END_42 [shape = Mrecord, label = "<a>Say goodbye to her"];
     BAD_END_41:a -> BAD_END_42:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_43 [shape = Mrecord, label = "<a>"];
+    BAD_END_43 [shape = Mrecord, label = "<a>Leave the library"];
     BAD_END_42:a -> BAD_END_43:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_44 [shape = Mrecord, label = "<a>"];
+    BAD_END_44 [shape = Mrecord, label = "<a>Try to play it*\n(See the Doki Doki High School section)"];
     BAD_END_43:a -> BAD_END_44:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_45 [shape = Mrecord, label = "<a>"];
+    BAD_END_45 [shape = Mrecord, label = "<a>Wake up completely"];
     BAD_END_44:a -> BAD_END_45:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_46 [shape = Mrecord, label = "<a>"];
+    BAD_END_46 [shape = Mrecord, label = "<a>Call out to her"];
     BAD_END_45:a -> BAD_END_46:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_47 [shape = Mrecord, label = "<a>"];
+    BAD_END_47 [shape = Mrecord, label = "<a>I guess so..."];
     BAD_END_46:a -> BAD_END_47:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_48 [shape = Mrecord, label = "<a>"];
+    BAD_END_48 [shape = Mrecord, label = "<a>Eat it anyway"];
     BAD_END_47:a -> BAD_END_48:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_49 [shape = Mrecord, label = "<a>"];
+    BAD_END_49 [shape = Mrecord, label = "<a>I'm going home right now"];
     BAD_END_48:a -> BAD_END_49:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_50 [shape = Mrecord, label = "<a>"];
+    BAD_END_50 [shape = Mrecord, label = "<a>Yeah, you are"];
     BAD_END_49:a -> BAD_END_50:a [color = yellowgreen];    //BAD_END
 
-    BAD_END_51 [shape = Mrecord, label = "<a>"];
+    BAD_END_51 [shape = Mrecord, label = "<a>Say \"Good day\""];
     BAD_END_50:a -> BAD_END_51:a [color = yellowgreen];    //BAD_END
+    
+    BAD_END_52 [shape = Mrecord, label = "<a>Yeah"];
+    BAD_END_51:a -> BAD_END_52:a [color = yellowgreen];    //BAD_END
 
     BAD_END_END [label = "Sunohara's Bad Ending"];
-    BAD_END_51:a -> BAD_END_END [color = yellowgreen];    //BAD_END
+    BAD_END_52:a -> BAD_END_END [color = yellowgreen];    //BAD_END
 
-/*
-Dub something over it
-Say something fitting
-Ignore her
-Skip class
-Eat some
-Go down to the courtyard
-Continue talking
-See what's going on
-This interests me
-I'm a bit worried
-Ignore her
-Go and see
-Make haste and buy
-Help her out
-I want to do that
-Go watch
-Go along
-Go with him
-Skip class
-Go with her
-Check to see if the pages have been cut
-Illustration
-Go out and search
-Peek in the next classroom
-Leave her alone
-Help him out
-Kick him back
-Try her fortune telling
-Go to the library
-Conceal my presence
-Go inside the library
-Say her name
-I just can't leave it as it is
-Eat with Kotomi from now on
-Help her
-What sort of drama play are you planning?
-Stop him
-Go to the old school building
-To the reference room
-Leave
-Ignore her
-Say goodbye to her
-Leave the library
-Try to play it*\n(See the Doki Doki High School section)
-Wake up completely
-Call out to her
-I guess so...
-Eat it anyway
-I'm going home right now
-Yeah, you are
-Say "Good day"
-Yeah
-*/
+
 
     
     
