@@ -1,20 +1,20 @@
 /*
-#
-#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-#                    Version 2, December 2004
-#
-# Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
-#
-# Everyone is permitted to copy and distribute verbatim or modified
-# copies of this license document, and changing it is allowed as long
-# as the name is changed.
-#
-#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-#   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-#
-#  0. You just DO WHAT THE FUCK YOU WANT TO.
-#
-#
+#######################################################################
+#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE              #
+#                    Version 2, December 2004                         #
+#                                                                     #
+# Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>                    #
+#                                                                     #
+# Everyone is permitted to copy and distribute verbatim or modified   #
+# copies of this license document, and changing it is allowed as long #
+# as the name is changed.                                             #
+#                                                                     #
+#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE              #
+#   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION   #
+#                                                                     #
+#  0. You just DO WHAT THE FUCK YOU WANT TO.                          #
+#                                                                     #
+#######################################################################
 */
     
 // The Definitive Clannad Visual Novel Flowchart
@@ -358,7 +358,7 @@ digraph Clannad{
     Fuko_37 [shape = Mrecord, label = "<a>No way"];
     Fuko_36:a -> Fuko_37:a [color = olivedrab];    //Fuko
     
-    Fuko_38 [shape = Mrecord, label = "<a>Talk 'round the clock about things she likes"];    //Tomoyo_43
+    //Fuko_38 [shape = Mrecord, label = "<a>Talk 'round the clock about things she likes"];    //Tomoyo_43
     Fuko_37:a -> Tomoyo_43:a2 [color = olivedrab];    //Fuko
     
     Fuko_39 [shape = Mrecord, label = "<a>No, that's wrong"];
