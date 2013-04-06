@@ -361,7 +361,7 @@ digraph Clannad{
     TA_20_a:a1 -> TA_21:a1;
     TA_20_a:a1 -> TA_21:a2;
     TA_21:a2 -> BAD_END;    //additional path to BAD_END
-    TA_21:a1 -> BAD_END;    //additional path to BAD_END  (depends on earlier choices)
+    TA_21:a1 -> BAD_END;    //additional path to BAD_END_2  (depends on earlier choices)
 
 
     //July 23
@@ -392,7 +392,7 @@ digraph Clannad{
 
 
     //August 10
-    AUG_10 [shape = box, label = "xxxx, August 10th, 2004"];
+    AUG_10 [shape = box, label = "Tuesday, August 10th, 2004"];
     TA_22:a3 -> AUG_10 [color = green];    //END1
     TA_22:a3 -> AUG_10 [color = blue];    //END2
     TA_22:a3 -> AUG_10 [color = red];    //BAD_END
@@ -433,7 +433,10 @@ digraph Clannad{
     END2_END [label = "Second Ending"];
     TA_26:aa -> END2_END [color = blue];    //END2
 
-    BAD_END [label = "Bad End"];
-    TA_26:aa -> BAD_END [color = red];    //END2
+    BAD_END_1 [label = "Bad End #1"];
+    TA_26:aa -> BAD_END_2 [color = red];    //BAD_END
+
+    BAD_END_2 [label = "Bad End #2"];
+    TA_26:aa -> BAD_END_2 [color = red];    //BAD_END #2
 
 }
