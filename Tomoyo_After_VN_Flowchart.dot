@@ -112,6 +112,7 @@ digraph Clannad{
     TA_6:a1 -> TA_7:a1 [color = red];    //BAD_END
     TA_6a -> TA_7:a1;
     TA_6a -> TA_7:a2;
+    TA_6:a1 -> TA_7:a2;
 
 
     //July 10
@@ -120,10 +121,12 @@ digraph Clannad{
     TA_7:a1 -> JUL_10 [color = blue];    //END2
     TA_7:a1 -> JUL_10 [color = red];    //BAD_END
 
+
     TA_8 [shape = Mrecord, label = "<a1>Endure it silently.|<a2>You can't be there."];
     JUL_10 -> TA_8:a1 [color = green];    //END1
     JUL_10 -> TA_8:a1 [color = blue];    //END2
     JUL_10 -> TA_8:a1 [color = red];    //BAD_END
+    JUL_10 -> TA_8:a2;
 
 
     //July 11
@@ -350,7 +353,7 @@ digraph Clannad{
     TA_20:a1 -> TA_20_a:a1;
     TA_20:a1 -> TA_20_a:a2;
     
-    TA_20_a:a2 -> BAD_END;    //additional path to BAD_END
+    TA_20_a:a2 -> BAD_END_2;    //additional path to BAD_END_2
 
     //July 21
     TA_21 [shape = Mrecord, label = "<a1>Keep trying.|<a2>Go head-to-head"];
@@ -360,12 +363,12 @@ digraph Clannad{
     TA_20:a2 -> TA_21:a2;
     TA_20_a:a1 -> TA_21:a1;
     TA_20_a:a1 -> TA_21:a2;
-    TA_21:a2 -> BAD_END;    //additional path to BAD_END
-    TA_21:a1 -> BAD_END;    //additional path to BAD_END_2  (depends on earlier choices)
+    TA_21:a2 -> BAD_END_2;    //additional path to BAD_END_2
+    TA_21:a1 -> BAD_END_2;    //additional path to BAD_END_2  (depends on earlier choices)
 
 
     //July 23
-    JUL_23 [shape = box, label = "Friday, July 23th, 2004\n(You can only get here if you won all the fights)"];
+    JUL_23 [shape = box, label = "Friday, July 23th, 2004\n(You can only get here if you won all the fights\nand searched for Tomo's mom, etc.)"];
     TA_21:a1 -> JUL_23 [color = green];    //END1
     TA_21:a1 -> JUL_23 [color = blue];    //END2
     TA_21:a1 -> JUL_23 [color = red];    //BAD_END
@@ -397,17 +400,17 @@ digraph Clannad{
     TA_22:a3 -> AUG_10 [color = blue];    //END2
     TA_22:a3 -> AUG_10 [color = red];    //BAD_END
 
-    TA_23 [shape = Mrecord, label = "<a>Tomoyo, Kanako, and I will go.|<aa>"];
-    AUG_10 -> TA_23:a [color = green];    //END1
-    AUG_10 -> TA_23:a [color = blue];    //END2
-    AUG_10 -> TA_23:a [color = red];    //BAD_END
+    TA_23 [shape = Mrecord, label = "<a1>Tomoyo and I will go.|<a2>Tomoyo, Kanako, and I will go.|<a3>Tomoyo, Takafumi, and I will go."];
+    AUG_10 -> TA_23:a2 [color = green];    //END1
+    AUG_10 -> TA_23:a2 [color = blue];    //END2
+    AUG_10 -> TA_23:a2 [color = red];    //BAD_END
 
 
     //August 11
     TA_24 [shape = Mrecord, label = "<a>Acknowledge her joke.|<aa>Ignore her lame joke."];
-    TA_23:a -> TA_24:a [color = green];    //END1
-    TA_23:a -> TA_24:a [color = blue];    //END2
-    TA_23:a -> TA_24:aa [color = red];    //BAD_END
+    TA_23:a2 -> TA_24:a [color = green];    //END1
+    TA_23:a2 -> TA_24:a [color = blue];    //END2
+    TA_23:a2 -> TA_24:aa [color = red];    //BAD_END
 
 
     //August 12
@@ -434,9 +437,9 @@ digraph Clannad{
     TA_26:aa -> END2_END [color = blue];    //END2
 
     BAD_END_1 [label = "Bad End #1"];
-    TA_26:aa -> BAD_END_2 [color = red];    //BAD_END
+    TA_26:aa -> BAD_END_1 [color = red];    //BAD_END
 
     BAD_END_2 [label = "Bad End #2"];
-    TA_26:aa -> BAD_END_2 [color = red];    //BAD_END #2
+    //TA_26:aa -> BAD_END_2 [color = red];    //BAD_END #2
 
 }
