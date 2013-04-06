@@ -430,8 +430,8 @@ digraph Clannad{
 
 
 
-    END1_END [label = "First Ending"];
-    TA_26:a -> END1_END [color = green];    //END1
+    END1_END [label = "First Ending\nTomoyo After: After"];
+    TA_26:a -> END1_END [color = green];    //END1    //Tomoyo After: After
 
     END2_END [label = "Second Ending"];
     TA_26:aa -> END2_END [color = blue];    //END2
