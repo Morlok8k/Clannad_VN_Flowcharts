@@ -421,25 +421,24 @@ digraph Clannad{
 
 
     //August 14
-    TA_26 [shape = Mrecord, label = "<a>Refuse it.|<aa>Pursue her body."];
-    TA_25:a1 -> TA_26:a [color = green];    //END1
-    TA_25:a1 -> TA_26:aa [color = blue];    //END2
-    TA_25:a1 -> TA_26:aa [color = red];    //BAD_END
+    TA_26 [shape = Mrecord, label = "<a1>Refuse it.|<a2>Pursue her body."];
+    TA_25:a1 -> TA_26:a1 [color = green];    //END1
+    TA_25:a1 -> TA_26:a2 [color = blue];    //END2
+    TA_25:a1 -> TA_26:a2 [color = red];    //BAD_END
 
 
 
 
 
     END1_END [label = "First Ending\nTomoyo After: After"];
-    TA_26:a -> END1_END [color = green];    //END1    //Tomoyo After: After
+    TA_26:a1 -> END1_END [color = green];    //END1    //Tomoyo After: After
 
     END2_END [label = "Second Ending"];
-    TA_26:aa -> END2_END [color = blue];    //END2
+    TA_26:a2 -> END2_END [color = blue];    //END2
 
-    BAD_END_1 [label = "Bad End #1"];
-    TA_26:aa -> BAD_END_1 [color = red];    //BAD_END
+    BAD_END_1 [label = "Bad Ending"];
+    TA_26:a2 -> BAD_END_1 [color = red];    //BAD_END
 
-    BAD_END_2 [label = "Bad End #2"];
-    //TA_26:aa -> BAD_END_2 [color = red];    //BAD_END #2
+    BAD_END_2 [label = "Premature Bad End"];    //BAD_END #2
 
 }
