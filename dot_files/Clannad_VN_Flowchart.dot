@@ -23,8 +23,10 @@ digraph Clannad{
 
     Note [shape = note, label = "Note:\nThis walkthrough is based off Clannad Full Voice (for the PC) from the \"7 July 2012\" English patch.\nClannad (PC Original version), Clannad Memorial Edition (PC), as well as the PS2, PSP, and Xbox 360 versions\nhave identical stories, but most of those are not translated."];
 
-
-
+    Clannad_logo [image="dot_files/Clannad_logo.png", label = " ", shape = box, color = invis];
+    Clannad_logo -> Start [color = invis];
+    
+    
     Start [label = "Clannad Start\n(School Story)"];
     SEEN6900_0 [shape = box, label = "SEEN6900\nPrologue\n(Lines 0-22)"];
     Start -> SEEN6900_0;

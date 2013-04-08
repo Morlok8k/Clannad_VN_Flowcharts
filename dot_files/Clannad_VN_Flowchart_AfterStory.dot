@@ -21,6 +21,9 @@
 digraph Clannad{
     graph [ label = "\n\n\n\nThe Definitive Clannad Visual Novel Flowchart\nby Morlok8k, Version 0.1 alpha, April 2013\nhttps://github.com/Morlok8k/Clannad_VN_Flowcharts\n--------------------\nCopyright © 2013\nThis work is free. You can redistribute it and/or modify it under the\nterms of the Do What The Fuck You Want To Public License, Version 2,\nas published by Sam Hocevar. See http://www.wtfpl.net/ for more details." ];
 
+    Clannad_After_Story_logo [image="dot_files/Clannad_After_Story_logo.png", label = " ", shape = box, color = invis];
+    Clannad_After_Story_logo -> AF_Start [color = invis];
+    
 // AFTER STORY
     AF_Start [label = "Afterstory Start\nMonday, April 5th, 2004"];
     AF_MAY5 [shape = box, label = "Wednesday, May 5th, 2004"];

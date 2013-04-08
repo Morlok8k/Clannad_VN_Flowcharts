@@ -29,6 +29,9 @@ digraph Tomoyo_After_PC {
 
 
 //Tomoyo After
+    Tomoyo_After_logo [image="dot_files/Tomoyo_After_logo.jpg", label = " ", shape = box, color = invis];
+    Tomoyo_After_logo -> Start [color = invis];
+
 
 //start
 
