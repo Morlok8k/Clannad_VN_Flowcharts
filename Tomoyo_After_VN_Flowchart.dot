@@ -442,7 +442,7 @@ digraph Tomoyo_After_PC {
 
 
     //July 23
-    JUL_23 [shape = box, label = "Friday, July 23th, 2004\n(You can only get here if you won all the fights\nand searched for Tomo's mom, etc.)"];
+    JUL_23 [shape = box, label = "Friday, July 23th, 2004\n(You can only get here if you won all the fights...)"];
     TA_21:a1 -> JUL_23 [color = green];    //END1
     TA_21:a1 -> JUL_23 [color = blue];    //Blue Path
     TA_21:a1 -> JUL_23 [color = red];    //BAD_END
@@ -474,13 +474,20 @@ digraph Tomoyo_After_PC {
     TA_22:a3 -> CG15 [color = blue];    //Blue Path
     TA_22:a3 -> CG15 [color = red];    //BAD_END
 
+    //August 6
+    AUG_6 [shape = box, label = "Friday, August 6th, 2004"];
+    CG15 -> AUG_6 [color = green];    //END1
+    CG15 -> AUG_6 [color = blue];    //Blue Path
+    CG15 -> AUG_6 [color = red];    //BAD_END
+    AUG_6_BAD_END [label = "Didn't search for Tomo's Mom\nBAD END"];
+    AUG_6 -> AUG_6_BAD_END;
 
 
     //August 10
     AUG_10 [shape = box, label = "Tuesday, August 10th, 2004"];
-    CG15 -> AUG_10 [color = green];    //END1
-    CG15 -> AUG_10 [color = blue];    //Blue Path
-    CG15 -> AUG_10 [color = red];    //BAD_END
+    AUG_6 -> AUG_10 [color = green];    //END1
+    AUG_6 -> AUG_10 [color = blue];    //Blue Path
+    AUG_6 -> AUG_10 [color = red];    //BAD_END
 
     TA_23 [shape = Mrecord, label = "<a1>Tomoyo and I will go.|<a2>Tomoyo, Kanako, and I will go.|<a3>Tomoyo, Takafumi, and I will go."];
     AUG_10 -> TA_23:a2 [color = green];    //END1
