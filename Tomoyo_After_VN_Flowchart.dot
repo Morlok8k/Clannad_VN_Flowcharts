@@ -19,10 +19,14 @@
 
 // The Definitive Tomoyo After Visual Novel Flowchart
 digraph Clannad{
-    graph [ label = "\n\n\n\nThe Definitive Tomoyo After Visual Novel Flowchart\nby Morlok8k, Version 0.1 alpha, April 2013\nhttps://github.com/Morlok8k/Clannad_VN_Flowcharts\n--------------------\nCopyright © 2013\nThis work is free. You can redistribute it and/or modify it under the\nterms of the Do What The Fuck You Want To Public License, Version 2,\nas published by Sam Hocevar. See http://www.wtfpl.net/ for more details." ];
+    graph [label = "\n\n\n\nThe Definitive Tomoyo After Visual Novel Flowchart\nby Morlok8k, Version 0.1 alpha, April 2013\nhttps://github.com/Morlok8k/Clannad_VN_Flowcharts\n--------------------\nCopyright © 2013\nThis work is free. You can redistribute it and/or modify it under the\nterms of the Do What The Fuck You Want To Public License, Version 2,\nas published by Sam Hocevar. See http://www.wtfpl.net/ for more details." ];
 
 
-    Note [label = "Note:\nThis is for the original Tomoyo After VN (for the PC)\nThis is based off of \"Tomoyo After - English Patch v1.1\"\nThe Memorial Edition is said to have more paths, though I haven't played it."];
+    Note [shape = note, label = "Note:\nThis is for the original Tomoyo After VN (for the PC)\nThis is based off of \"Tomoyo_After_English_v1.10_[Doki]\"\nThe Memorial Edition is said to have more paths, though I haven't played it."];
+    Note2 [shape = note, label = "Note:\nColored paths should be strictly followed.\nThere are few exceptions: Mainly the June 29th options and\nthe Talk/Study options, as those just loop around.\n★'s are shown on choices that have no effect on the storyline"];
+    Note3 [shape = note, label = "Note:\nGallery Pictures are represented as:\nCGa-b or CGa-b-c\na is the page,\nb is the picture number\nc is for the sub-picture (for different versions)"];
+    Note -> Note2 -> Note3 [color = invis];
+
 
 //Tomoyo After
 
@@ -38,18 +42,32 @@ digraph Clannad{
     Start -> JUN_28 [color = blue];    //END2
     Start -> JUN_28 [color = red];    //BAD_END
 
-    TA_1 [shape = Mrecord, label = "<a1>...I'll kiss her normally.|<a2>...I'll be fixated on her breath.|<a3>I'll be fixated on her saliva."];
-    JUN_28 -> TA_1:a2 [color = green];    //END1
-    JUN_28 -> TA_1:a2 [color = blue];    //END2
-    JUN_28 -> TA_1:a1 [color = red];    //BAD_END
+    //CG2-5-1
+    CG251 [shape = parallelogram, label = "CG2-5-1"];
+    JUN_28 -> CG251 [color = green];    //END1
+    JUN_28 -> CG251 [color = blue];    //END2
+    JUN_28 -> CG251 [color = red];    //BAD_END
 
+    TA_1 [shape = Mrecord, label = "<a1>...I'll kiss her normally.|<a2>...I'll be fixated on her breath.|<a3>I'll be fixated on her saliva."];
+    //choice affects scene on August 14
+    CG251 -> TA_1:a2 [color = green];    //END1
+    CG251 -> TA_1:a2 [color = blue];    //END2
+    CG251 -> TA_1:a1 [color = red];    //BAD_END
+    CG251 -> TA_1:a3;
+
+    //CG2-5-2
+    CG252 [shape = parallelogram, label = "CG2-5-2"];
+    TA_1:a2 -> CG252 [color = green];    //END1
+    TA_1:a2 -> CG252 [color = blue];    //END2
+    TA_1:a1 -> CG252 [color = red];    //BAD_END
+    TA_1:a3 -> CG252;
 
     //June 29
     JUN_29 [shape = box, label = "Tuesday, June 29th, 2004"];
-    TA_1:a2 -> JUN_29 [color = green];    //END1
-    TA_1:a2 -> JUN_29 [color = blue];    //END2
-    TA_1:a1 -> JUN_29 [color = red];    //BAD_END
-
+    CG252 -> JUN_29 [color = green];    //END1
+    CG252 -> JUN_29 [color = blue];    //END2
+    CG252 -> JUN_29 [color = red];    //BAD_END
+    
     TA_2 [shape = Mrecord, label = "<a1>Use your panties.|<a2>Use your socks."];
     JUN_29 -> TA_2:a2 [color = green];    //END1
     JUN_29 -> TA_2:a2 [color = blue];    //END2
@@ -59,28 +77,56 @@ digraph Clannad{
     TA_2:a1 -> TA_2a:a1;
     TA_2:a1 -> TA_2a:a2;
 
-
-
-
-    TA_3 [shape = Mrecord, label = "<a1>I'll cum at this rate.|<a2>It makes me want more."];
+    TA_3 [shape = Mrecord, label = "<a1>★ I'll cum at this rate. ★|<a2>★ It makes me want more. ★"];
     TA_2:a2 -> TA_3:a2 [color = green];    //END1
     TA_2:a2 -> TA_3:a2 [color = blue];    //END2
     TA_2:a2 -> TA_3:a2 [color = red];    //BAD_END
+    TA_2:a2 -> TA_3:a1;
 
-    TA_4 [shape = Mrecord, label = "<a1>I'll cum at this rate.|<a2>It makes me want more."];
+    TA_4 [shape = Mrecord, label = "<a1>★ I'll cum at this rate. ★|<a2>★ It makes me want more. ★"];
     TA_3:a2 -> TA_4:a2 [color = green];    //END1
     TA_3:a2 -> TA_4:a2 [color = blue];    //END2
     TA_3:a2 -> TA_4:a1 [color = red];    //BAD_END
 
 
+    //Scene1 CG2-6-1 CG2-7-1
+    Scene1 [shape = parallelogram, label = "Scene1\nCG2-6-1\nCG2-7-1"];
+    TA_2a:a1 -> Scene1;
+
+    //Scene2 CG2-6-2 CG2-7-1
+    Scene2 [shape = parallelogram, label = "Scene2\nCG2-6-2\nCG2-7-1"];
+    TA_2a:a2 -> Scene2;
+
+    //Scene3 CG2-8-1 CG2-7-2
+    Scene3 [shape = parallelogram, label = "Scene3\nCG2-8-1\nCG2-7-2"];
+    TA_3:a1 -> Scene3;
+
+    //Scene4 CG2-8-2 CG2-7-2
+    Scene4 [shape = parallelogram, label = "Scene4\nCG2-8-2\nCG2-7-2"];
+    TA_4:a1 -> Scene4 [color = red];
+
+    //Scene5 CG2-6-3 CG2-7-2
+    Scene5 [shape = parallelogram, label = "Scene5\nCG2-6-3\nCG2-7-2"];
+    TA_4:a2 -> Scene5 [color = green];
+    TA_4:a2 -> Scene5 [color = blue];
+
+    //Scene6 CG2-9 CG2-7-3
+    //Scene7 CG2-10 CG2-7-4
+    //Scene8 CG2-11 CG2-12 CG2-7-5
+    Scene678 [shape = parallelogram, label = "Scene6 CG2-9 CG2-7-3\nScene7 CG2-10 CG2-7-4\nScene8 CG2-11 CG2-12 CG2-7-5"];
+    Scene5 -> Scene678 [color = green];    //END1
+    Scene5 -> Scene678 [color = blue];    //END2
+    Scene4 -> Scene678 [color = red];    //BAD_END
+    Scene1 -> Scene678;
+    Scene2 -> Scene678;
+    Scene3 -> Scene678;
+
     //July 07
     JUL_7 [shape = box, label = "Wednesday, July 7th, 2004"];
-    TA_4:a2 -> JUL_7 [color = green];    //END1
-    TA_4:a2 -> JUL_7 [color = blue];    //END2
-    TA_4:a1 -> JUL_7 [color = red];    //BAD_END
-    TA_2a:a1 -> JUL_7;
-    TA_2a:a2 -> JUL_7;
-    TA_3:a1 -> JUL_7;
+    Scene678 -> JUL_7 [color = green];    //END1
+    Scene678 -> JUL_7 [color = blue];    //END2
+    Scene678 -> JUL_7 [color = red];    //BAD_END
+
 
     TA_5 [shape = Mrecord, label = "<a1>Check Tomo's luggage.|<a2>Check Tomoyo's underwear."];
     JUL_7 -> TA_5:a1 [color = green];    //END1
@@ -135,21 +181,27 @@ digraph Clannad{
     TA_8:a1 -> JUL_11 [color = blue];    //END2
     TA_8:a1 -> JUL_11 [color = red];    //BAD_END
 
+
+
     JUL_11_mother1 [label = "Visit Tomo's Mom with Tomoyo"];
     JUL_11_mother2 [label = "Visit Tomo's Mom without Tomoyo"];
     JUL_11_mother3 [label = "Dont Visit Tomo's Mom"];
 
-    JUL_11 -> JUL_11_mother1 [color = green, group = "JUL_11_mother"];    //END1
-    JUL_11 -> JUL_11_mother1 [color = blue, group = "JUL_11_mother"];    //END2
-    JUL_11 -> JUL_11_mother1 [color = red, group = "JUL_11_mother"];    //BAD_END
-    TA_8:a2 -> JUL_11_mother2 [group = "JUL_11_mother"];
-    TA_7:a2 -> JUL_11_mother3 [group = "JUL_11_mother"];
+    JUL_11 -> JUL_11_mother1 [color = green];    //END1
+    JUL_11 -> JUL_11_mother1 [color = blue];    //END2
+    JUL_11 -> JUL_11_mother1 [color = red];    //BAD_END
+    TA_8:a2 -> JUL_11_mother2;
+    TA_7:a2 -> JUL_11_mother3;
 
+    CG11 [shape = parallelogram, label = "CG1-1 (all)"];
+    JUL_11_mother1 -> CG11 [color = green];    //END1
+    JUL_11_mother1 -> CG11 [color = blue];    //END2
+    JUL_11_mother1 -> CG11 [color = red];    //BAD_END
 
     JUL_11_bp [label = "Bear & Panda fight"];
-    JUL_11_mother1 -> JUL_11_bp [color = green];    //END1
-    JUL_11_mother1 -> JUL_11_bp [color = blue];    //END2
-    JUL_11_mother1 -> JUL_11_bp [color = red];    //BAD_END
+    CG11 -> JUL_11_bp [color = green];    //END1
+    CG11 -> JUL_11_bp [color = blue];    //END2
+    CG11 -> JUL_11_bp [color = red];    //BAD_END
     JUL_11_mother2 -> JUL_11_bp;
     JUL_11_mother3 -> JUL_11_bp;
 
@@ -342,6 +394,14 @@ digraph Clannad{
     TA_19:a1 -> JUL_20 [color = red];    //BAD_END
     TA_19:a2 -> JUL_20;
 
+    RPG [shape = Mrecord, label = "<a1>I want to play.|<a2>I don't want to play."];
+    JUL_20 -> RPG:a1 [style = dashed, label = "Only seen if game\nhas been completed"];
+    JUL_20 -> RPG:a2 [style = dashed];
+    RPG:a2 -> TA_20:a1 [style = dashed];
+    RPG:a2 -> TA_20:a2 [style = dashed];
+
+    GAME [label = "Dungeons & Takafumis"];
+    RPG:a1 -> GAME [style = dashed];
 
     TA_20 [shape = Mrecord, label = "<a1>Ask him directly.|<a2>Find another way."];
     JUL_20 -> TA_20:a2 [color = green];    //END1
@@ -407,24 +467,39 @@ digraph Clannad{
 
 
     //August 11
+    AUG_11 [shape = box, label = "Wednesday, August 11th, 2004"];
+    TA_23:a2 -> AUG_11 [color = green];    //END1
+    TA_23:a2 -> AUG_11 [color = blue];    //END2
+    TA_23:a2 -> AUG_11 [color = red];    //BAD_END
+
     TA_24 [shape = Mrecord, label = "<a1>Acknowledge her joke.|<a2>Ignore her lame joke."];
-    TA_23:a2 -> TA_24:a1 [color = green];    //END1
-    TA_23:a2 -> TA_24:a1 [color = blue];    //END2
-    TA_23:a2 -> TA_24:a2 [color = red];    //BAD_END
+    AUG_11 -> TA_24:a1 [color = green];    //END1
+    AUG_11 -> TA_24:a1 [color = blue];    //END2
+    AUG_11 -> TA_24:a2 [color = red];    //BAD_END
 
 
     //August 12
+    AUG_12 [shape = box, label = "Thursday, August 12th, 2004"];
+    TA_24:a1 -> AUG_12 [color = green];    //END1
+    TA_24:a1 -> AUG_12 [color = blue];    //END2
+    TA_24:a2 -> AUG_12 [color = red];    //BAD_END
+
     TA_25 [shape = Mrecord, label = "<a1>Build a school.|<a2>Think of possible alternatives."];
-    TA_24:a1 -> TA_25:a1 [color = green];    //END1
-    TA_24:a1 -> TA_25:a1 [color = blue];    //END2
-    TA_24:a2 -> TA_25:a1 [color = red];    //BAD_END
+    AUG_12 -> TA_25:a1 [color = green];    //END1
+    AUG_12 -> TA_25:a1 [color = blue];    //END2
+    AUG_12 -> TA_25:a1 [color = red];    //BAD_END
 
 
     //August 14
+    AUG_14 [shape = box, label = "Saturday, August 14th, 2004"];
+    TA_25:a1 -> AUG_14 [color = green];    //END1
+    TA_25:a1 -> AUG_14 [color = blue];    //END2
+    TA_25:a1 -> AUG_14 [color = red];    //BAD_END
+
     TA_26 [shape = Mrecord, label = "<a1>Refuse it.|<a2>Pursue her body."];
-    TA_25:a1 -> TA_26:a1 [color = green];    //END1
-    TA_25:a1 -> TA_26:a2 [color = blue];    //END2
-    TA_25:a1 -> TA_26:a2 [color = red];    //BAD_END
+    AUG_14 -> TA_26:a1 [color = green];    //END1
+    AUG_14 -> TA_26:a2 [color = blue];    //END2
+    AUG_14 -> TA_26:a2 [color = red];    //BAD_END
 
 
 
