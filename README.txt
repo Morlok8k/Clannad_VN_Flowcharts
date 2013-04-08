@@ -52,7 +52,7 @@ And... interestingly enough, AT&T, for creating Graphviz (and making it open sou
 http://www.graphviz.org/
 http://www.research.att.com/software_tools
 
-A big thanks to Google Translate for translating Japanese to English for me, as I can't read it whatsoever...
+A big thanks to Google Translate for translating Japanese to English for me... Although it doesn't translate very well...
 
 
 --------
