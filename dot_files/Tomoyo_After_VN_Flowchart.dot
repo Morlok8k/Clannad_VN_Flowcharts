@@ -512,6 +512,8 @@ D&T completion is playing it 8 times?  this fact needs verification.
     AUG_10 -> TA_23:a2 [color = green];    //END1
     AUG_10 -> TA_23:a2 [color = blue];    //Blue Path
     AUG_10 -> TA_23:a2 [color = red];    //BAD_END
+    AUG_10 -> TA_23:a1;
+    AUG_10 -> TA_23:a3;
 
 
     //August 11
