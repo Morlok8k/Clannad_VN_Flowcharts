@@ -21,6 +21,21 @@
 digraph Tomoyo_After_PC {
     graph [label = "\n\n\n\nThe Definitive Tomoyo After Visual Novel Flowchart\nby Morlok8k, Version 0.1 alpha, April 2013\nhttps://github.com/Morlok8k/Clannad_VN_Flowcharts\n--------------------\nCopyright © 2013\nThis work is free. You can redistribute it and/or modify it under the\nterms of the Do What The Fuck You Want To Public License, Version 2,\nas published by Sam Hocevar. See http://www.wtfpl.net/ for more details.\n\nLogo is Copyright © Key / Visual Art's" ];
 
+/*
+TODO:
+
+figure out if there are rlvm bugs.  (not counting D&T)
+I cant seem to get some of the CG's that i should.
+
+where are the last 3 CG's on page 1?
+why am i not getting the first 4 of page 2?
+
+need to play on Windows / Wine.
+
+D&T completion is said to unlock a CG.
+D&T completion is playing it 8 times?  this fact needs verification.
+
+*/
 
     Note [shape = note, label = "Note:\nThis is for the original Tomoyo After VN (for the PC)\nThis is based off of \"Tomoyo_After_English_v1.10_[Doki]\"\nThe Memorial Edition is said to have more paths, however it is not translated yet..."];
     Note2 [shape = note, label = "Note:\nColored paths should be strictly followed.\nThere are few exceptions: Mainly the June 29th options and\nthe Talk/Study options, as those just loop around.\n★'s are shown on choices that have no effect on the storyline"];
@@ -484,6 +499,7 @@ digraph Tomoyo_After_PC {
     CG15 -> AUG_6 [color = red];    //BAD_END
     AUG_6_BAD_END [label = "Didn't search for Tomo's Mom\nBAD END"];
     AUG_6 -> AUG_6_BAD_END;
+    //TODO: Verify!
 
 
     //August 10
@@ -545,8 +561,26 @@ digraph Tomoyo_After_PC {
 
 
 
-    END1_END [label = "True Ending\nTomoyo After: After"];
-    TA_26:a1 -> END1_END [color = green];    //END1    //Tomoyo After: After
+
+//AUG 23
+//CG1-11 CG1-12 CG1-13
+
+    TAA [label = "Tomoyo After: After"];
+    TA_26:a1 -> TAA [color = green];    //END1
+
+//CG1-14 CG1-15 CG1-16 CG1-17
+//Scene12
+//CG2-1 CG2-2 CG2-3 CG2-4
+    Scene12 [shape = parallelogram, label = "CG1-14 CG1-15 CG1-16 CG1-17\nScene12\nCG2-1 CG2-2 CG2-3 CG2-4"];
+    TAA -> Scene12 [color = green];    //END1
+
+//TODO: I cant seem to get CG2-1, 2-2, 2-3, or 2-4.  try on windows. rlvm bug?
+
+    END1_END [label = "True Ending\n"];
+    Scene12 -> END1_END [color = green];    //END1
+
+
+
 
     BAD_END_1 [label = "Bad Ending"];
     Scene11 -> BAD_END_1 [color = blue];    //Blue Path
