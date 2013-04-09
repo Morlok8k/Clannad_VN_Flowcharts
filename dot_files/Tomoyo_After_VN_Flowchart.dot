@@ -538,7 +538,7 @@ D&T completion is playing it 8 times?  this fact needs verification.
     AUG_12 -> TA_25:a1 [color = green];    //END1
     AUG_12 -> TA_25:a1 [color = blue];    //Blue Path
     AUG_12 -> TA_25:a1 [color = red];    //BAD_END
-
+    AUG_12 -> TA_25:a2;
 
     //August 14
     AUG_14 [shape = box, label = "Saturday, August 14th, 2004"];
