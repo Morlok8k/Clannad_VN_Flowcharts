@@ -1,0 +1,83 @@
+/*
+#######################################################################
+#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE              #
+#                    Version 2, December 2004                         #
+#                                                                     #
+# Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>                    #
+#                                                                     #
+# Everyone is permitted to copy and distribute verbatim or modified   #
+# copies of this license document, and changing it is allowed as long #
+# as the name is changed.                                             #
+#                                                                     #
+#            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE              #
+#   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION   #
+#                                                                     #
+#  0. You just DO WHAT THE FUCK YOU WANT TO.                          #
+#                                                                     #
+#######################################################################
+*/
+
+// The Definitive Clannad Visual Novel Flowchart
+digraph Clannad{
+    graph [ label = "\n\n\n\nThe Definitive Clannad Visual Novel Flowchart\nby Morlok8k, Version 0.1 alpha, April 2013\nhttps://github.com/Morlok8k/Clannad_VN_Flowcharts\n--------------------\nCopyright © 2013\nThis work is free. You can redistribute it and/or modify it under the\nterms of the Do What The Fuck You Want To Public License, Version 2,\nas published by Sam Hocevar. See http://www.wtfpl.net/ for more details." ];
+
+    //new translation:
+    //"This is the Heartfelt Academy" (aka Doki Doki High School)
+
+
+
+    Heartfelt_Academy_start [label = "\"This is the Heartfelt Academy\"\nMinigame\nStart"];
+    HFA_game_over [label = "Game Over", color = red];    //Retry | Stop reading (Go to April 21 in clannad)
+    HFA_the_end [label = "The End"];    //retry | stop
+    HFA_finished [label = "--RAGE QUIT--"];    //Exit the game (--RAGE QUIT--)
+    HFA_retry [shape = Mrecord, label = "<a1>Retry|<a2>Stop reading"];
+    HFA_back2clannad [label = "Go back to Clannad"];
+
+
+    HFA_q1 [shape = Mrecord, label = "<a1>Confess|<a2>See her off"];
+    HFA_q2 [shape = Mrecord, label = "<a1>Confess|<a2>Watch her"];
+    HFA_q3 [shape = Mrecord, label = "<a1>Confess|<a2>See her off"];
+    HFA_q4 [shape = Mrecord, label = "<a1>Shake her off|<a2>Embrace her"];
+    HFA_q5 [shape = Mrecord, label = "<a1>Go with Steve.|<a2>Go alone."];
+    HFA_q6 [shape = Mrecord, label = "<a1>Leave it all to Steve.|<a2>Fight too."];
+    HFA_q7 [shape = Mrecord, label = "<a1>Open it.|<a2>Ignore it."];
+    HFA_q8 [shape = Mrecord, label = "<a1>Go straight.|<a2>Go left.|<a3>Go right."];
+    HFA_q9 [shape = Mrecord, label = "<a1>Hold him.|<a2>Shake him off."];
+    HFA_q10 [shape = Mrecord, label = "<a1>Go with her|<a2>Shake her off"];
+
+    Heartfelt_Academy_start -> HFA_q1;
+    HFA_q1:a2 -> HFA_q2;
+    HFA_q2:a2 -> HFA_q3;
+    HFA_q3:a1 -> HFA_q4;
+    HFA_q4:a1 -> HFA_q5;
+    HFA_q5:a1 -> HFA_q6;
+    HFA_q6:a2 -> HFA_q7;
+    HFA_q7:a2 -> HFA_q8;
+    HFA_q7:a1 -> HFA_q9;
+    HFA_q8:a2 -> HFA_the_end;
+    HFA_q9:a2 -> HFA_q10;
+    HFA_q10:a2 -> HFA_finished;
+    HFA_finished -> HFA_back2clannad;
+
+    HFA_q1:a1 -> HFA_game_over [color = red];
+    HFA_q2:a1 -> HFA_game_over [color = red];
+    HFA_q3:a2 -> HFA_game_over [color = red];
+    HFA_q4:a2 -> HFA_game_over [color = red];
+    HFA_q5:a2 -> HFA_game_over [color = red];
+    HFA_q6:a1 -> HFA_game_over [color = red];
+    HFA_q8:a1 -> HFA_game_over [color = red];
+    HFA_q8:a3 -> HFA_game_over [color = red];
+    HFA_q9:a1 -> HFA_game_over [color = red];
+    HFA_q10:a1 -> HFA_game_over [color = red];
+
+    HFA_game_over -> HFA_retry [color = red];
+    HFA_the_end -> HFA_retry;
+    HFA_retry:a1 -> Heartfelt_Academy_start [color = blue];
+    HFA_retry:a2 -> HFA_back2clannad;
+
+
+
+
+
+
+}

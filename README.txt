@@ -23,8 +23,8 @@ I suggest viewing "Clannad_VN_Flowchart_AfterStory.jpg" to get a feel of the res
 Status:
 Clannad's School Life has much work to be done.
 Clannad's Afterstory is functionally complete, though more detail could be added.
-Doki Doki High School minigame is complete.
-Tomoyo After is partially completed.
+"This is the Heartfelt Academy" minigame is complete.  (Doki Doki High School was its name in an older translation)
+Tomoyo After is mostly completed.
 
 
 Creators:
