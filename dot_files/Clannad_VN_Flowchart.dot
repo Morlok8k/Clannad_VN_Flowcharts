@@ -40,40 +40,38 @@ sleep!
 
 
 
-    Note [shape = note, label = "Note:\nThis walkthrough is based off Clannad Full Voice (for the PC) from the \"7 July 2012\" English patch.\nClannad (PC Original version), Clannad Memorial Edition (PC), as well as the PS2, PSP, and Xbox 360 versions\nhave identical stories, but most of those are not translated."];
+    Note [shape = note, label = "Note:\nThis walkthrough is based off Clannad Full Voice (for the PC) from the \"7 July 2012\" English patch.\nClannad (PC Original version), Clannad Memorial Edition (PC), as well as\nthe PS2, PSP, Xbox 360, and Android versions have identical stories, but most of those are not translated."];
 
     Clannad_logo [image="dot_files/Clannad_logo.png", label = " ", shape = box, color = invis];
     Clannad_logo -> Start [color = invis];
     
     
     Start [label = "Clannad Start\n(School Story)"];
-    SEEN6900_0 [shape = box, label = "SEEN6900\nPrologue\n(Lines 0-22)"];
-    Start -> SEEN6900_0;
-    SEEN0414 [shape = box, label = "SEEN0414\nMonday April 14th, 2003\nMain Storyline"];
-    SEEN6900_0 -> SEEN0414;
+
     SEEN0414_q1 [shape = Mrecord, label = "<a1>Dub something over it|<a2>Don't do anything"];
-    SEEN0414 -> SEEN0414_q1:a1;
-    SEEN0414 -> SEEN0414_q1:a2;
+    //Start -> SEEN0414_q1:a1;
+    //Start -> SEEN0414_q1:a2;
     SEEN0414_q2 [shape = Mrecord, label = "<a1>Forget it, this is stupid...|<a2>Say something fitting"];
     SEEN0414_q1:a1 -> SEEN0414_q2:a1;
-    SEEN0414_q1:a1 -> SEEN0414_q2:a2;
-    SEEN0414_dub [shape = parallelogram, label = "7 Various Songs"];
-    SEEN0414_q2:a2 -> SEEN0414_dub;
-    SEEN0415_1 [shape = box, label = "SEEN0415\nTuesday, April 15th\nMain Storyline\n(Lines 0-59)"];
-    SEEN0414_dub -> SEEN0415_1;
-    SEEN0414_q2:a1 -> SEEN0415_1;
-    SEEN0414_q1:a2 -> SEEN0415_1;
-    SEEN3415 [shape = box, label = "SEEN3415\nKyou Storyline\n(Lines ?)"];  //TODO: verify lines
-    SEEN0415_1 -> SEEN3415;
-    
+    //SEEN0414_q1:a1 -> SEEN0414_q2:a2;
+
+    SEEN0414_q2:a2 -> SEEN0415_q1:a1;
+    SEEN0414_q2:a1 -> SEEN0415_q1:a1;
+    SEEN0414_q2:a2 -> SEEN0415_q1:a2;
+    SEEN0414_q2:a1 -> SEEN0415_q1:a2;
+
+
     
 // tomoyo
+    Start -> SEEN0414_q1:a2 [color = lightblue3];    //Tomoyo
+
+
     //April 15
-    Tomoyo_1 [shape = Mrecord, label = "<a1>Apologize to her|<a2>Ignore her"];
-    SEEN3415 -> Tomoyo_1:a2 [color = lightblue3];    //Tomoyo
+    SEEN0415_q1 [shape = Mrecord, label = "<a1>Apologize to her|<a2>Ignore her"];
+    SEEN0414_q1:a2 -> SEEN0415_q1:a2 [color = lightblue3];    //Tomoyo
     
     Tomoyo_2 [shape = Mrecord, label = "<a1>Skip class|<a2>Take the lesson"];
-    Tomoyo_1:a2 -> Tomoyo_2:a2 [color = lightblue3];    //Tomoyo
+    SEEN0415_q1:a2 -> Tomoyo_2:a2 [color = lightblue3];    //Tomoyo
     
     Tomoyo_3 [shape = Mrecord, label = "<a1>Go down to the courtyard|<a2>Ignore her"];
     Tomoyo_2:a2 -> Tomoyo_3:a1 [color = lightblue3];    //Tomoyo
@@ -268,18 +266,17 @@ sleep!
     
     
     
-    Start0 [label = "Temporary Start marker"];
     
     
     
-    Fuko_1 [shape = Mrecord, label = "<a1>Dub something over it|<a2>Don't do anything"];
-    Start0 -> Fuko_1:a2 [color = olivedrab];    //Fuko
+    //Fuko_1 [shape = Mrecord, label = "<a1>Dub something over it|<a2>Don't do anything"];
+    Start -> SEEN0414_q1:a2 [color = olivedrab];    //Fuko
     
     //Fuko_2 [shape = Mrecord, label = "<a1>Apologize to her|<a2>Ignore her"];
-    Fuko_1:a2 -> Tomoyo_1:a2 [color = olivedrab];    //Fuko
+    SEEN0414_q1:a2 -> SEEN0415_q1:a2 [color = olivedrab];    //Fuko
     
     //Fuko_3 [shape = Mrecord, label = "<a>Take the lesson"];
-    Tomoyo_1:a2 -> Tomoyo_2:a2 [color = olivedrab];    //Fuko
+    SEEN0415_q1:a2 -> Tomoyo_2:a2 [color = olivedrab];    //Fuko
     
     //Fuko_4 [shape = Mrecord, label = "<a>Go down to the courtyard"];
     Tomoyo_2:a2 -> Tomoyo_3:a1 [color = olivedrab];    //Fuko
@@ -477,40 +474,40 @@ sleep!
    
     
     
-    Kyou_Ryou_1 [shape = Mrecord, label = "<a>Don't do anything"];
-    Start0 -> Kyou_Ryou_1:a [color = darkorchid];    //Kyou
-    Start0 -> Kyou_Ryou_1:a [color = midnightblue];    //Ryou
-    Start0 -> Kyou_Ryou_1:a [color = cadetblue];    //Kappei
+    //Kyou_Ryou_1 [shape = Mrecord, label = "<a1>Dub something over it|<a2>Don't do anything"];
+    Start -> SEEN0414_q1:a2 [color = darkorchid];    //Kyou
+    Start -> SEEN0414_q1:a2 [color = midnightblue];    //Ryou
+    Start -> SEEN0414_q1:a2 [color = cadetblue];    //Kappei
     
-    Kyou_Ryou_2 [shape = Mrecord, label = "<a>Apologize to her"];
-    Kyou_Ryou_1:a -> Kyou_Ryou_2:a [color = darkorchid];    //Kyou
-    Kyou_Ryou_1:a -> Kyou_Ryou_2:a [color = midnightblue];    //Ryou
-    Kyou_Ryou_1:a -> Kyou_Ryou_2:a [color = cadetblue];    //Kappei
+    Kyou_Ryou_2 [shape = Mrecord, label = "<a1>Apologize to her|<a2>Ignore her"];
+    SEEN0414_q1:a2 -> Kyou_Ryou_2:a1 [color = darkorchid];    //Kyou
+    SEEN0414_q1:a2 -> Kyou_Ryou_2:a1 [color = midnightblue];    //Ryou
+    SEEN0414_q1:a2 -> Kyou_Ryou_2:a1 [color = cadetblue];    //Kappei
     
-    Kyou_Ryou_3 [shape = Mrecord, label = "<a>Take the lesson"];
-    Kyou_Ryou_2:a -> Kyou_Ryou_3:a [color = darkorchid];    //Kyou
-    Kyou_Ryou_2:a -> Kyou_Ryou_3:a [color = midnightblue];    //Ryou
-    Kyou_Ryou_2:a -> Kyou_Ryou_3:a [color = cadetblue];    //Kappei
+    Kyou_Ryou_3 [shape = Mrecord, label = "<a1>Skip class|<a2>Take the lesson"];
+    Kyou_Ryou_2:a1 -> Kyou_Ryou_3:a2 [color = darkorchid];    //Kyou
+    Kyou_Ryou_2:a1 -> Kyou_Ryou_3:a2 [color = midnightblue];    //Ryou
+    Kyou_Ryou_2:a1 -> Kyou_Ryou_3:a2 [color = cadetblue];    //Kappei
     
-    Kyou_Ryou_4 [shape = Mrecord, label = "<a>Ignore her"];
-    Kyou_Ryou_3:a -> Kyou_Ryou_4:a [color = darkorchid];    //Kyou
-    Kyou_Ryou_3:a -> Kyou_Ryou_4:a [color = midnightblue];    //Ryou
-    Kyou_Ryou_3:a -> Kyou_Ryou_4:a [color = cadetblue];    //Kappei
+    Kyou_Ryou_4 [shape = Mrecord, label = "<a1>Go down to the courtyard|<a2>Ignore her"];
+    Kyou_Ryou_3:a2 -> Kyou_Ryou_4:a2 [color = darkorchid];    //Kyou
+    Kyou_Ryou_3:a2 -> Kyou_Ryou_4:a2 [color = midnightblue];    //Ryou
+    Kyou_Ryou_3:a2 -> Kyou_Ryou_4:a2 [color = cadetblue];    //Kappei
     
-    Kyou_Ryou_5 [shape = Mrecord, label = "<a>Take refuge"];
-    Kyou_Ryou_4:a -> Kyou_Ryou_5:a [color = darkorchid];    //Kyou
-    Kyou_Ryou_4:a -> Kyou_Ryou_5:a [color = midnightblue];    //Ryou
-    Kyou_Ryou_4:a -> Kyou_Ryou_5:a [color = cadetblue];    //Kappei
+    Kyou_Ryou_5 [shape = Mrecord, label = "<a1>Take refuge|<a2>See what's going on"];
+    Kyou_Ryou_4:a2 -> Kyou_Ryou_5:a1 [color = darkorchid];    //Kyou
+    Kyou_Ryou_4:a2 -> Kyou_Ryou_5:a1 [color = midnightblue];    //Ryou
+    Kyou_Ryou_4:a2 -> Kyou_Ryou_5:a1 [color = cadetblue];    //Kappei
     
-    Kyou_Ryou_6 [shape = Mrecord, label = "<a>Ignore her"];
-    Kyou_Ryou_5:a -> Kyou_Ryou_6:a [color = darkorchid];    //Kyou
-    Kyou_Ryou_5:a -> Kyou_Ryou_6:a [color = midnightblue];    //Ryou
-    Kyou_Ryou_5:a -> Kyou_Ryou_6:a [color = cadetblue];    //Kappei
+    Kyou_Ryou_6 [shape = Mrecord, label = "<a1>Talk to her|<a2>Ignore her"];
+    Kyou_Ryou_5:a1 -> Kyou_Ryou_6:a2 [color = darkorchid];    //Kyou
+    Kyou_Ryou_5:a1 -> Kyou_Ryou_6:a2 [color = midnightblue];    //Ryou
+    Kyou_Ryou_5:a1 -> Kyou_Ryou_6:a2 [color = cadetblue];    //Kappei
     
     Kyou_Ryou_7 [shape = Mrecord, label = "<a>Talk to the old lady"];
-    Kyou_Ryou_6:a -> Kyou_Ryou_7:a [color = darkorchid];    //Kyou
-    Kyou_Ryou_6:a -> Kyou_Ryou_7:a [color = midnightblue];    //Ryou
-    Kyou_Ryou_6:a -> Kyou_Ryou_7:a [color = cadetblue];    //Kappei
+    Kyou_Ryou_6:a2 -> Kyou_Ryou_7:a [color = darkorchid];    //Kyou
+    Kyou_Ryou_6:a2 -> Kyou_Ryou_7:a [color = midnightblue];    //Ryou
+    Kyou_Ryou_6:a2 -> Kyou_Ryou_7:a [color = cadetblue];    //Kappei
     
     Kyou_Ryou_8 [shape = Mrecord, label = "<a>Investigate"];
     Kyou_Ryou_7:a -> Kyou_Ryou_8:a [color = darkorchid];    //Kyou
@@ -693,11 +690,11 @@ sleep!
     
     
     
-    Misae_1 [shape = Mrecord, label = "<a>Don't do anything"];
-    Start0 -> Misae_1:a [color = gold];    //Misae
+    //Misae_1 [shape = Mrecord, label = "<a>Don't do anything"];
+    Start -> SEEN0414_q1:a2 [color = gold];    //Misae
     
     Misae_2 [shape = Mrecord, label = "<a>Ignore her"];
-    Misae_1:a -> Misae_2:a [color = gold];    //Misae
+    SEEN0414_q1:a2 -> Misae_2:a [color = gold];    //Misae
     
     Misae_3 [shape = Mrecord, label = "<a>Take the lesson"];
     Misae_2:a -> Misae_3:a [color = gold];    //Misae
@@ -766,11 +763,11 @@ sleep!
     
     
     
-    Koumura_1 [shape = Mrecord, label = "<a>Don't do anything"];
-    Start0 -> Koumura_1:a [color = seagreen];    //Koumura
+    //Koumura_1 [shape = Mrecord, label = "<a>Don't do anything"];
+    Start -> SEEN0414_q1:a2 [color = seagreen];    //Koumura
     
     Koumura_2 [shape = Mrecord, label = "<a>Ignore her"];
-    Koumura_1:a -> Koumura_2:a [color = seagreen];    //Koumura
+    SEEN0414_q1:a2 -> Koumura_2:a [color = seagreen];    //Koumura
     
     Koumura_3 [shape = Mrecord, label = "<a>Take the lesson"];
     Koumura_2:a -> Koumura_3:a [color = seagreen];    //Koumura
@@ -964,11 +961,11 @@ sleep!
     
     
     
-    Yukine_1 [shape = Mrecord, label = "<a>Don't do anything"];
-    Start0 -> Yukine_1:a [color = violet];    //Yukine
+    //Yukine_1 [shape = Mrecord, label = "<a>Don't do anything"];
+    Start -> SEEN0414_q1:a2 [color = violet];    //Yukine
     
     Yukine_2 [shape = Mrecord, label = "<a>Ignore her"];
-    Yukine_1:a -> Yukine_2:a [color = violet];    //Yukine
+    SEEN0414_q1:a2 -> Yukine_2:a [color = violet];    //Yukine
     
     Yukine_3 [shape = Mrecord, label = "<a>Take the lesson"];
     Yukine_2:a -> Yukine_3:a [color = violet];    //Yukine
@@ -1066,11 +1063,11 @@ sleep!
     
     
     
-    Kotomi_1 [shape = Mrecord, label = "<a>Don't do anything"];
-    Start0 -> Kotomi_1:a [color = limegreen];    //Kotomi
+    //Kotomi_1 [shape = Mrecord, label = "<a>Don't do anything"];
+    Start -> SEEN0414_q1:a2 [color = limegreen];    //Kotomi
     
     Kotomi_2 [shape = Mrecord, label = "<a>Ignore her"];
-    Kotomi_1:a -> Kotomi_2:a [color = limegreen];    //Kotomi
+    SEEN0414_q1:a2 -> Kotomi_2:a [color = limegreen];    //Kotomi
     
     Kotomi_3 [shape = Mrecord, label = "<a>Skip Class"];
     Kotomi_2:a -> Kotomi_3:a [color = limegreen];    //Kotomi
@@ -1192,11 +1189,11 @@ sleep!
     
     
     
-    Mei_1 [shape = Mrecord, label = "<a>Don't do anything"];
-    Start0 -> Mei_1:a [color = darkorange];    //Mei
+    //Mei_1 [shape = Mrecord, label = "<a>Don't do anything"];
+    Start -> SEEN0414_q1:a2 [color = darkorange];    //Mei
     
     Mei_2 [shape = Mrecord, label = "<a>Ignore her"];
-    Mei_1:a -> Mei_2:a [color = darkorange];    //Mei
+    SEEN0414_q1:a2 -> Mei_2:a [color = darkorange];    //Mei
     
     Mei_3 [shape = Mrecord, label = "<a>Take the lesson"];
     Mei_2:a -> Mei_3:a [color = darkorange];    //Mei
@@ -1267,11 +1264,11 @@ sleep!
     
     
     
-    Nagisa_1 [shape = Mrecord, label = "<a>Don't do anything"];
-    Start0 -> Nagisa_1:a [color = firebrick];    //Nagisa
+    //Nagisa_1 [shape = Mrecord, label = "<a>Don't do anything"];
+    Start -> SEEN0414_q1:a2 [color = firebrick];    //Nagisa
     
     Nagisa_2 [shape = Mrecord, label = "<a>Apologize to her"];
-    Nagisa_1:a -> Nagisa_2:a [color = firebrick];    //Nagisa
+    SEEN0414_q1:a2 -> Nagisa_2:a [color = firebrick];    //Nagisa
     
     Nagisa_3 [shape = Mrecord, label = "<a>Take the lesson"];
     Nagisa_2:a -> Nagisa_3:a [color = firebrick];    //Nagisa
@@ -1482,14 +1479,14 @@ sleep!
     
     
     
-    BAD_END_1 [shape = Mrecord, label = "<a>Dub something over it"];
-    Start0 -> BAD_END_1:a [color = yellowgreen];    //BAD_END
+    //BAD_END_1 [shape = Mrecord, label = "<a>Dub something over it"];
+    Start -> SEEN0414_q1:a1 [color = yellowgreen];    //BAD_END
 
-    BAD_END_2 [shape = Mrecord, label = "<a>Say something fitting"];
-    BAD_END_1:a -> BAD_END_2:a [color = yellowgreen];    //BAD_END
+    //BAD_END_2 [shape = Mrecord, label = "<a>Say something fitting"];
+    SEEN0414_q1:a1 -> SEEN0414_q2:a2 [color = yellowgreen];    //BAD_END
 
     BAD_END_3 [shape = Mrecord, label = "<a>Ignore her"];
-    BAD_END_2:a -> BAD_END_3:a [color = yellowgreen];    //BAD_END
+    SEEN0414_q2:a2 -> BAD_END_3:a [color = yellowgreen];    //BAD_END
 
     BAD_END_4 [shape = Mrecord, label = "<a>Skip class"];
     BAD_END_3:a -> BAD_END_4:a [color = yellowgreen];    //BAD_END
