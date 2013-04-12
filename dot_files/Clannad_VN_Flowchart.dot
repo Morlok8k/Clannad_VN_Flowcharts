@@ -504,31 +504,31 @@ sleep!
     Kyou_Ryou_5:a1 -> Kyou_Ryou_6:a2 [color = midnightblue];    //Ryou
     Kyou_Ryou_5:a1 -> Kyou_Ryou_6:a2 [color = cadetblue];    //Kappei
     
-    Kyou_Ryou_7 [shape = Mrecord, label = "<a>Talk to the old lady"];
-    Kyou_Ryou_6:a2 -> Kyou_Ryou_7:a [color = darkorchid];    //Kyou
-    Kyou_Ryou_6:a2 -> Kyou_Ryou_7:a [color = midnightblue];    //Ryou
-    Kyou_Ryou_6:a2 -> Kyou_Ryou_7:a [color = cadetblue];    //Kappei
+    Kyou_Ryou_7 [shape = Mrecord, label = "<a1>Talk to the old lady|<a2>Walk past her"];
+    Kyou_Ryou_6:a2 -> Kyou_Ryou_7:a1 [color = darkorchid];    //Kyou
+    Kyou_Ryou_6:a2 -> Kyou_Ryou_7:a1 [color = midnightblue];    //Ryou
+    Kyou_Ryou_6:a2 -> Kyou_Ryou_7:a1 [color = cadetblue];    //Kappei
     
-    Kyou_Ryou_8 [shape = Mrecord, label = "<a>Investigate"];
-    Kyou_Ryou_7:a -> Kyou_Ryou_8:a [color = darkorchid];    //Kyou
-    Kyou_Ryou_7:a -> Kyou_Ryou_8:a [color = midnightblue];    //Ryou
-    Kyou_Ryou_7:a -> Kyou_Ryou_8:a [color = cadetblue];    //Kappei
+    Kyou_Ryou_8 [shape = Mrecord, label = "<a1>Investigate|<a2>Forget about it"];
+    Kyou_Ryou_7:a1 -> Kyou_Ryou_8:a1 [color = darkorchid];    //Kyou
+    Kyou_Ryou_7:a1 -> Kyou_Ryou_8:a1 [color = midnightblue];    //Ryou
+    Kyou_Ryou_7:a1 -> Kyou_Ryou_8:a1 [color = cadetblue];    //Kappei
     
 
-    Kyou_Ryou_9 [shape = Mrecord, label = "<a>Stay in class"];
-    Kyou_Ryou_8:a -> Kyou_Ryou_9:a [color = darkorchid];    //Kyou
-    Kyou_Ryou_8:a -> Kyou_Ryou_9:a [color = midnightblue];    //Ryou
-    Kyou_Ryou_8:a -> Kyou_Ryou_9:a [color = cadetblue];    //Kappei
+    Kyou_Ryou_9 [shape = Mrecord, label = "<a1>Skip class|<a2>Stay in class"];
+    Kyou_Ryou_8:a1 -> Kyou_Ryou_9:a2 [color = darkorchid];    //Kyou
+    Kyou_Ryou_8:a1 -> Kyou_Ryou_9:a2 [color = midnightblue];    //Ryou
+    Kyou_Ryou_8:a1 -> Kyou_Ryou_9:a2 [color = cadetblue];    //Kappei
     
-    Kyou_Ryou_10 [shape = Mrecord, label = "<a>Waste time outside the school"];
-    Kyou_Ryou_9:a -> Kyou_Ryou_10:a [color = darkorchid];    //Kyou
-    Kyou_Ryou_9:a -> Kyou_Ryou_10:a [color = midnightblue];    //Ryou
-    Kyou_Ryou_9:a -> Kyou_Ryou_10:a [color = cadetblue];    //Kappei
+    Kyou_Ryou_10 [shape = Mrecord, label = "<a1>Waste time in the school|<a2>Waste time outside the school"];
+    Kyou_Ryou_9:a2 -> Kyou_Ryou_10:a2 [color = darkorchid];    //Kyou
+    Kyou_Ryou_9:a2 -> Kyou_Ryou_10:a2 [color = midnightblue];    //Ryou
+    Kyou_Ryou_9:a2 -> Kyou_Ryou_10:a2 [color = cadetblue];    //Kappei
     
     Kyou_Ryou_11 [shape = Mrecord, label = "<a>See her off"];
-    Kyou_Ryou_10:a -> Kyou_Ryou_11:a [color = darkorchid];    //Kyou
-    Kyou_Ryou_10:a -> Kyou_Ryou_11:a [color = midnightblue];    //Ryou
-    Kyou_Ryou_10:a -> Kyou_Ryou_11:a [color = cadetblue];    //Kappei
+    Kyou_Ryou_10:a2 -> Kyou_Ryou_11:a [color = darkorchid];    //Kyou
+    Kyou_Ryou_10:a2 -> Kyou_Ryou_11:a [color = midnightblue];    //Ryou
+    Kyou_Ryou_10:a2 -> Kyou_Ryou_11:a [color = cadetblue];    //Kappei
     
     Kyou_Ryou_12 [shape = Mrecord, label = "<a>Fortune telling using cards"];
     Kyou_Ryou_11:a -> Kyou_Ryou_12:a [color = darkorchid];    //Kyou
