@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 #######################################################################
 #            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE              #
@@ -25,14 +25,13 @@
 # The same applies to pngcrush.
 #
 
-
-
-
 echo "- Graphing..."
+echo " "
+
 for dot in `find $1 -name "*.dot"`;
 do
   echo "-- Graphing: $dot"
-  dot -Tpng "$dot" -O
+  dot -Tpng "$dot" -O     # creates ./dot_files/Clannad_VN_Flowchart.dot.png
   
   PART4=$dot              # PART4 is ./dot_files/Clannad_VN_Flowchart.dot
   PART1="${PART4%%/*}"    # PART1 is .
@@ -43,22 +42,18 @@ do
                           # PART4 is .dot
   PART4="${PART4#*.}"     # PART4 is dot
 
+  # move .png file down one folder, change *.dot.png to just *.png
   mv ./$PART2/$PART3.dot.png ./$PART3.png
 
+  echo "-- Compressing: $PART3.png" 
+  pngcrush -q -m 113 $PART3.png temp.png
+  # pngcrush can complain about overwriting a file.  thus temp.png
+  mv -f temp.png $PART3.png
+
+  echo " "
+
 done;
 
-echo " "
-echo "- Compressing Images..."
-for png in `find -maxdepth 1 $1 -name "*.png"`;
-do
-  echo "-- Compressing $png"  
-  pngcrush -q -m 113 "$png" temp.png
-  mv -f temp.png $png
-done;
-
-echo " "
 echo - Done!
-
-
 
 
