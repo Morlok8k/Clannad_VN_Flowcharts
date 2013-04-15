@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #######################################################################
 #            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE              #
@@ -17,32 +17,41 @@
 #                                                                     #
 #######################################################################
 
-# Simple Linux shell script file to graph some .dot files.
+# Linux shell script file to graph some .dot files.
 #
 # Graphviz Dot needs to be installed, perferably by the packaging system of your Linux distro,
 # so it will be set up correctly.
+#
+# The same applies to pngcrush.
+#
 
 
 
 
-echo - Graphing:
-echo -- Clannad_VN_Flowchart.dot
-dot -Tpng ./dot_files/Clannad_VN_Flowchart.dot -o ./Clannad_VN_Flowchart.png
+echo "- Graphing..."
+for dot in `find $1 -name "*.dot"`;
+do
+  echo "-- Graphing: $dot"
+  dot -Tpng "$dot" -O
+  
+  PART4=$dot              # PART4 is ./dot_files/Clannad_VN_Flowchart.dot
+  PART1="${PART4%%/*}"    # PART1 is .
+  PART4="${PART4#*/}"     # PART4 is /dot_files/Clannad_VN_Flowchart.dot
+  PART2="${PART4%%/*}"    # PART2 is dot_files
+  PART4="${PART4#*/}"     # PART4 is /Clannad_VN_Flowchart.dot
+  PART3="${PART4%%.*}"    # PART3 is Clannad_VN_Flowchart
+                          # PART4 is .dot
+  PART4="${PART4#*.}"     # PART4 is dot
 
-echo -- Clannad_VN_Flowchart_AfterStory.dot
-dot -Tpng ./dot_files/Clannad_VN_Flowchart_AfterStory.dot -o ./Clannad_VN_Flowchart_AfterStory.png
+  mv ./$PART2/$PART3.dot.png ./$PART3.png
 
-echo -- Clannad_VN_Flowchart_Heartfelt_Academy.dot
-dot -Tpng ./dot_files/Clannad_VN_Flowchart_Heartfelt_Academy.dot -o ./Clannad_VN_Flowchart_Heartfelt_Academy.png
-
-echo -- Tomoyo_After_VN_Flowchart.dot
-dot -Tpng ./dot_files/Tomoyo_After_VN_Flowchart.dot -o ./Tomoyo_After_VN_Flowchart.png
+done;
 
 echo " "
-echo - Compressing Images:
+echo "- Compressing Images..."
 for png in `find -maxdepth 1 $1 -name "*.png"`;
 do
-  echo "-- Crushing $png"  
+  echo "-- Compressing $png"  
   pngcrush -q -m 113 "$png" temp.png
   mv -f temp.png $png
 done;
