@@ -25,7 +25,7 @@
 
 
 
-echo -- Graphing:
+echo - Graphing:
 echo -- Clannad_VN_Flowchart.dot
 dot -Tpng ./dot_files/Clannad_VN_Flowchart.dot -o ./Clannad_VN_Flowchart.png
 
@@ -38,5 +38,18 @@ dot -Tpng ./dot_files/Clannad_VN_Flowchart_Heartfelt_Academy.dot -o ./Clannad_VN
 echo -- Tomoyo_After_VN_Flowchart.dot
 dot -Tpng ./dot_files/Tomoyo_After_VN_Flowchart.dot -o ./Tomoyo_After_VN_Flowchart.png
 
-echo -- Done!
+echo " "
+echo - Compressing Images:
+for png in `find -maxdepth 1 $1 -name "*.png"`;
+do
+  echo "-- Crushing $png"  
+  pngcrush -q -m 113 "$png" temp.png
+  mv -f temp.png $png
+done;
+
+echo " "
+echo - Done!
+
+
+
 
