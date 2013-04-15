@@ -41,12 +41,12 @@ D&T completion is playing it 8 times?  this fact needs verification.
     Note [shape = note, label = "Note:\nThis is for the original Tomoyo After VN (for the PC)\nThis is based off of \"Tomoyo_After_English_v1.10_[Doki]\"\nThe Memorial Edition is said to have more paths, however it is not translated yet..."];
     Note2 [shape = note, label = "Note:\nColored paths should be strictly followed.\nThere are few exceptions: Mainly the June 29th options and\nthe Talk/Study options, as those just loop around.\n★'s are shown on choices that have no effect on the storyline"];
     Note3 [shape = note, label = "Note:\nGallery Pictures are represented as:\nCGa-b or CGa-b-c\na is the page,\nb is the picture number\nc is for the sub-picture (for different versions)"];
-    Note -> Note2 -> Note3 [color = invis];
+    Note -> Note2 -> Note3 [style = bold, color = invis];
 
 
 //Tomoyo After
     Tomoyo_After_logo [image="dot_files/Tomoyo_After_logo.jpg", label = " ", shape = box, color = invis];
-    Tomoyo_After_logo -> Start [color = invis];
+    Tomoyo_After_logo -> Start [style = bold, color = invis];
 
 
 //start
@@ -57,56 +57,56 @@ D&T completion is playing it 8 times?  this fact needs verification.
     //June 28
     JUN_28 [shape = box, label = "Monday, June 28th, 2004"];
 
-    Start -> JUN_28 [color = green];    //END1
-    Start -> JUN_28 [color = blue];    //Blue Path
-    Start -> JUN_28 [color = red];    //BAD_END
+    Start -> JUN_28 [style = bold, color = green];    //END1
+    Start -> JUN_28 [style = bold, color = blue];    //Blue Path
+    Start -> JUN_28 [style = bold, color = red];    //BAD_END
 
     //CG2-5-1
     CG251 [shape = parallelogram, label = "CG2-5-1"];
-    JUN_28 -> CG251 [color = green];    //END1
-    JUN_28 -> CG251 [color = blue];    //Blue Path
-    JUN_28 -> CG251 [color = red];    //BAD_END
+    JUN_28 -> CG251 [style = bold, color = green];    //END1
+    JUN_28 -> CG251 [style = bold, color = blue];    //Blue Path
+    JUN_28 -> CG251 [style = bold, color = red];    //BAD_END
 
     TA_1 [shape = Mrecord, label = "<a1>...I'll kiss her normally.|<a2>...I'll be fixated on her breath.|<a3>I'll be fixated on her saliva."];
     //choice affects scene on August 14
-    CG251 -> TA_1:a2 [color = green];    //END1
-    CG251 -> TA_1:a2 [color = blue];    //Blue Path
-    CG251 -> TA_1:a1 [color = red];    //BAD_END
+    CG251 -> TA_1:a2 [style = bold, color = green];    //END1
+    CG251 -> TA_1:a2 [style = bold, color = blue];    //Blue Path
+    CG251 -> TA_1:a1 [style = bold, color = red];    //BAD_END
     CG251 -> TA_1:a3;
 
     //CG2-5-2
     CG252 [shape = parallelogram, label = "CG2-5-2"];
-    TA_1:a2 -> CG252 [color = green];    //END1
-    TA_1:a2 -> CG252 [color = blue];    //Blue Path
-    TA_1:a1 -> CG252 [color = red];    //BAD_END
+    TA_1:a2 -> CG252 [style = bold, color = green];    //END1
+    TA_1:a2 -> CG252 [style = bold, color = blue];    //Blue Path
+    TA_1:a1 -> CG252 [style = bold, color = red];    //BAD_END
     TA_1:a3 -> CG252;
 
     //June 29
     JUN_29 [shape = box, label = "Tuesday, June 29th, 2004"];
-    CG252 -> JUN_29 [color = green];    //END1
-    CG252 -> JUN_29 [color = blue];    //Blue Path
-    CG252 -> JUN_29 [color = red];    //BAD_END
+    CG252 -> JUN_29 [style = bold, color = green];    //END1
+    CG252 -> JUN_29 [style = bold, color = blue];    //Blue Path
+    CG252 -> JUN_29 [style = bold, color = red];    //BAD_END
     
     TA_2 [shape = Mrecord, label = "<a1>Use your panties.|<a2>Use your socks."];
-    JUN_29 -> TA_2:a2 [color = green];    //END1
-    JUN_29 -> TA_2:a2 [color = blue];    //Blue Path
-    JUN_29 -> TA_2:a2 [color = red];    //BAD_END
+    JUN_29 -> TA_2:a2 [style = bold, color = green];    //END1
+    JUN_29 -> TA_2:a2 [style = bold, color = blue];    //Blue Path
+    JUN_29 -> TA_2:a2 [style = bold, color = red];    //BAD_END
 
     TA_2a [shape = Mrecord, label = "<a1>Finish up.|<a2>Demand more."];
     TA_2:a1 -> TA_2a:a1;
     TA_2:a1 -> TA_2a:a2;
 
     TA_3 [shape = Mrecord, label = "<a1>★ I'll cum at this rate. ★|<a2>★ It makes me want more. ★"];
-    TA_2:a2 -> TA_3:a2 [color = green];    //END1
-    TA_2:a2 -> TA_3:a2 [color = blue];    //Blue Path
-    TA_2:a2 -> TA_3:a2 [color = red];    //BAD_END
+    TA_2:a2 -> TA_3:a2 [style = bold, color = green];    //END1
+    TA_2:a2 -> TA_3:a2 [style = bold, color = blue];    //Blue Path
+    TA_2:a2 -> TA_3:a2 [style = bold, color = red];    //BAD_END
     TA_2:a2 -> TA_3:a1;
 
     TA_4 [shape = Mrecord, label = "<a1>★ I'll cum at this rate. ★|<a2>★ It makes me want more. ★"];
-    TA_3:a2 -> TA_4:a2 [color = green];    //END1
-    TA_3:a2 -> TA_4:a2 [color = invis];    // putting in an invisible arrow seperates the green and blue a bit more...
-    TA_3:a2 -> TA_4:a2 [color = blue];    //Blue Path
-    TA_3:a2 -> TA_4:a1 [color = red];    //BAD_END
+    TA_3:a2 -> TA_4:a2 [style = bold, color = green];    //END1
+    TA_3:a2 -> TA_4:a2 [style = bold, color = invis];    // putting in an invisible arrow seperates the green and blue a bit more...
+    TA_3:a2 -> TA_4:a2 [style = bold, color = blue];    //Blue Path
+    TA_3:a2 -> TA_4:a1 [style = bold, color = red];    //BAD_END
 
 
     //Scene1 CG2-6-1 CG2-7-1
@@ -123,47 +123,47 @@ D&T completion is playing it 8 times?  this fact needs verification.
 
     //Scene4 CG2-8-2 CG2-7-2
     Scene4 [shape = parallelogram, label = "Scene4\nCG2-8-2\nCG2-7-2"];
-    TA_4:a1 -> Scene4 [color = red];
+    TA_4:a1 -> Scene4 [style = bold, color = red];
 
     //Scene5 CG2-6-3 CG2-7-2
     Scene5 [shape = parallelogram, label = "Scene5\nCG2-6-3\nCG2-7-2"];
-    TA_4:a2 -> Scene5 [color = green];
-    TA_4:a2 -> Scene5 [color = blue];
+    TA_4:a2 -> Scene5 [style = bold, color = green];
+    TA_4:a2 -> Scene5 [style = bold, color = blue];
 
     //Scene6 CG2-9 CG2-7-3    //June 30
     //Scene7 CG2-10 CG2-7-4    //July 1
     //Scene8 CG2-11 CG2-12 CG2-7-5    //July 2
     Scene678 [shape = parallelogram, label = "June 30: Scene6 CG2-9 CG2-7-3\nJuly 1: Scene7 CG2-10 CG2-7-4\nJuly 2: Scene8 CG2-11 CG2-12 CG2-7-5"];
-    Scene5 -> Scene678 [color = green];    //END1
-    Scene5 -> Scene678 [color = blue];    //Blue Path
-    Scene4 -> Scene678 [color = red];    //BAD_END
+    Scene5 -> Scene678 [style = bold, color = green];    //END1
+    Scene5 -> Scene678 [style = bold, color = blue];    //Blue Path
+    Scene4 -> Scene678 [style = bold, color = red];    //BAD_END
     Scene1 -> Scene678;
     Scene2 -> Scene678;
     Scene3 -> Scene678;
 
     //July 07
     JUL_7 [shape = box, label = "Wednesday, July 7th, 2004"];
-    Scene678 -> JUL_7 [color = green];    //END1
-    Scene678 -> JUL_7 [color = blue];    //Blue Path
-    Scene678 -> JUL_7 [color = red];    //BAD_END
+    Scene678 -> JUL_7 [style = bold, color = green];    //END1
+    Scene678 -> JUL_7 [style = bold, color = blue];    //Blue Path
+    Scene678 -> JUL_7 [style = bold, color = red];    //BAD_END
 
 
     TA_5 [shape = Mrecord, label = "<a1>Check Tomo's luggage.|<a2>Check Tomoyo's underwear."];
-    JUL_7 -> TA_5:a1 [color = green];    //END1
-    JUL_7 -> TA_5:a1 [color = blue];    //Blue Path
-    JUL_7 -> TA_5:a2 [color = red];    //BAD_END
+    JUL_7 -> TA_5:a1 [style = bold, color = green];    //END1
+    JUL_7 -> TA_5:a1 [style = bold, color = blue];    //Blue Path
+    JUL_7 -> TA_5:a2 [style = bold, color = red];    //BAD_END
 
 
     //July 09
     JUL_9 [shape = box, label = "Friday, July 9th, 2004"];
-    TA_5:a1 -> JUL_9 [color = green];    //END1
-    TA_5:a1 -> JUL_9 [color = blue];    //Blue Path
-    TA_5:a2 -> JUL_9 [color = red];    //BAD_END
+    TA_5:a1 -> JUL_9 [style = bold, color = green];    //END1
+    TA_5:a1 -> JUL_9 [style = bold, color = blue];    //Blue Path
+    TA_5:a2 -> JUL_9 [style = bold, color = red];    //BAD_END
 
     TA_6 [shape = Mrecord, label = "<a1>Am in front of the apartment|<a2>Am in front of the bathhouse|<a3>Am in front of the supermarket"];
-    JUL_9 -> TA_6:a1 [color = green];    //END1
-    JUL_9 -> TA_6:a1 [color = blue];    //Blue Path
-    JUL_9 -> TA_6:a1 [color = red];    //BAD_END
+    JUL_9 -> TA_6:a1 [style = bold, color = green];    //END1
+    JUL_9 -> TA_6:a1 [style = bold, color = blue];    //Blue Path
+    JUL_9 -> TA_6:a1 [style = bold, color = red];    //BAD_END
     JUL_9 -> TA_6:a2;
     JUL_9 -> TA_6:a3;
 
@@ -173,9 +173,9 @@ D&T completion is playing it 8 times?  this fact needs verification.
 
 
     TA_7 [shape = Mrecord, label = "<a1>I'll search for her.|<a2>Don't search."];
-    TA_6:a1 -> TA_7:a1 [color = green];    //END1
-    TA_6:a1 -> TA_7:a1 [color = blue];    //Blue Path
-    TA_6:a1 -> TA_7:a1 [color = red];    //BAD_END
+    TA_6:a1 -> TA_7:a1 [style = bold, color = green];    //END1
+    TA_6:a1 -> TA_7:a1 [style = bold, color = blue];    //Blue Path
+    TA_6:a1 -> TA_7:a1 [style = bold, color = red];    //BAD_END
     TA_6a -> TA_7:a1;
     TA_6a -> TA_7:a2;
     TA_6:a1 -> TA_7:a2;
@@ -183,23 +183,23 @@ D&T completion is playing it 8 times?  this fact needs verification.
 
     //July 10
     JUL_10 [shape = box, label = "Saturday, July 10th, 2004"];
-    TA_7:a1 -> JUL_10 [color = green];    //END1
-    TA_7:a1 -> JUL_10 [color = blue];    //Blue Path
-    TA_7:a1 -> JUL_10 [color = red];    //BAD_END
+    TA_7:a1 -> JUL_10 [style = bold, color = green];    //END1
+    TA_7:a1 -> JUL_10 [style = bold, color = blue];    //Blue Path
+    TA_7:a1 -> JUL_10 [style = bold, color = red];    //BAD_END
 
 
     TA_8 [shape = Mrecord, label = "<a1>Endure it silently.|<a2>You can't be there."];
-    JUL_10 -> TA_8:a1 [color = green];    //END1
-    JUL_10 -> TA_8:a1 [color = blue];    //Blue Path
-    JUL_10 -> TA_8:a1 [color = red];    //BAD_END
+    JUL_10 -> TA_8:a1 [style = bold, color = green];    //END1
+    JUL_10 -> TA_8:a1 [style = bold, color = blue];    //Blue Path
+    JUL_10 -> TA_8:a1 [style = bold, color = red];    //BAD_END
     JUL_10 -> TA_8:a2;
 
 
     //July 11
     JUL_11 [shape = box, label = "Sunday, July 11th, 2004"];
-    TA_8:a1 -> JUL_11 [color = green];    //END1
-    TA_8:a1 -> JUL_11 [color = blue];    //Blue Path
-    TA_8:a1 -> JUL_11 [color = red];    //BAD_END
+    TA_8:a1 -> JUL_11 [style = bold, color = green];    //END1
+    TA_8:a1 -> JUL_11 [style = bold, color = blue];    //Blue Path
+    TA_8:a1 -> JUL_11 [style = bold, color = red];    //BAD_END
 
 
 
@@ -207,49 +207,49 @@ D&T completion is playing it 8 times?  this fact needs verification.
     JUL_11_mother2 [label = "Visit Tomo's Mom without Tomoyo"];
     JUL_11_mother3 [label = "Dont Visit Tomo's Mom"];
 
-    JUL_11 -> JUL_11_mother1 [color = green];    //END1
-    JUL_11 -> JUL_11_mother1 [color = blue];    //Blue Path
-    JUL_11 -> JUL_11_mother1 [color = red];    //BAD_END
+    JUL_11 -> JUL_11_mother1 [style = bold, color = green];    //END1
+    JUL_11 -> JUL_11_mother1 [style = bold, color = blue];    //Blue Path
+    JUL_11 -> JUL_11_mother1 [style = bold, color = red];    //BAD_END
     TA_8:a2 -> JUL_11_mother2;
     TA_7:a2 -> JUL_11_mother3;
 
     CG11 [shape = parallelogram, label = "CG1-1"];
-    JUL_11_mother1 -> CG11 [color = green];    //END1
-    JUL_11_mother1 -> CG11 [color = blue];    //Blue Path
-    JUL_11_mother1 -> CG11 [color = red];    //BAD_END
+    JUL_11_mother1 -> CG11 [style = bold, color = green];    //END1
+    JUL_11_mother1 -> CG11 [style = bold, color = blue];    //Blue Path
+    JUL_11_mother1 -> CG11 [style = bold, color = red];    //BAD_END
 
     JUL_11_bp [label = "Bear & Panda fight"];
-    CG11 -> JUL_11_bp [color = green];    //END1
-    CG11 -> JUL_11_bp [color = blue];    //Blue Path
-    CG11 -> JUL_11_bp [color = red];    //BAD_END
+    CG11 -> JUL_11_bp [style = bold, color = green];    //END1
+    CG11 -> JUL_11_bp [style = bold, color = blue];    //Blue Path
+    CG11 -> JUL_11_bp [style = bold, color = red];    //BAD_END
     JUL_11_mother2 -> JUL_11_bp;
     JUL_11_mother3 -> JUL_11_bp;
 
 
     CG12 [shape = parallelogram, label = "CG1-2"];
-    JUL_11_bp -> CG12 [color = green];    //END1
-    JUL_11_bp -> CG12 [color = blue];    //Blue Path
-    JUL_11_bp -> CG12 [color = red];    //BAD_END
+    JUL_11_bp -> CG12 [style = bold, color = green];    //END1
+    JUL_11_bp -> CG12 [style = bold, color = blue];    //Blue Path
+    JUL_11_bp -> CG12 [style = bold, color = red];    //BAD_END
 
 
     TA_9 [shape = Mrecord, label = "<a1>To have sex with Tomoyo from behind while she cooks.|<a2>Tone it down and have sex with Tomoyo while Tomo sleeps.|<a3>Nothing."];
-    CG12 -> TA_9:a2 [color = green];    //END1
-    CG12 -> TA_9:a2 [color = blue];    //Blue Path
-    CG12 -> TA_9:a1 [color = red];    //BAD_END
+    CG12 -> TA_9:a2 [style = bold, color = green];    //END1
+    CG12 -> TA_9:a2 [style = bold, color = blue];    //Blue Path
+    CG12 -> TA_9:a1 [style = bold, color = red];    //BAD_END
     CG12 -> TA_9:a3;
 
 
     //July 14
     JUL_14 [shape = box, label = "Wednesday, July 14th, 2004"];
-    TA_9:a2 -> JUL_14 [color = green];    //END1
-    TA_9:a2 -> JUL_14 [color = blue];    //Blue Path
-    TA_9:a1 -> JUL_14 [color = red];    //BAD_END
+    TA_9:a2 -> JUL_14 [style = bold, color = green];    //END1
+    TA_9:a2 -> JUL_14 [style = bold, color = blue];    //Blue Path
+    TA_9:a1 -> JUL_14 [style = bold, color = red];    //BAD_END
     TA_9:a3 -> JUL_14;
 
     TA_10 [shape = Mrecord, label = "<a1>Talk|<a2>Study"];
-    JUL_14 -> TA_10:a2 [color = green];    //END1
-    JUL_14 -> TA_10:a2 [color = blue];    //Blue Path
-    JUL_14 -> TA_10:a2 [color = red];    //BAD_END
+    JUL_14 -> TA_10:a2 [style = bold, color = green];    //END1
+    JUL_14 -> TA_10:a2 [style = bold, color = blue];    //Blue Path
+    JUL_14 -> TA_10:a2 [style = bold, color = red];    //BAD_END
 
 
 
@@ -264,9 +264,9 @@ D&T completion is playing it 8 times?  this fact needs verification.
 
 
     TA_11 [shape = Mrecord, label = "<a1>Play along.|<a2>Continue studying."];
-    TA_10:a2 -> TA_11:a2 [color = green];    //END1
-    TA_10:a2 -> TA_11:a2 [color = blue];    //Blue Path
-    TA_10:a2 -> TA_11:a2 [color = red];    //BAD_END
+    TA_10:a2 -> TA_11:a2 [style = bold, color = green];    //END1
+    TA_10:a2 -> TA_11:a2 [style = bold, color = blue];    //Blue Path
+    TA_10:a2 -> TA_11:a2 [style = bold, color = red];    //BAD_END
     TA_10:a2 -> TA_11:a1;
 
     TA_11_a [shape = Mrecord, label = "<a1>People's chin's grow as they get older.|<a2>I caught Mickey Mouse in the sink.|<a3>There are 100 Takafumis."];
@@ -295,36 +295,36 @@ D&T completion is playing it 8 times?  this fact needs verification.
 
 
     TA_12 [shape = Mrecord, label = "<a1>Go to where the fireworks are.|<a2>Ignore the letter."];
-    TA_11:a2 -> TA_12:a1 [color = green];    //END1
-    TA_11:a2 -> TA_12:a1 [color = blue];    //Blue Path
-    TA_11:a2 -> TA_12:a1 [color = red];    //BAD_END
+    TA_11:a2 -> TA_12:a1 [style = bold, color = green];    //END1
+    TA_11:a2 -> TA_12:a1 [style = bold, color = blue];    //Blue Path
+    TA_11:a2 -> TA_12:a1 [style = bold, color = red];    //BAD_END
 
     TA_13 [shape = Mrecord, label = "<a1>A substitute for Tomoyo.|<a2>Just a spectator.|<a3>Saito."];
-    TA_12:a1 -> TA_13:a1 [color = green];    //END1
-    TA_12:a1 -> TA_13:a1 [color = blue];    //Blue Path
-    TA_12:a1 -> TA_13:a1 [color = red];    //BAD_END
+    TA_12:a1 -> TA_13:a1 [style = bold, color = green];    //END1
+    TA_12:a1 -> TA_13:a1 [style = bold, color = blue];    //Blue Path
+    TA_12:a1 -> TA_13:a1 [style = bold, color = red];    //BAD_END
 
     CG13 [shape = parallelogram, label = "CG1-3"];
-    TA_13:a1 -> CG13 [color = green];    //END1
-    TA_13:a1 -> CG13 [color = blue];    //Blue Path
-    TA_13:a1 -> CG13 [color = red];    //BAD_END
+    TA_13:a1 -> CG13 [style = bold, color = green];    //END1
+    TA_13:a1 -> CG13 [style = bold, color = blue];    //Blue Path
+    TA_13:a1 -> CG13 [style = bold, color = red];    //BAD_END
 
     //July 15
     JUL_15 [shape = box, label = "Thursday, July 15th, 2004"];
-    CG13 -> JUL_15 [color = green];    //END1
-    CG13 -> JUL_15 [color = blue];    //Blue Path
-    CG13 -> JUL_15 [color = red];    //BAD_END
+    CG13 -> JUL_15 [style = bold, color = green];    //END1
+    CG13 -> JUL_15 [style = bold, color = blue];    //Blue Path
+    CG13 -> JUL_15 [style = bold, color = red];    //BAD_END
 
     TA_14 [shape = Mrecord, label = "<a1>Yes.|<a2>No way."];
-    JUL_15 -> TA_14:a2 [color = green];    //END1
-    JUL_15 -> TA_14:a2 [color = blue];    //Blue Path
-    JUL_15 -> TA_14:a2 [color = red];    //BAD_END
+    JUL_15 -> TA_14:a2 [style = bold, color = green];    //END1
+    JUL_15 -> TA_14:a2 [style = bold, color = blue];    //Blue Path
+    JUL_15 -> TA_14:a2 [style = bold, color = red];    //BAD_END
     JUL_15 -> TA_14:a1;
 
     TA_15 [shape = Mrecord, label = "<a1>Talk.|<a2>Study."];
-    TA_14:a2 -> TA_15:a2 [color = green];    //END1
-    TA_14:a2 -> TA_15:a2 [color = blue];    //Blue Path
-    TA_14:a2 -> TA_15:a2 [color = red];    //BAD_END
+    TA_14:a2 -> TA_15:a2 [style = bold, color = green];    //END1
+    TA_14:a2 -> TA_15:a2 [style = bold, color = blue];    //Blue Path
+    TA_14:a2 -> TA_15:a2 [style = bold, color = red];    //BAD_END
     TA_14:a1 -> TA_15:a1;
     TA_14:a1 -> TA_15:a2;
     TA_14:a2 -> TA_15:a1;
@@ -353,21 +353,21 @@ D&T completion is playing it 8 times?  this fact needs verification.
 
 
     TA_16 [shape = Mrecord, label = "<a>Do it|<aa>Don't"];
-    TA_15:a2 -> TA_16:a [color = green];    //END1
-    TA_15:a2 -> TA_16:a [color = blue];    //Blue Path
-    TA_15:a2 -> TA_16:aa [color = red];    //BAD_END
+    TA_15:a2 -> TA_16:a [style = bold, color = green];    //END1
+    TA_15:a2 -> TA_16:a [style = bold, color = blue];    //Blue Path
+    TA_15:a2 -> TA_16:aa [style = bold, color = red];    //BAD_END
 
 
     //July 16
     JUL_16 [shape = box, label = "Friday, July 16th, 2004"];
-    TA_16:a -> JUL_16 [color = green];    //END1
-    TA_16:a -> JUL_16 [color = blue];    //Blue Path
-    TA_16:aa -> JUL_16 [color = red];    //BAD_END
+    TA_16:a -> JUL_16 [style = bold, color = green];    //END1
+    TA_16:a -> JUL_16 [style = bold, color = blue];    //Blue Path
+    TA_16:aa -> JUL_16 [style = bold, color = red];    //BAD_END
 
     TA_17 [shape = Mrecord, label = "<a1>Talk.|<a2>Study."];
-    JUL_16 -> TA_17:a2 [color = green];    //END1
-    JUL_16 -> TA_17:a2 [color = blue];    //Blue Path
-    JUL_16 -> TA_17:a2 [color = red];    //BAD_END
+    JUL_16 -> TA_17:a2 [style = bold, color = green];    //END1
+    JUL_16 -> TA_17:a2 [style = bold, color = blue];    //Blue Path
+    JUL_16 -> TA_17:a2 [style = bold, color = red];    //BAD_END
     JUL_16 -> TA_17:a1;
 
     TA_17_a [shape = Mrecord, label = "<a1>Tomoyo|<a2>Takafumi|<a3>Kanako"];
@@ -381,9 +381,9 @@ D&T completion is playing it 8 times?  this fact needs verification.
 
 
     TA_18 [shape = Mrecord, label = "<a1>Work on it together|<a2>Don't work on it together"];
-    TA_17:a2 -> TA_18:a2 [color = green];    //END1
-    TA_17:a2 -> TA_18:a2 [color = blue];    //Blue Path
-    TA_17:a2 -> TA_18:a2 [color = red];    //BAD_END
+    TA_17:a2 -> TA_18:a2 [style = bold, color = green];    //END1
+    TA_17:a2 -> TA_18:a2 [style = bold, color = blue];    //Blue Path
+    TA_17:a2 -> TA_18:a2 [style = bold, color = red];    //BAD_END
     TA_17:a2 -> TA_18:a1;
 
     TA_18_a [shape = Mrecord, label = "{<a1>Me|<a2>Takafumi}|{<a3>Kanako|<a4>Tomoyo}"];
@@ -408,23 +408,23 @@ D&T completion is playing it 8 times?  this fact needs verification.
     TA_18_a -> TA_19:a2;
 
     TA_19 [shape = Mrecord, label = "<a1>Sub in for Kanako|<a2>Let Kanako handle him"];
-    TA_18:a2 -> TA_19:a1 [color = green];    //END1
-    TA_18:a2 -> TA_19:a1 [color = blue];    //Blue Path
-    TA_18:a2 -> TA_19:a1 [color = red];    //BAD_END
+    TA_18:a2 -> TA_19:a1 [style = bold, color = green];    //END1
+    TA_18:a2 -> TA_19:a1 [style = bold, color = blue];    //Blue Path
+    TA_18:a2 -> TA_19:a1 [style = bold, color = red];    //BAD_END
 
     //July 19
     CG14 [shape = parallelogram, label = "CG1-4"];
-    TA_19:a1 -> CG14 [color = green];    //END1
-    TA_19:a1 -> CG14 [color = blue];    //Blue Path
-    TA_19:a1 -> CG14 [color = red];    //BAD_END
+    TA_19:a1 -> CG14 [style = bold, color = green];    //END1
+    TA_19:a1 -> CG14 [style = bold, color = blue];    //Blue Path
+    TA_19:a1 -> CG14 [style = bold, color = red];    //BAD_END
 
     //July 20
     JUL_20 [shape = box, label = "Tuesday, July 20th, 2004"];
     TA_18_a -> JUL_20;    //if tomoyo fought on the 15th
     TA_18:a2 -> JUL_20;    //if tomoyo fought on the 15th
-    CG14 -> JUL_20 [color = green];    //END1
-    CG14 -> JUL_20 [color = blue];    //Blue Path
-    CG14 -> JUL_20 [color = red];    //BAD_END
+    CG14 -> JUL_20 [style = bold, color = green];    //END1
+    CG14 -> JUL_20 [style = bold, color = blue];    //Blue Path
+    CG14 -> JUL_20 [style = bold, color = red];    //BAD_END
     TA_19:a2 -> JUL_20;
 
     RPG [shape = Mrecord, label = "<a1>I want to play.|<a2>I don't want to play."];
@@ -437,9 +437,9 @@ D&T completion is playing it 8 times?  this fact needs verification.
     RPG:a1 -> GAME [style = dashed];
 
     TA_20 [shape = Mrecord, label = "<a1>Ask him directly.|<a2>Find another way."];
-    JUL_20 -> TA_20:a2 [color = green];    //END1
-    JUL_20 -> TA_20:a2 [color = blue];    //Blue Path
-    JUL_20 -> TA_20:a2 [color = red];    //BAD_END
+    JUL_20 -> TA_20:a2 [style = bold, color = green];    //END1
+    JUL_20 -> TA_20:a2 [style = bold, color = blue];    //Blue Path
+    JUL_20 -> TA_20:a2 [style = bold, color = red];    //BAD_END
     JUL_20 -> TA_20:a1;
 
     TA_20_a [shape = Mrecord, label = "<a1>Listen to her advice.|<a2>Ignore her advice."];
@@ -450,9 +450,9 @@ D&T completion is playing it 8 times?  this fact needs verification.
 
     //July 21
     TA_21 [shape = Mrecord, label = "<a1>Keep trying.|<a2>Go head-to-head"];
-    TA_20:a2 -> TA_21:a1 [color = green];    //END1
-    TA_20:a2 -> TA_21:a1 [color = blue];    //Blue Path
-    TA_20:a2 -> TA_21:a1 [color = red];    //BAD_END
+    TA_20:a2 -> TA_21:a1 [style = bold, color = green];    //END1
+    TA_20:a2 -> TA_21:a1 [style = bold, color = blue];    //Blue Path
+    TA_20:a2 -> TA_21:a1 [style = bold, color = red];    //BAD_END
     TA_20:a2 -> TA_21:a2;
     TA_20_a:a1 -> TA_21:a1;
     TA_20_a:a1 -> TA_21:a2;
@@ -462,15 +462,15 @@ D&T completion is playing it 8 times?  this fact needs verification.
 
     //July 23
     JUL_23 [shape = box, label = "Friday, July 23th, 2004\n(You can only get here if you won all the fights...)"];
-    TA_21:a1 -> JUL_23 [color = green];    //END1
-    TA_21:a1 -> JUL_23 [color = blue];    //Blue Path
-    TA_21:a1 -> JUL_23 [color = red];    //BAD_END
+    TA_21:a1 -> JUL_23 [style = bold, color = green];    //END1
+    TA_21:a1 -> JUL_23 [style = bold, color = blue];    //Blue Path
+    TA_21:a1 -> JUL_23 [style = bold, color = red];    //BAD_END
 
     
     TA_22 [shape = Mrecord, label = "<a1>Talk|<a2>Study|<a3>Go out"];
-    JUL_23 -> TA_22:a3 [color = green];    //END1
-    JUL_23 -> TA_22:a3 [color = blue];    //Blue Path
-    JUL_23 -> TA_22:a3 [color = red];    //BAD_END
+    JUL_23 -> TA_22:a3 [style = bold, color = green];    //END1
+    JUL_23 -> TA_22:a3 [style = bold, color = blue];    //Blue Path
+    JUL_23 -> TA_22:a3 [style = bold, color = red];    //BAD_END
     JUL_23 -> TA_22:a1;
     JUL_23 -> TA_22:a2;
 
@@ -489,15 +489,15 @@ D&T completion is playing it 8 times?  this fact needs verification.
     //August 1
     //CG1-6 CG1-7 CG1-8 CG1-9 CG1-10
     CG15 [shape = parallelogram, label = "July 29: CG1-5\nAugust 1: CG1-6 CG1-7 CG1-8 CG1-9 CG1-10"];
-    TA_22:a3 -> CG15 [color = green];    //END1
-    TA_22:a3 -> CG15 [color = blue];    //Blue Path
-    TA_22:a3 -> CG15 [color = red];    //BAD_END
+    TA_22:a3 -> CG15 [style = bold, color = green];    //END1
+    TA_22:a3 -> CG15 [style = bold, color = blue];    //Blue Path
+    TA_22:a3 -> CG15 [style = bold, color = red];    //BAD_END
 
     //August 6
     AUG_6 [shape = box, label = "Friday, August 6th, 2004"];
-    CG15 -> AUG_6 [color = green];    //END1
-    CG15 -> AUG_6 [color = blue];    //Blue Path
-    CG15 -> AUG_6 [color = red];    //BAD_END
+    CG15 -> AUG_6 [style = bold, color = green];    //END1
+    CG15 -> AUG_6 [style = bold, color = blue];    //Blue Path
+    CG15 -> AUG_6 [style = bold, color = red];    //BAD_END
     AUG_6_BAD_END [label = "Didn't search for Tomo's Mom\nBAD END"];
     AUG_6 -> AUG_6_BAD_END;
     //TODO: Verify!
@@ -505,62 +505,62 @@ D&T completion is playing it 8 times?  this fact needs verification.
 
     //August 10
     AUG_10 [shape = box, label = "Tuesday, August 10th, 2004"];
-    AUG_6 -> AUG_10 [color = green];    //END1
-    AUG_6 -> AUG_10 [color = blue];    //Blue Path
-    AUG_6 -> AUG_10 [color = red];    //BAD_END
+    AUG_6 -> AUG_10 [style = bold, color = green];    //END1
+    AUG_6 -> AUG_10 [style = bold, color = blue];    //Blue Path
+    AUG_6 -> AUG_10 [style = bold, color = red];    //BAD_END
 
     TA_23 [shape = Mrecord, label = "<a1>Tomoyo and I will go.|<a2>Tomoyo, Kanako, and I will go.|<a3>Tomoyo, Takafumi, and I will go."];
-    AUG_10 -> TA_23:a2 [color = green];    //END1
-    AUG_10 -> TA_23:a2 [color = blue];    //Blue Path
-    AUG_10 -> TA_23:a2 [color = red];    //BAD_END
+    AUG_10 -> TA_23:a2 [style = bold, color = green];    //END1
+    AUG_10 -> TA_23:a2 [style = bold, color = blue];    //Blue Path
+    AUG_10 -> TA_23:a2 [style = bold, color = red];    //BAD_END
     AUG_10 -> TA_23:a1;
     AUG_10 -> TA_23:a3;
 
 
     //August 11
     AUG_11 [shape = box, label = "Wednesday, August 11th, 2004"];
-    TA_23:a2 -> AUG_11 [color = green];    //END1
-    TA_23:a2 -> AUG_11 [color = blue];    //Blue Path
-    TA_23:a2 -> AUG_11 [color = red];    //BAD_END
+    TA_23:a2 -> AUG_11 [style = bold, color = green];    //END1
+    TA_23:a2 -> AUG_11 [style = bold, color = blue];    //Blue Path
+    TA_23:a2 -> AUG_11 [style = bold, color = red];    //BAD_END
 
     TA_24 [shape = Mrecord, label = "<a1>Acknowledge her joke.|<a2>Ignore her lame joke."];
-    AUG_11 -> TA_24:a1 [color = green];    //END1
-    AUG_11 -> TA_24:a1 [color = blue];    //Blue Path
-    AUG_11 -> TA_24:a2 [color = red];    //BAD_END
+    AUG_11 -> TA_24:a1 [style = bold, color = green];    //END1
+    AUG_11 -> TA_24:a1 [style = bold, color = blue];    //Blue Path
+    AUG_11 -> TA_24:a2 [style = bold, color = red];    //BAD_END
 
 
     //August 12
     AUG_12 [shape = box, label = "Thursday, August 12th, 2004"];
-    TA_24:a1 -> AUG_12 [color = green];    //END1
-    TA_24:a1 -> AUG_12 [color = blue];    //Blue Path
-    TA_24:a2 -> AUG_12 [color = red];    //BAD_END
+    TA_24:a1 -> AUG_12 [style = bold, color = green];    //END1
+    TA_24:a1 -> AUG_12 [style = bold, color = blue];    //Blue Path
+    TA_24:a2 -> AUG_12 [style = bold, color = red];    //BAD_END
 
     TA_25 [shape = Mrecord, label = "<a1>Build a school.|<a2>Think of possible alternatives."];
-    AUG_12 -> TA_25:a1 [color = green];    //END1
-    AUG_12 -> TA_25:a1 [color = blue];    //Blue Path
-    AUG_12 -> TA_25:a1 [color = red];    //BAD_END
+    AUG_12 -> TA_25:a1 [style = bold, color = green];    //END1
+    AUG_12 -> TA_25:a1 [style = bold, color = blue];    //Blue Path
+    AUG_12 -> TA_25:a1 [style = bold, color = red];    //BAD_END
     AUG_12 -> TA_25:a2;
 
     //August 14
     AUG_14 [shape = box, label = "Saturday, August 14th, 2004"];
-    TA_25:a1 -> AUG_14 [color = green];    //END1
-    TA_25:a1 -> AUG_14 [color = blue];    //Blue Path
-    TA_25:a1 -> AUG_14 [color = red];    //BAD_END
+    TA_25:a1 -> AUG_14 [style = bold, color = green];    //END1
+    TA_25:a1 -> AUG_14 [style = bold, color = blue];    //Blue Path
+    TA_25:a1 -> AUG_14 [style = bold, color = red];    //BAD_END
 
     TA_26 [shape = Mrecord, label = "<a1>Refuse it.|<a2>Pursue her body."];
-    AUG_14 -> TA_26:a1 [color = green];    //END1
-    AUG_14 -> TA_26:a2 [color = blue];    //Blue Path
-    AUG_14 -> TA_26:a2 [color = red];    //BAD_END
+    AUG_14 -> TA_26:a1 [style = bold, color = green];    //END1
+    AUG_14 -> TA_26:a2 [style = bold, color = blue];    //Blue Path
+    AUG_14 -> TA_26:a2 [style = bold, color = red];    //BAD_END
 
 
     Scene9 [shape = parallelogram, label = "June 28: kiss her normally SELECTED\nScene9\nCG2-14"];
     Scene10 [shape = parallelogram, label = "June 28: saliva OR breath SELECTED\nScene10\nCG2-13"];
-    TA_26:a2 -> Scene10 [color = blue];    //Blue Path
-    TA_26:a2 -> Scene9 [color = red];    //BAD_END
+    TA_26:a2 -> Scene10 [style = bold, color = blue];    //Blue Path
+    TA_26:a2 -> Scene9 [style = bold, color = red];    //BAD_END
 
     Scene11 [shape = parallelogram, label = "Scene11"];
-    Scene9 -> Scene11 [color = red];    //BAD_END
-    Scene10 -> Scene11 [color = blue];    //Blue Path
+    Scene9 -> Scene11 [style = bold, color = red];    //BAD_END
+    Scene10 -> Scene11 [style = bold, color = blue];    //Blue Path
 
 
 
@@ -569,25 +569,25 @@ D&T completion is playing it 8 times?  this fact needs verification.
 //CG1-11 CG1-12 CG1-13
 
     TAA [label = "Tomoyo After: After"];
-    TA_26:a1 -> TAA [color = green];    //END1
+    TA_26:a1 -> TAA [style = bold, color = green];    //END1
 
 //CG1-14 CG1-15 CG1-16 CG1-17
 //Scene12
 //CG2-1 CG2-2 CG2-3 CG2-4
     Scene12 [shape = parallelogram, label = "CG1-14 CG1-15 CG1-16 CG1-17\nScene12\nCG2-1 CG2-2 CG2-3 CG2-4"];
-    TAA -> Scene12 [color = green];    //END1
+    TAA -> Scene12 [style = bold, color = green];    //END1
 
 //TODO: I cant seem to get CG2-1, 2-2, 2-3, or 2-4.  try on windows. rlvm bug?
 
     END1_END [label = "True Ending\n"];
-    Scene12 -> END1_END [color = green];    //END1
+    Scene12 -> END1_END [style = bold, color = green];    //END1
 
 
 
 
     BAD_END_1 [label = "Bad Ending"];
-    Scene11 -> BAD_END_1 [color = blue];    //Blue Path
-    Scene11 -> BAD_END_1 [color = red];    //BAD_END
+    Scene11 -> BAD_END_1 [style = bold, color = blue];    //Blue Path
+    Scene11 -> BAD_END_1 [style = bold, color = red];    //BAD_END
     TA_23:a1 -> BAD_END_1;
     TA_23:a3 -> BAD_END_1;
     TA_25:a2 -> BAD_END_1;
