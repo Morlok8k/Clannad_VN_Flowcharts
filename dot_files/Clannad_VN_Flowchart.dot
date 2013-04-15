@@ -1,3 +1,4 @@
+digraph Clannad {
 /*
 #######################################################################
 #            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE              #
@@ -17,8 +18,8 @@
 #######################################################################
 */
     
-// The Definitive Clannad Visual Novel Flowchart
-digraph Clannad{
+    // The Definitive Clannad Visual Novel Flowchart
+
     graph [ label = "\n\n\n\nThe Definitive Clannad Visual Novel Flowchart\nby Morlok8k, Version 0.1 alpha, April 2013\nhttps://github.com/Morlok8k/Clannad_VN_Flowcharts\n--------------------\nCopyright © 2013\nThis work is free. You can redistribute it and/or modify it under the\nterms of the Do What The Fuck You Want To Public License, Version 2,\nas published by Sam Hocevar. See http://www.wtfpl.net/ for more details.\n\nLogo is Copyright © Key / Visual Art's" ];
     ranksep=1.25;
     compound=true;
@@ -495,20 +496,20 @@ sleep!
     SEEN0415_q1:a1 -> Tomoyo_2:a2 [style = bold, color = midnightblue];    //Ryou
     SEEN0415_q1:a1 -> Tomoyo_2:a2 [style = bold, color = cadetblue];    //Kappei
     
-    Kyou_Ryou_4 [shape = Mrecord, label = "<a1>Go down to the courtyard|<a2>Ignore her"];
-    Tomoyo_2:a2 -> Kyou_Ryou_4:a2 [style = bold, color = darkorchid];    //Kyou
-    Tomoyo_2:a2 -> Kyou_Ryou_4:a2 [style = bold, color = midnightblue];    //Ryou
-    Tomoyo_2:a2 -> Kyou_Ryou_4:a2 [style = bold, color = cadetblue];    //Kappei
+    //Kyou_Ryou_4 [shape = Mrecord, label = "<a1>Go down to the courtyard|<a2>Ignore her"];
+    Tomoyo_2:a2 -> Tomoyo_3:a2 [style = bold, color = darkorchid];    //Kyou
+    Tomoyo_2:a2 -> Tomoyo_3:a2 [style = bold, color = midnightblue];    //Ryou
+    Tomoyo_2:a2 -> Tomoyo_3:a2 [style = bold, color = cadetblue];    //Kappei
     
-    Kyou_Ryou_5 [shape = Mrecord, label = "<a1>Take refuge|<a2>See what's going on"];
-    Kyou_Ryou_4:a2 -> Kyou_Ryou_5:a1 [style = bold, color = darkorchid];    //Kyou
-    Kyou_Ryou_4:a2 -> Kyou_Ryou_5:a1 [style = bold, color = midnightblue];    //Ryou
-    Kyou_Ryou_4:a2 -> Kyou_Ryou_5:a1 [style = bold, color = cadetblue];    //Kappei
+    //Kyou_Ryou_5 [shape = Mrecord, label = "<a1>Take refuge|<a2>See what's going on"];
+    Tomoyo_3:a2 -> Tomoyo_5:a1 [style = bold, color = darkorchid];    //Kyou
+    Tomoyo_3:a2 -> Tomoyo_5:a1 [style = bold, color = midnightblue];    //Ryou
+    Tomoyo_3:a2 -> Tomoyo_5:a1 [style = bold, color = cadetblue];    //Kappei
     
     Kyou_Ryou_6 [shape = Mrecord, label = "<a1>Talk to her|<a2>Ignore her"];
-    Kyou_Ryou_5:a1 -> Kyou_Ryou_6:a2 [style = bold, color = darkorchid];    //Kyou
-    Kyou_Ryou_5:a1 -> Kyou_Ryou_6:a2 [style = bold, color = midnightblue];    //Ryou
-    Kyou_Ryou_5:a1 -> Kyou_Ryou_6:a2 [style = bold, color = cadetblue];    //Kappei
+    Tomoyo_5:a1 -> Kyou_Ryou_6:a2 [style = bold, color = darkorchid];    //Kyou
+    Tomoyo_5:a1 -> Kyou_Ryou_6:a2 [style = bold, color = midnightblue];    //Ryou
+    Tomoyo_5:a1 -> Kyou_Ryou_6:a2 [style = bold, color = cadetblue];    //Kappei
     
     Kyou_Ryou_7 [shape = Mrecord, label = "<a1>Talk to the old lady|<a2>Walk past her"];
     Kyou_Ryou_6:a2 -> Kyou_Ryou_7:a1 [style = bold, color = darkorchid];    //Kyou
@@ -645,25 +646,44 @@ sleep!
     Kyou_Ryou_31 [shape = Mrecord, label = "<a1>It's delicious...|<a2>It's terrible..."];
     Kyou_Ryou_30:a1 -> Kyou_Ryou_31:a2 [style = bold, color = darkorchid];    //Kyou
     Kyou_Ryou_30:a2 -> Kyou_Ryou_31:a1 [style = bold, color = midnightblue];    //Ryou
+    Kyou_Ryou_30:a1 -> Kyou_Ryou_31:a1;
+    Kyou_Ryou_30:a2 -> Kyou_Ryou_31:a2;
     
     Kyou_Ryou_32 [shape = Mrecord, label = "<a1>Try practicing|<a2>Watch Kyou silently"];
     Kyou_Ryou_31:a2 -> Kyou_Ryou_32:a1 [style = bold, color = darkorchid];    //Kyou
     Kyou_Ryou_31:a1 -> Kyou_Ryou_32:a2 [style = bold, color = midnightblue];    //Ryou
-    
+    Kyou_Ryou_31:a1 -> Kyou_Ryou_32:a1;
+    Kyou_Ryou_31:a2 -> Kyou_Ryou_32:a2;
+
     Kyou_Ryou_33 [shape = Mrecord, label = "<a1>Tanzanite|<a2>Amethyst"];
     Kyou_Ryou_32:a1 -> Kyou_Ryou_33:a2 [style = bold, color = darkorchid];    //Kyou
     Kyou_Ryou_32:a2 -> Kyou_Ryou_33:a1 [style = bold, color = midnightblue];    //Ryou
-    
+    Kyou_Ryou_32:a1 -> Kyou_Ryou_33:a1;
+    Kyou_Ryou_32:a2 -> Kyou_Ryou_33:a2;
+
     Kyou_Ryou_34 [shape = Mrecord, label = "<a1>Friends|<a2>Lovers|<a3>Married"];
     Kyou_Ryou_33:a2 -> Kyou_Ryou_34:a2 [style = bold, color = darkorchid];    //Kyou
     Kyou_Ryou_33:a1 -> Kyou_Ryou_34:a2 [style = bold, color = midnightblue];    //Ryou
+    Kyou_Ryou_33:a1 -> Kyou_Ryou_34:a1;
+    Kyou_Ryou_33:a2 -> Kyou_Ryou_34:a1;
+    Kyou_Ryou_33:a1 -> Kyou_Ryou_34:a3;
+    Kyou_Ryou_33:a2 -> Kyou_Ryou_34:a3;
     
-    Kyou_Ryou_35 [shape = Mrecord, label = "<a1>Kiss her|<a2>Dont't kiss her"];
+    Kyou_Ryou_35 [shape = Mrecord, label = "<a1>Kiss her|<a2>Don't kiss her"];
     Kyou_Ryou_34:a2 -> Kyou_Ryou_35:a1 [style = bold, color = darkorchid];    //Kyou
     Kyou_Ryou_34:a2 -> Kyou_Ryou_35:a1 [style = bold, color = midnightblue];    //Ryou
+    Kyou_Ryou_34:a1 -> Kyou_Ryou_35:a1;
+    Kyou_Ryou_34:a1 -> Kyou_Ryou_35:a2;
+    Kyou_Ryou_34:a3 -> Kyou_Ryou_35:a1;
+    Kyou_Ryou_34:a2 -> Kyou_Ryou_35:a2;
+    Kyou_Ryou_34:a3 -> Kyou_Ryou_35:a2;
+
     
     Kyou_Ryou_36 [shape = Mrecord, label = "<a1>Call out|<a2>Run away"];
     Kyou_Ryou_35:a1 -> Kyou_Ryou_36:a1 [style = bold, color = darkorchid];    //Kyou
+    Kyou_Ryou_35:a1 -> Kyou_Ryou_36:a2;
+    Kyou_Ryou_35:a2 -> Kyou_Ryou_36:a1;
+    Kyou_Ryou_35:a2 -> Kyou_Ryou_36:a2;
     
     RYOU_GOOD_END [label = "Ryou's Good End"];
     KYOU_GOOD_END [label = "Kyou's Good End"];
@@ -724,17 +744,17 @@ sleep!
     //Misae_3 [shape = Mrecord, label = "<a>Take the lesson"];
     SEEN0415_q1:a2 -> Tomoyo_2:a2 [style = bold, color = gold];    //Misae
     
-    Misae_4 [shape = Mrecord, label = "<a>Go down to the courtyard"];
-    Tomoyo_2:a2 -> Misae_4:a [style = bold, color = gold];    //Misae
+    //Misae_4 [shape = Mrecord, label = "<a>Go down to the courtyard"];
+    Tomoyo_2:a2 -> Tomoyo_3:a1 [style = bold, color = gold];    //Misae
     
-    Misae_5 [shape = Mrecord, label = "<a>Continue talking"];
-    Misae_4:a -> Misae_5:a [style = bold, color = gold];    //Misae
+    //Misae_5 [shape = Mrecord, label = "<a>Continue talking"];
+    Tomoyo_3:a1 -> Tomoyo_4:a2 [style = bold, color = gold];    //Misae
     
-    Misae_6 [shape = Mrecord, label = "<a>See what's going on"];
-    Misae_5:a -> Misae_6:a [style = bold, color = gold];    //Misae
+    //Misae_6 [shape = Mrecord, label = "<a>See what's going on"];
+    Tomoyo_4:a2 -> Tomoyo_5:a2 [style = bold, color = gold];    //Misae
     
     Misae_7 [shape = Mrecord, label = "<a>Not interested"];
-    Misae_6:a -> Misae_7:a [style = bold, color = gold];    //Misae
+    Tomoyo_5:a2 -> Misae_7:a [style = bold, color = gold];    //Misae
     
     Misae_8 [shape = Mrecord, label = "<a>Don't worry"];
     Misae_7:a -> Misae_8:a [style = bold, color = gold];    //Misae
@@ -797,17 +817,17 @@ sleep!
     //Koumura_3 [shape = Mrecord, label = "<a>Take the lesson"];
     SEEN0415_q1:a2 -> Tomoyo_2:a2 [style = bold, color = seagreen];    //Koumura
     
-    Koumura_4 [shape = Mrecord, label = "<a>Go down to the courtyard"];
-    Tomoyo_2:a2 -> Koumura_4:a [style = bold, color = seagreen];    //Koumura
+    //Koumura_4 [shape = Mrecord, label = "<a>Go down to the courtyard"];
+    Tomoyo_2:a2 -> Tomoyo_3:a1 [style = bold, color = seagreen];    //Koumura
     
-    Koumura_5 [shape = Mrecord, label = "<a>Continue Talking"];
-    Koumura_4:a -> Koumura_5:a [style = bold, color = seagreen];    //Koumura
+    //Koumura_5 [shape = Mrecord, label = "<a>Continue Talking"];
+    Tomoyo_3:a1 -> Tomoyo_4:a2 [style = bold, color = seagreen];    //Koumura
     
-    Koumura_6 [shape = Mrecord, label = "<a>See what's going on"];
-    Koumura_5:a -> Koumura_6:a [style = bold, color = seagreen];    //Koumura
+    //Koumura_6 [shape = Mrecord, label = "<a>See what's going on"];
+    Tomoyo_4:a2 -> Tomoyo_5:a2 [style = bold, color = seagreen];    //Koumura
     
     Koumura_7 [shape = Mrecord, label = "<a>This interests me"];
-    Koumura_6:a -> Koumura_7:a [style = bold, color = seagreen];    //Koumura
+    Tomoyo_5:a2 -> Koumura_7:a [style = bold, color = seagreen];    //Koumura
     
     Koumura_8 [shape = Mrecord, label = "<a>I'm a bit worried"];
     Koumura_7:a -> Koumura_8:a [style = bold, color = seagreen];    //Koumura
@@ -995,14 +1015,14 @@ sleep!
     //Yukine_3 [shape = Mrecord, label = "<a>Take the lesson"];
     SEEN0415_q1:a2 -> Tomoyo_2:a2 [style = bold, color = violet];    //Yukine
     
-    Yukine_4 [shape = Mrecord, label = "<a>Ignore her"];
-    Tomoyo_2:a2 -> Yukine_4:a [style = bold, color = violet];    //Yukine
+    //Yukine_4 [shape = Mrecord, label = "<a>Ignore her"];
+    Tomoyo_2:a2 -> Tomoyo_3:a2 [style = bold, color = violet];    //Yukine
     
-    Yukine_5 [shape = Mrecord, label = "<a>Take refuge"];
-    Yukine_4:a -> Yukine_5:a [style = bold, color = violet];    //Yukine
+    //Yukine_5 [shape = Mrecord, label = "<a>Take refuge"];
+    Tomoyo_3:a2 -> Tomoyo_5:a1 [style = bold, color = violet];    //Yukine
     
     Yukine_6 [shape = Mrecord, label = "<a>Ignore her"];
-    Yukine_5:a -> Yukine_6:a [style = bold, color = violet];    //Yukine
+    Tomoyo_5:a1 -> Yukine_6:a [style = bold, color = violet];    //Yukine
     
     Yukine_7 [shape = Mrecord, label = "<a>Stay in class"];
     Yukine_6:a -> Yukine_7:a [style = bold, color = violet];    //Yukine
@@ -1097,20 +1117,20 @@ sleep!
     //Kotomi_3 [shape = Mrecord, label = "<a>Skip Class"];
     SEEN0415_q1:a2 -> Tomoyo_2:a1 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_4 [shape = Mrecord, label = "<a>Eat something"];
-    Tomoyo_2:a1 -> Kotomi_4:a [style = bold, color = limegreen];    //Kotomi
+    Kotomi_4 [shape = Mrecord, label = "<a1>Eat some|<a2>Decline her offer"];
+    Tomoyo_2:a1 -> Kotomi_4:a1 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_5 [shape = Mrecord, label = "<a>Go down to the courtyard"];
-    Kotomi_4:a -> Kotomi_5:a [style = bold, color = limegreen];    //Kotomi
+    //Kotomi_5 [shape = Mrecord, label = "<a>Go down to the courtyard"];
+    Kotomi_4:a1 -> Tomoyo_3:a1 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_6 [shape = Mrecord, label = "<a>Continue talking"];
-    Kotomi_5:a -> Kotomi_6:a [style = bold, color = limegreen];    //Kotomi
+    //Kotomi_6 [shape = Mrecord, label = "<a>Continue talking"];
+    Tomoyo_3:a1 -> Tomoyo_4:a2 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_7 [shape = Mrecord, label = "<a>See what's going on"];
-    Kotomi_6:a -> Kotomi_7:a [style = bold, color = limegreen];    //Kotomi
+    //Kotomi_7 [shape = Mrecord, label = "<a>See what's going on"];
+    Tomoyo_4:a2 -> Tomoyo_5:a2 [style = bold, color = limegreen];    //Kotomi
     
     Kotomi_8 [shape = Mrecord, label = "<a>Not Interested"];
-    Kotomi_7:a -> Kotomi_8:a [style = bold, color = limegreen];    //Kotomi
+    Tomoyo_5:a2 -> Kotomi_8:a [style = bold, color = limegreen];    //Kotomi
     
     Kotomi_9 [shape = Mrecord, label = "<a>Don't worry"];
     Kotomi_8:a -> Kotomi_9:a [style = bold, color = limegreen];    //Kotomi
@@ -1223,14 +1243,14 @@ sleep!
     //Mei_3 [shape = Mrecord, label = "<a>Take the lesson"];
     SEEN0415_q1:a2 -> Tomoyo_2:a2 [style = bold, color = darkorange];    //Mei
     
-    Mei_4 [shape = Mrecord, label = "<a>Ignore her"];
-    Tomoyo_2:a2 -> Mei_4:a [style = bold, color = darkorange];    //Mei
+    //Mei_4 [shape = Mrecord, label = "<a>Ignore her"];
+    Tomoyo_2:a2 -> Tomoyo_3:a2 [style = bold, color = darkorange];    //Mei
     
-    Mei_5 [shape = Mrecord, label = "<a>Take refuge"];
-    Mei_4:a -> Mei_5:a [style = bold, color = darkorange];    //Mei
+    //Mei_5 [shape = Mrecord, label = "<a>Take refuge"];
+    Tomoyo_3:a2 -> Tomoyo_5:a1 [style = bold, color = darkorange];    //Mei
     
     Mei_6 [shape = Mrecord, label = "<a>Ignore her"];
-    Mei_5:a -> Mei_6:a [style = bold, color = darkorange];    //Mei
+    Tomoyo_5:a1 -> Mei_6:a [style = bold, color = darkorange];    //Mei
     
     Mei_7 [shape = Mrecord, label = "<a>Stay in class"];
     Mei_6:a -> Mei_7:a [style = bold, color = darkorange];    //Mei
@@ -1298,17 +1318,17 @@ sleep!
     //Nagisa_3 [shape = Mrecord, label = "<a>Take the lesson"];
     SEEN0415_q1:a1 -> Tomoyo_2:a2 [style = bold, color = firebrick];    //Nagisa
     
-    Nagisa_4 [shape = Mrecord, label = "<a>Go down to the courtyard"];
-    Tomoyo_2:a2 -> Nagisa_4:a [style = bold, color = firebrick];    //Nagisa
+    //Nagisa_4 [shape = Mrecord, label = "<a>Go down to the courtyard"];
+    Tomoyo_2:a2 -> Tomoyo_3:a1 [style = bold, color = firebrick];    //Nagisa
     
-    Nagisa_5 [shape = Mrecord, label = "<a>Continue talking"];
-    Nagisa_4:a -> Nagisa_5:a [style = bold, color = firebrick];    //Nagisa
+    //Nagisa_5 [shape = Mrecord, label = "<a>Continue talking"];
+    Tomoyo_3:a1 -> Tomoyo_4:a2 [style = bold, color = firebrick];    //Nagisa
     
-    Nagisa_6 [shape = Mrecord, label = "<a>See what's going on"];
-    Nagisa_5:a -> Nagisa_6:a [style = bold, color = firebrick];    //Nagisa
+    //Nagisa_6 [shape = Mrecord, label = "<a>See what's going on"];
+    Tomoyo_4:a2 -> Tomoyo_5:a2 [style = bold, color = firebrick];    //Nagisa
     
     Nagisa_7 [shape = Mrecord, label = "<a>This interests me"];
-    Nagisa_6:a -> Nagisa_7:a [style = bold, color = firebrick];    //Nagisa
+    Tomoyo_5:a2 -> Nagisa_7:a [style = bold, color = firebrick];    //Nagisa
     
     Nagisa_8 [shape = Mrecord, label = "<a>I'm a bit worried"];
     Nagisa_7:a -> Nagisa_8:a [style = bold, color = firebrick];    //Nagisa
@@ -1516,20 +1536,20 @@ sleep!
     //BAD_END_4 [shape = Mrecord, label = "<a>Skip class"];
     SEEN0415_q1:a2 -> Tomoyo_2:a1 [style = bold, color = yellowgreen];    //BAD_END
 
-    BAD_END_5 [shape = Mrecord, label = "<a>Eat some"];
-    Tomoyo_2:a1 -> BAD_END_5:a [style = bold, color = yellowgreen];    //BAD_END
+    //BAD_END_5 [shape = Mrecord, label = "<a>Eat some"];
+    Tomoyo_2:a1 -> Kotomi_4:a1 [style = bold, color = yellowgreen];    //BAD_END
 
-    BAD_END_6 [shape = Mrecord, label = "<a>Go down to the courtyard"];
-    BAD_END_5:a -> BAD_END_6:a [style = bold, color = yellowgreen];    //BAD_END
+    //BAD_END_6 [shape = Mrecord, label = "<a>Go down to the courtyard"];
+    Kotomi_4:a1 -> Tomoyo_3:a1 [style = bold, color = yellowgreen];    //BAD_END
 
-    BAD_END_7 [shape = Mrecord, label = "<a>Continue talking"];
-    BAD_END_6:a -> BAD_END_7:a [style = bold, color = yellowgreen];    //BAD_END
+    //BAD_END_7 [shape = Mrecord, label = "<a>Continue talking"];
+    Tomoyo_3:a1 -> Tomoyo_4:a2 [style = bold, color = yellowgreen];    //BAD_END
 
-    BAD_END_8 [shape = Mrecord, label = "<a>See what's going on"];
-    BAD_END_7:a -> BAD_END_8:a [style = bold, color = yellowgreen];    //BAD_END
+    //BAD_END_8 [shape = Mrecord, label = "<a>See what's going on"];
+    Tomoyo_4:a2 -> Tomoyo_5:a2 [style = bold, color = yellowgreen];    //BAD_END
 
     BAD_END_9 [shape = Mrecord, label = "<a>This interests me"];
-    BAD_END_8:a -> BAD_END_9:a [style = bold, color = yellowgreen];    //BAD_END
+    Tomoyo_5:a2 -> BAD_END_9:a [style = bold, color = yellowgreen];    //BAD_END
 
     BAD_END_10 [shape = Mrecord, label = "<a>I'm a bit worried"];
     BAD_END_9:a -> BAD_END_10:a [style = bold, color = yellowgreen];    //BAD_END
@@ -1736,4 +1756,4 @@ sleep!
     Light3:a2 -> BAD_END_Always_with_me;
 
 
-}
+}digraph Clannad{
