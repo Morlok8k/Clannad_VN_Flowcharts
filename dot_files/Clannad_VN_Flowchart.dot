@@ -66,6 +66,24 @@ sleep!
     SEEN0414_q2:a2 -> SEEN0415_q1:a2;
     SEEN0414_q2:a1 -> SEEN0415_q1:a2;
 
+    subgraph cluster_April_14 {
+        label = "April 14th";
+        SEEN0414_q1;
+        SEEN0414_q2;
+    }
+
+    subgraph cluster_April_15 {
+        label = "April 15th";
+        SEEN0415_q1;
+        Tomoyo_2;
+        Tomoyo_3;
+        Tomoyo_4;
+        Tomoyo_5;
+        Tomoyo_6;
+        Tomoyo_7;
+        Tomoyo_8;
+        Kotomi_4;
+    }
 
     
 // tomoyo
