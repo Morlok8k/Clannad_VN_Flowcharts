@@ -46,28 +46,40 @@ sleep!
 
 
 
-    Note [shape = note, label = "Note:\nThis walkthrough is based off Clannad Full Voice (for the PC) from the \"7 July 2012\" English patch.\nClannad (PC Original version), Clannad Memorial Edition (PC), as well as\nthe PS2, PSP, Xbox 360, and Android versions have identical stories, but most of those are not translated."];
 
-    Clannad_logo [image="dot_files/Clannad_logo.png", label = " ", shape = box, color = invis];
-    Clannad_logo -> Start [style = bold, color = invis];
-    
-    
-    Start [label = "Clannad Start\n(School Story)"];
 
-    SEEN0414_q1 [shape = Mrecord, label = "<a1>Dub something over it|<a2>Don't do anything"];
-    //Start -> SEEN0414_q1:a1;
-    //Start -> SEEN0414_q1:a2;
-    SEEN0414_q2 [shape = Mrecord, label = "<a1>Forget it, this is stupid...|<a2>Say something fitting"];
-    SEEN0414_q1:a1 -> SEEN0414_q2:a1;
-    //SEEN0414_q1:a1 -> SEEN0414_q2:a2;
+/* Note:  The year 2003 was chosen as it was the most logical:
 
-    SEEN0414_q2:a2 -> SEEN0415_q1:a1;
-    SEEN0414_q2:a1 -> SEEN0415_q1:a1;
-    SEEN0414_q2:a2 -> SEEN0415_q1:a2;
-    SEEN0414_q2:a1 -> SEEN0415_q1:a2;
+  * In the year 2003, April 14 was actaully on a Monday.
+      - Monday April 14 also exists in 1986, 1997, and 2008.
 
+  * The game originally came out April 28, 2004 (So the game was being made in 2003)
+
+  * The game is not set in the future or past, just a generic "modern times"
+      - Due to references to technology (cell phones are kinda new, repairing old VHS's, and the internet is relativly new)
+            in Clannad and Tomoyo After, 1997 or 2003 both make a good point in time for the game.
+      - 1986 seems a bit far in the past, but it still is possible by the referenced technology.
+      - 2008 was in the future when the game was made, so thats out.
+
+  * Tomoyo After contains "Monday, June 28th" and is a year after Clannad: School Life
+      - This cuts out 1987, as it has Monday June 29th.
+      - This cuts out 1998, as it has Monday June 29th.
+      - This cuts out 2009, as it has Monday June 29th.
+      + This Verifies 2004, as it has Monday June 28th!!!!!
+
+  So, combining logic and the process of elimination, 2003 is the year.
+      - I think the programmers were just lazy though and just looked at their current calendar while making the game.
+
+*/
+
+/* 
+    The following clusters place each answer set (nodes)
+    into it's respective date.
+    All these nodes are defined below.
+    And their arrows (edges)
+*/ 
     subgraph cluster_April_14 {
-        label = "Monday April 14th, 2003";
+        label = "Monday, April 14th, 2003";
         SEEN0414_q1;
         SEEN0414_q2;
     }
@@ -137,7 +149,180 @@ sleep!
         SEEN4418_q6;
         SEEN4418_q7;
         Kyou_Ryou_12;
+        Nagisa_32;
+        Nagisa_33;
+        Yukine_14;
     }
+
+    subgraph cluster_April_19 {
+        label = "Saturday, April 19th, 2003";
+        Tomoyo_30;
+        Tomoyo_31;
+        Nagisa_35;
+        Yukine_16;
+        Kotomi_24;
+        Kotomi_25;
+    }
+
+    subgraph cluster_April_20 {
+        label = "Sunday, April 20th, 2003";
+        Tomoyo_32;
+        Tomoyo_33;
+        Tomoyo_34;
+        Misae_18;
+        Nagisa_36;
+        Nagisa_39;
+        Kotomi_26;
+        Kotomi_27;
+    }
+
+    subgraph cluster_April_21 {
+        label = "Monday, April 21st, 2003";
+        Tomoyo_35;
+        Tomoyo_36;
+        Tomoyo_37;
+        Tomoyo_38;
+        Tomoyo_39;
+        Misae_19;
+        Misae_20;
+        Misae_21;
+        Misae_22;
+        Kyou_Ryou_17;
+        Kyou_Ryou_18;
+        Kyou_Ryou_19;
+    }
+
+    subgraph cluster_April_22 {
+        label = "Tuesday, April 22nd, 2003";
+        Tomoyo_40;
+        Tomoyo_41;
+        Tomoyo_42;
+    }
+
+    subgraph cluster_April_23 {
+        label = "Wednesday, April 23rd, 2003";
+        Tomoyo_43;
+        Tomoyo_44;
+        Tomoyo_45;
+        Tomoyo_46;
+    }
+
+    subgraph cluster_April_24 {
+        label = "Thursday, April 24th, 2003";
+        Tomoyo_47;
+    }
+
+    subgraph cluster_April_25 {
+        label = "Friday, April 25th, 2003";
+        Tomoyo_48;
+    }
+
+    subgraph cluster_April_26 {
+        label = "Saturday, April 26th, 2003";
+        Tomoyo_49;
+    }
+
+    subgraph cluster_April_27 {
+        label = "Sunday, April 27th, 2003";
+        Fuko_53;
+        Fuko_54;
+        Fuko_55;
+        Nagisa_59;
+
+    }
+
+    subgraph cluster_April_28 {
+        label = "Monday, April 28rd, 2003";
+    }
+
+    subgraph cluster_April_29 {
+        label = "Tuesday, April 29nd, 2003";
+    }
+
+    subgraph cluster_April_30 {
+        label = "Wednesday, April 30rd, 2003";
+    }
+
+    subgraph cluster_May_1 {
+        label = "Thursday, May 1st, 2003";
+    }
+
+    subgraph cluster_May_2 {
+        label = "Friday, May 2nd, 2003";
+        Tomoyo_50;
+    }
+
+    subgraph cluster_May_3 {
+        label = "Saturday, May 3rd, 2003";
+        Tomoyo_51;
+        Tomoyo_52;
+        Tomoyo_53;
+    }
+
+    subgraph cluster_May_4 {
+        label = "Sunday, May 4th, 2003";
+        Tomoyo_54;
+    }
+
+    subgraph cluster_May_5 {
+        label = "Monday, May 5th, 2003";
+        Tomoyo_55;
+    }
+
+    subgraph cluster_May_6 {
+        label = "Tuesday, May 6th, 2003";
+        Tomoyo_56;
+        Tomoyo_57;
+    }
+
+    subgraph cluster_May_7 {
+        label = "Wednesday, May 7th, 2003";
+    }
+
+    subgraph cluster_May_8 {
+        label = "Thursday, May 8th, 2003";
+    }
+
+    /*
+    subgraph cluster_May_9 {
+        label = "Friday, May 9th, 2003";    // May 9th has no answer sets in any path
+    }
+    */
+
+    subgraph cluster_May_10 {
+        label = "Saturday, May 10th, 2003";
+    }
+
+    subgraph cluster_May_11 {
+        label = "Sunday, May 11th, 2003";
+        Tomoyo_58;
+        Tomoyo_59;
+    }
+
+    // Days after May 11th are usually labeled as the Path's name
+
+
+
+
+    Note [shape = note, label = "Note:\nThis walkthrough is based off Clannad Full Voice (for the PC) from the \"7 July 2012\" English patch.\nClannad (PC Original version), Clannad Memorial Edition (PC), as well as\nthe PS2, PSP, Xbox 360, and Android versions have identical stories, but most of those are not translated."];
+
+    Clannad_logo [image="dot_files/Clannad_logo.png", label = " ", shape = box, color = invis];
+    Clannad_logo -> Start [style = bold, color = invis];
+    
+    
+    Start [label = "Clannad Start\n(School Story)"];
+
+    SEEN0414_q1 [shape = Mrecord, label = "<a1>Dub something over it|<a2>Don't do anything"];
+    //Start -> SEEN0414_q1:a1;
+    //Start -> SEEN0414_q1:a2;
+    SEEN0414_q2 [shape = Mrecord, label = "<a1>Forget it, this is stupid...|<a2>Say something fitting"];
+    SEEN0414_q1:a1 -> SEEN0414_q2:a1;
+    //SEEN0414_q1:a1 -> SEEN0414_q2:a2;
+
+    SEEN0414_q2:a2 -> SEEN0415_q1:a1;
+    SEEN0414_q2:a1 -> SEEN0415_q1:a1;
+    SEEN0414_q2:a2 -> SEEN0415_q1:a2;
+    SEEN0414_q2:a1 -> SEEN0415_q1:a2;
 
     
 // tomoyo
@@ -411,17 +596,17 @@ sleep!
     //Fuko_21 [shape = Mrecord, label = "<a>I guess I'll go back to class"];
     Tomoyo_25:a2 -> Tomoyo_26:a2 [style = bold, color = olivedrab];    //Fuko
     
-    Fuko_22 [shape = Mrecord, label = "<a>What sort of drama play are you planning?"];
-    Tomoyo_26:a2 -> Fuko_22:a [style = bold, color = olivedrab];    //Fuko
+    //Fuko_22 [shape = Mrecord, label = "<a>What sort of drama play are you planning?"];
+    Tomoyo_26:a2 -> Nagisa_32:a [style = bold, color = olivedrab];    //Fuko
     
-    Fuko_23 [shape = Mrecord, label = "<a>Grab Furukawa's hand and run away."];
-    Fuko_22:a -> Fuko_23:a [style = bold, color = olivedrab];    //Fuko
+    //Fuko_23 [shape = Mrecord, label = "<a>Grab Furukawa's hand and run away."];
+    Nagisa_32:a -> Nagisa_33:a [style = bold, color = olivedrab];    //Fuko
     
-    Fuko_24 [shape = Mrecord, label = "<a>Go and see."];
-    Fuko_23:a -> Fuko_24:a [style = bold, color = olivedrab];    //Fuko
+    //Fuko_24 [shape = Mrecord, label = "<a>Go and see."];
+    Nagisa_33:a -> Nagisa_35:a [style = bold, color = olivedrab];    //Fuko
     
     Fuko_25 [shape = Mrecord, label = "<a>Where's Sanae-san?"];
-    Fuko_24:a -> Fuko_25:a [style = bold, color = olivedrab];    //Fuko
+    Nagisa_35:a -> Fuko_25:a [style = bold, color = olivedrab];    //Fuko
     
     Fuko_26 [shape = Mrecord, label = "<a>Ignore him"];
     Fuko_25:a -> Fuko_26:a [style = bold, color = olivedrab];    //Fuko
@@ -632,20 +817,20 @@ sleep!
     //Kappei_16 [shape = Mrecord, label = "<a2>Watch a little longer"];
     Tomoyo_32:a2 -> Tomoyo_33:a2 [style = bold, color = cadetblue];    //Kappei
     
-    Kappei_17 [shape = Mrecord, label = "<a>Help out"];
-    Tomoyo_33:a2 -> Kappei_17:a [style = bold, color = cadetblue];    //Kappei
+    //Kappei_17 [shape = Mrecord, label = "<a>Help out"];
+    Tomoyo_33:a2 -> Nagisa_39:a [style = bold, color = cadetblue];    //Kappei
     
 
     
-    Kyou_Ryou_16 [shape = Mrecord, label = "<a1>Get out of bed|<a2>Go to class later"];
-    Tomoyo_32:a2 -> Kyou_Ryou_16:a2 [style = bold, color = darkorchid];    //Kyou
-    Tomoyo_32:a2 -> Kyou_Ryou_16:a2 [style = bold, color = midnightblue];    //Ryou
-    Kappei_17:a -> Kyou_Ryou_16:a2 [style = bold, color = cadetblue];    //Kappei
+    //Kyou_Ryou_16 [shape = Mrecord, label = "<a1>Get out of bed|<a2>Go to class later"];
+    Tomoyo_32:a2 -> Tomoyo_35:a2 [style = bold, color = darkorchid];    //Kyou
+    Tomoyo_32:a2 -> Tomoyo_35:a2 [style = bold, color = midnightblue];    //Ryou
+    Nagisa_39:a -> Tomoyo_35:a2 [style = bold, color = cadetblue];    //Kappei
     
     Kyou_Ryou_17 [shape = Mrecord, label = "<a1>Jump to the right|<a2>Stay still|<a3>Jump to the left"];
-    Kyou_Ryou_16:a2 -> Kyou_Ryou_17:a1 [style = bold, color = darkorchid];    //Kyou
-    Kyou_Ryou_16:a2 -> Kyou_Ryou_17:a1 [style = bold, color = midnightblue];    //Ryou
-    Kyou_Ryou_16:a2 -> Kyou_Ryou_17:a1 [style = bold, color = cadetblue];    //Kappei
+    Tomoyo_35:a2 -> Kyou_Ryou_17:a1 [style = bold, color = darkorchid];    //Kyou
+    Tomoyo_35:a2 -> Kyou_Ryou_17:a1 [style = bold, color = midnightblue];    //Ryou
+    Tomoyo_35:a2 -> Kyou_Ryou_17:a1 [style = bold, color = cadetblue];    //Kappei
     
     Kyou_Ryou_18 [shape = Mrecord, label = "<a1>Run Away|<a2>Wake the person up"];
     Kyou_Ryou_17:a1 -> Kyou_Ryou_18:a1 [style = bold, color = darkorchid];    //Kyou
@@ -964,26 +1149,26 @@ sleep!
     //Koumura_28 [shape = Mrecord, label = "<a>I guess I'll go back to class"];
     Tomoyo_25:a2 -> Tomoyo_26:a2 [style = bold, color = seagreen];    //Koumura
     
-    Koumura_29 [shape = Mrecord, label = "<a>Help her"];
-    Tomoyo_26:a2 -> Koumura_29:a [style = bold, color = seagreen];    //Koumura
+    //Koumura_29 [shape = Mrecord, label = "<a>Help her"];
+    Tomoyo_26:a2 -> Tomoyo_28:a1 [style = bold, color = seagreen];    //Koumura
     
-    Koumura_30 [shape = Mrecord, label = "<a>What sort of drama play are you planning?"];
-    Koumura_29:a -> Koumura_30:a [style = bold, color = seagreen];    //Koumura
+    //Koumura_30 [shape = Mrecord, label = "<a>What sort of drama play are you planning?"];
+    Tomoyo_28:a1 -> Nagisa_32:a [style = bold, color = seagreen];    //Koumura
     
-    Koumura_31 [shape = Mrecord, label = "<a>Grab Furukawa's hand and run away"];
-    Koumura_30:a -> Koumura_31:a [style = bold, color = seagreen];    //Koumura
+    //Koumura_31 [shape = Mrecord, label = "<a>Grab Furukawa's hand and run away"];
+    Nagisa_32:a -> Nagisa_33:a [style = bold, color = seagreen];    //Koumura
     
-    Koumura_32 [shape = Mrecord, label = "<a>Stop him"];
-    Koumura_31:a -> Koumura_32:a [style = bold, color = seagreen];    //Koumura
+    //Koumura_32 [shape = Mrecord, label = "<a>Stop him"];
+    Nagisa_33:a -> Tomoyo_30:a1 [style = bold, color = seagreen];    //Koumura
     
-    Koumura_33 [shape = Mrecord, label = "<a>Go and see."];
-    Koumura_32:a -> Koumura_33:a [style = bold, color = seagreen];    //Koumura
+    //Koumura_33 [shape = Mrecord, label = "<a>Go and see."];
+    Tomoyo_30:a1 -> Nagisa_35:a [style = bold, color = seagreen];    //Koumura
     
-    Koumura_34 [shape = Mrecord, label = "<a>How's Furukawa doing?"];
-    Koumura_33:a -> Koumura_34:a [style = bold, color = seagreen];    //Koumura
+    //Koumura_34 [shape = Mrecord, label = "<a>How's Furukawa doing?"];
+    Nagisa_35:a -> Nagisa_36:a [style = bold, color = seagreen];    //Koumura
     
     //Koumura_35 [shape = Mrecord, label = "<a>Go there"];
-    Koumura_34:a -> Tomoyo_32:a1 [style = bold, color = seagreen];    //Koumura
+    Nagisa_36:a -> Tomoyo_32:a1 [style = bold, color = seagreen];    //Koumura
     
     //Koumura_36 [shape = Mrecord, label = "<a>Watch a little longer"];
     Tomoyo_32:a1 -> Tomoyo_33:a2 [style = bold, color = seagreen];    //Koumura
@@ -1114,11 +1299,11 @@ sleep!
     //Yukine_12 [shape = Mrecord, label = "<a>Head there to sleep"];
     Tomoyo_22:a2 -> Tomoyo_26:a1 [style = bold, color = violet];    //Yukine
     
-    Yukine_13 [shape = Mrecord, label = "<a>Talk to her some more"];
-    Tomoyo_26:a1 -> Yukine_13:a [style = bold, color = violet];    //Yukine
+    //Yukine_13 [shape = Mrecord, label = "<a>Talk to her some more"];
+    Tomoyo_26:a1 -> Tomoyo_27:a2 [style = bold, color = violet];    //Yukine
     
     Yukine_14 [shape = Mrecord, label = "<a>Sleep"];
-    Yukine_13:a -> Yukine_14:a [style = bold, color = violet];    //Yukine
+    Tomoyo_27:a2 -> Yukine_14:a [style = bold, color = violet];    //Yukine
     
     //Yukine_15 [shape = Mrecord, label = "<a>Go to the old school building"];
     Yukine_14:a -> Tomoyo_31:a1 [style = bold, color = violet];    //Yukine
@@ -1135,11 +1320,11 @@ sleep!
     Yukine_19 [shape = Mrecord, label = "<a>Refuse"];
     Tomoyo_33:a2 -> Yukine_19:a [style = bold, color = violet];    //Yukine
     
-    Yukine_20 [shape = Mrecord, label = "<a>Wake up completely"];
-    Yukine_19:a -> Yukine_20:a [style = bold, color = violet];    //Yukine
+    //Yukine_20 [shape = Mrecord, label = "<a>Wake up completely"];
+    Yukine_19:a -> Misae_19:a [style = bold, color = violet];    //Yukine
     
     //Yukine_21 [shape = Mrecord, label = "<a1>|<a2>React when you see me as you enter|<a3>Introduce yourself first", color = red];    //TODO:  I'm not seeing this option!!!!!
-    Yukine_20:a -> Tomoyo_44:a3 [style = bold, color = violet];    //Yukine
+    Misae_19:a -> Tomoyo_44:a3 [style = bold, color = violet];    //Yukine
     
     Yukine_22 [shape = Mrecord, label = "<a>Go"];
     Tomoyo_44:a3 -> Yukine_22:a [style = bold, color = violet];    //Yukine
@@ -1284,10 +1469,10 @@ sleep!
     Kotomi_26:a2 -> Kotomi_27:a1 [style = bold, color = limegreen];    //Kotomi
     
     //Kotomi_28 [shape = Mrecord, label = "<a1>Get out of bed|<a2>Go to class later"];
-    Kotomi_27:a1 -> Kyou_Ryou_16:a1 [style = bold, color = limegreen];    //Kotomi
+    Kotomi_27:a1 -> Tomoyo_35:a1 [style = bold, color = limegreen];    //Kotomi
     
     Kotomi_29 [shape = Mrecord, label = "<a1>Tell her \"You got it wrong\"|<a2>Try and tease her a little"];
-    Kyou_Ryou_16:a1 -> Kotomi_29:a1 [style = bold, color = limegreen];    //Kotomi
+    Tomoyo_35:a1 -> Kotomi_29:a1 [style = bold, color = limegreen];    //Kotomi
     
     Kotomi_30 [shape = Mrecord, label = "<a>Go to the staff room"];
     Kotomi_29:a1 -> Kotomi_30:a [style = bold, color = limegreen];    //Kotomi
@@ -1370,14 +1555,14 @@ sleep!
     //Mei_14 [shape = Mrecord, label = "<a>Watch a little longer"];
     Tomoyo_32:a1 -> Tomoyo_33:a2 [style = bold, color = darkorange];    //Mei
     
-    Mei_15 [shape = Mrecord, label = "<a>Help out"];
-    Tomoyo_33:a2 -> Mei_15:a [style = bold, color = darkorange];    //Mei
+    //Mei_15 [shape = Mrecord, label = "<a>Help out"];
+    Tomoyo_33:a2 -> Nagisa_39:a [style = bold, color = darkorange];    //Mei
     
-    Mei_16 [shape = Mrecord, label = "<a>Wake up completely"];
-    Mei_15:a -> Mei_16:a [style = bold, color = darkorange];    //Mei
+    //Mei_16 [shape = Mrecord, label = "<a>Wake up completely"];
+    Nagisa_39:a -> Misae_19:a [style = bold, color = darkorange];    //Mei
     
     Mei_17 [shape = Mrecord, label = "<a>Say, \"Good Day\""];
-    Mei_16:a -> Mei_17:a [style = bold, color = darkorange];    //Mei
+    Misae_19:a -> Mei_17:a [style = bold, color = darkorange];    //Mei
     
     Mei_18 [shape = Mrecord, label = "<a>Say it like Ikkoku Dou"];
     Mei_17:a -> Mei_18:a [style = bold, color = darkorange];    //Mei
@@ -1493,20 +1678,20 @@ sleep!
     //Nagisa_30 [shape = Mrecord, label = "<a>I guess I'll go back to class"];
     Tomoyo_25:a2 -> Tomoyo_26:a2 [style = bold, color = firebrick];    //Nagisa
     
-    Nagisa_31 [shape = Mrecord, label = "<a>Help her"];
-    Tomoyo_26:a2 -> Nagisa_31:a [style = bold, color = firebrick];    //Nagisa
+    //Nagisa_31 [shape = Mrecord, label = "<a>Help her"];
+    Tomoyo_26:a2 -> Tomoyo_28:a1 [style = bold, color = firebrick];    //Nagisa
     
     Nagisa_32 [shape = Mrecord, label = "<a>What sort of drama play are you planning?"];
-    Nagisa_31:a -> Nagisa_32:a [style = bold, color = firebrick];    //Nagisa
+    Tomoyo_28:a1 -> Nagisa_32:a [style = bold, color = firebrick];    //Nagisa
     
     Nagisa_33 [shape = Mrecord, label = "<a>Grab Furukawa's hand and run away"];
     Nagisa_32:a -> Nagisa_33:a [style = bold, color = firebrick];    //Nagisa
     
-    Nagisa_34 [shape = Mrecord, label = "<a>Stop him"];
-    Nagisa_33:a -> Nagisa_34:a [style = bold, color = firebrick];    //Nagisa
+    //Nagisa_34 [shape = Mrecord, label = "<a>Stop him"];
+    Nagisa_33:a -> Tomoyo_30:a1 [style = bold, color = firebrick];    //Nagisa
     
     Nagisa_35 [shape = Mrecord, label = "<a>Go and see"];
-    Nagisa_34:a -> Nagisa_35:a [style = bold, color = firebrick];    //Nagisa
+    Tomoyo_30:a1 -> Nagisa_35:a [style = bold, color = firebrick];    //Nagisa
     
     Nagisa_36 [shape = Mrecord, label = "<a>How's Furukawa doing?"];
     Nagisa_35:a -> Nagisa_36:a [style = bold, color = firebrick];    //Nagisa
@@ -1720,17 +1905,17 @@ sleep!
     SEEN4418_q7 [shape = Mrecord, label = "<a1>Eat with Kotomi from now on|<a2>Keep on eating with Nagisa"];
     SEEN4418_q6:a1 -> SEEN4418_q7:a1 [style = bold, color = yellowgreen];    //BAD_END
 
-    BAD_END_35 [shape = Mrecord, label = "<a>Help her"];
-    SEEN4418_q7:a1 -> BAD_END_35:a [style = bold, color = yellowgreen];    //BAD_END
+    //BAD_END_35 [shape = Mrecord, label = "<a>Help her"];
+    SEEN4418_q7:a1 -> Tomoyo_28:a1 [style = bold, color = yellowgreen];    //BAD_END
 
-    BAD_END_36 [shape = Mrecord, label = "<a>What sort of drama play are you planning?"];
-    BAD_END_35:a -> BAD_END_36:a [style = bold, color = yellowgreen];    //BAD_END
+    //BAD_END_36 [shape = Mrecord, label = "<a>What sort of drama play are you planning?"];
+    Tomoyo_28:a1 -> Nagisa_32:a [style = bold, color = yellowgreen];    //BAD_END
 
-    BAD_END_37 [shape = Mrecord, label = "<a>Stop him"];
-    BAD_END_36:a -> BAD_END_37:a [style = bold, color = yellowgreen];    //BAD_END
+    //BAD_END_37 [shape = Mrecord, label = "<a>Stop him"];
+    Nagisa_32:a -> Tomoyo_30:a1 [style = bold, color = yellowgreen];    //BAD_END
 
     //BAD_END_38 [shape = Mrecord, label = "<a>Go to the old school building"];
-    BAD_END_37:a -> Tomoyo_31:a1 [style = bold, color = yellowgreen];    //BAD_END
+    Tomoyo_30:a1 -> Tomoyo_31:a1 [style = bold, color = yellowgreen];    //BAD_END
 
     //BAD_END_39 [shape = Mrecord, label = "<a>To the reference room"];
     Tomoyo_31:a1 -> Yukine_16:a3 [style = bold, color = yellowgreen];    //BAD_END
@@ -1750,11 +1935,11 @@ sleep!
     BAD_END_44 [shape = Mrecord, label = "<a>Try to play it*\n(See the Heartfelt Academy section)"];
     BAD_END_43:a -> BAD_END_44:a [style = bold, color = yellowgreen];    //BAD_END
 
-    BAD_END_45 [shape = Mrecord, label = "<a>Wake up completely"];
-    BAD_END_44:a -> BAD_END_45:a [style = bold, color = yellowgreen];    //BAD_END
+    //BAD_END_45 [shape = Mrecord, label = "<a>Wake up completely"];
+    BAD_END_44:a -> Misae_19:a [style = bold, color = yellowgreen];    //BAD_END
 
     BAD_END_46 [shape = Mrecord, label = "<a>Call out to her"];
-    BAD_END_45:a -> BAD_END_46:a [style = bold, color = yellowgreen];    //BAD_END
+    Misae_19:a -> BAD_END_46:a [style = bold, color = yellowgreen];    //BAD_END
 
     BAD_END_47 [shape = Mrecord, label = "<a>I guess so..."];
     BAD_END_46:a -> BAD_END_47:a [style = bold, color = yellowgreen];    //BAD_END
