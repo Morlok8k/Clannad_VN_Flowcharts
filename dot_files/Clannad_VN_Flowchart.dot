@@ -365,7 +365,7 @@ sleep!
 
     
 // tomoyo
-    //Start -> SEEN0414_q1:a2 [style = bold, color = lightblue3];    //Tomoyo
+    Start -> SEEN0414_q1:a2 [style = bold, color = lightblue3];    //Tomoyo
 
 
     //April 15
