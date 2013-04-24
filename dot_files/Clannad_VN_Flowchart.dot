@@ -340,7 +340,13 @@ sleep!
 
     // Days after May 11th are usually labeled as the Path's name
 
+
+
+
+
     Note [shape = note, label = "Note:\nThis walkthrough is based off Clannad Full Voice (for the PC) from the \"7 July 2012\" English patch.\nClannad (PC Original version), Clannad Memorial Edition (PC), as well as\nthe PS2, PSP, Xbox 360, and Android versions have identical stories, but most of those are not translated."];
+    //TODO: get this note on the other side of the image, as there is plenty of room there...
+
 
     Clannad_logo [image="dot_files/Clannad_logo.png", label = " ", shape = box, color = invis];
     Clannad_logo -> Start [style = bold, color = invis];
@@ -350,7 +356,7 @@ sleep!
 
     //Start -> SEEN0414_q1:a2 [color = "lightblue3:olivedrab:darkorchid:midnightblue:cadetblue:gold:seagreen:violet:limegreen:darkorange:firebrick"];
     //Start -> SEEN0414_q1:a1 [color = "yellowgreen"];
-
+        // this was a test of the parallel edges feature.  //TODO: get it to look nicer?  research needed.
 
 
     SEEN0414_q1 [shape = Mrecord, label = "<a1>Dub something over it|<a2>Don't do anything"];
