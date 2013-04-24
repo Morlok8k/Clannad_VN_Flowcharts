@@ -25,6 +25,13 @@
 # The same applies to pngcrush.
 #
 
+echo "- Finding Files..."
+for dot in `find $1 -name "*.dot"`;
+do
+  echo "-- Found: $dot"
+done;
+
+echo ""
 echo "- Graphing..."
 echo " "
 
@@ -42,13 +49,20 @@ do
                           # PART4 is .dot
   PART4="${PART4#*.}"     # PART4 is dot
 
+  # Notice: The above fails if the filename starts with a "." for a hidden file.
+  #         Thus we have the following check:
+  if [ "$PART3" = "" ]
+  then
+    PART3=".${PART4%%.*}"     #fixing
+  fi
+
   # move .png file down one folder, change *.dot.png to just *.png
   mv ./$PART2/$PART3.dot.png ./$PART3.png
 
   echo "-- Compressing: $PART3.png" 
-  pngcrush -q -m 113 $PART3.png temp.png
+  pngcrush -q -m 113 $PART3.png .temp_png.png
   # pngcrush can complain about overwriting a file.  thus temp.png
-  mv -f temp.png $PART3.png
+  mv -f .temp_png.png $PART3.png
 
   echo " "
 
