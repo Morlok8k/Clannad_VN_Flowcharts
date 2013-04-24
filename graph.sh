@@ -25,12 +25,6 @@
 # The same applies to pngcrush.
 #
 
-echo "- Finding Files..."
-for dot in `find $1 -name "*.dot"`;
-do
-  echo "-- Found: $dot"
-done;
-
 echo ""
 echo "- Graphing..."
 echo " "
