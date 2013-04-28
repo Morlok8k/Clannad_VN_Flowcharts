@@ -29,7 +29,7 @@ digraph Clannad {
 
 
     subgraph cluster_Heartfelt_Academy{
-        label = "";    //empty label for this cluster, else the "The Definitive Clannad Visual Novel" text will appear instead.
+        label = "Heartfelt Academy Minigame\n(a.k.a Doki Doki Highschool)";    //label for this cluster, else the "The Definitive Clannad Visual Novel" text will appear instead.
         
         Heartfelt_Academy_start [label = "\"This is the Heartfelt Academy\"\nMinigame\nStart"];
         HFA_game_over [label = "Game Over", color = red];    //Retry | Stop reading (Go to April 21 in clannad)
