@@ -104,7 +104,7 @@ sleep!
         Tomoyo_6;
         Tomoyo_7;
         Tomoyo_8;
-        Kotomi_4;
+
     }
 
     subgraph cluster_April_16 {
@@ -118,6 +118,11 @@ sleep!
         Nagisa_12;
         Nagisa_16;
         Fuko_12;  //TODO: merge with Nagisa_16
+    }
+
+    subgraph cluster_April_15_16 {
+        label = "Tuesday, April 15th, 2003\n- OR -\nWednesday, April 16th, 2003";
+        Kotomi_4;
     }
 
     subgraph cluster_April_17 {
@@ -1329,11 +1334,11 @@ sleep!
     //Yukine_7 [shape = Mrecord, label = "<a>Stay in class"];
     Tomoyo_8:a2 -> Tomoyo_10:a2 [style = bold, color = violet];    //Yukine
     
-    Yukine_8 [shape = Mrecord, label = "<a>Decline offer"];
-    Tomoyo_10:a2 -> Yukine_8:a [style = bold, color = violet];    //Yukine
+    //Yukine_8 [shape = Mrecord, label = "<a>Decline offer"];
+    Tomoyo_10:a2 -> Kotomi_4:a2 [style = bold, color = violet];    //Yukine
     
     //Yukine_9 [shape = Mrecord, label = "<a>Waste time outside the school"];
-    Yukine_8:a -> Tomoyo_16:a2 [style = bold, color = violet];    //Yukine
+    Kotomi_4:a2 -> Tomoyo_16:a2 [style = bold, color = violet];    //Yukine
     
     //Yukine_10 [shape = Mrecord, label = "<a>See her off"];
     Tomoyo_16:a2 -> Tomoyo_19:a2 [style = bold, color = violet];    //Yukine
@@ -1520,44 +1525,46 @@ sleep!
     Kotomi_29 [shape = Mrecord, label = "<a1>Tell her \"You got it wrong\"|<a2>Try and tease her a little"];
     Tomoyo_35:a1 -> Kotomi_29:a1 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_30 [shape = Mrecord, label = "<a>Go to the staff room"];
-    Kotomi_29:a1 -> Kotomi_30:a [style = bold, color = limegreen];    //Kotomi
+    Kotomi_30 [shape = Mrecord, label = "<a1>Go to the staff room|<a2>Wait a little bit"];
+    Kotomi_29:a1 -> Kotomi_30:a1 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_31 [shape = Mrecord, label = "<a>Wait obediently"];
-    Kotomi_30:a -> Kotomi_31:a [style = bold, color = limegreen];    //Kotomi
+    Kotomi_31 [shape = Mrecord, label = "<a1>Wait obediently|<a2>Make an escape, of course"];
+    Kotomi_30:a1 -> Kotomi_31:a1 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_32 [shape = Mrecord, label = "<a>Go outside"];
-    Kotomi_31:a -> Kotomi_32:a [style = bold, color = limegreen];    //Kotomi
+    Kotomi_32 [shape = Mrecord, label = "<a1>Stay inside the house|<a2>Go outside"];
+    Kotomi_31:a1 -> Kotomi_32:a2 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_33 [shape = Mrecord, label = "<a>Help Kotomi"];
-    Kotomi_32:a -> Kotomi_33:a [style = bold, color = limegreen];    //Kotomi
+    Kotomi_33 [shape = Mrecord, label = "<a1>Watch the situation|<a2>Help Kotomi"];
+    Kotomi_32:a2 -> Kotomi_33:a2 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_34 [shape = Mrecord, label = "<a>Not right now, but..."];
-    Kotomi_33:a -> Kotomi_34:a [style = bold, color = limegreen];    //Kotomi
+    Kotomi_34 [shape = Mrecord, label = "<a1>I'm just her friend|<a2>Not right now, but..."];
+    Kotomi_33:a2 -> Kotomi_34:a2 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_35 [shape = Mrecord, label = "<a>I guess this is also fine..."];
-    Kotomi_34:a -> Kotomi_35:a [style = bold, color = limegreen];    //Kotomi
+    Kotomi_35 [shape = Mrecord, label = "<a1>Drive away the intruders|<a2>I guess this is also fine..."];
+    Kotomi_34:a2 -> Kotomi_35:a2 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_36 [shape = Mrecord, label = "<a>Confess"];
-    Kotomi_35:a -> Kotomi_36:a [style = bold, color = limegreen];    //Kotomi
+    Kotomi_36 [shape = Mrecord, label = "<a1>Confess|<a2>Don't confess"];
+    Kotomi_35:a2 -> Kotomi_36:a1 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_37 [shape = Mrecord, label = "<a>Why do you ask such a thing?"];
-    Kotomi_36:a -> Kotomi_37:a [style = bold, color = limegreen];    //Kotomi
+    Kotomi_37 [shape = Mrecord, label = "<a1>Why do you ask such a thing?|<a2>It's not exactly what one would call dating..."];
+    Kotomi_36:a1 -> Kotomi_37:a1 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_38 [shape = Mrecord, label = "<a>Continue"];
-    Kotomi_37:a -> Kotomi_38:a [style = bold, color = limegreen];    //Kotomi
+    Kotomi_38 [shape = Mrecord, label = "<a1>Stop this now|<a2>Continue"];
+    Kotomi_37:a1 -> Kotomi_38:a2 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_39 [shape = Mrecord, label = "<a>Say \"Don't give up\"."];
-    Kotomi_38:a -> Kotomi_39:a [style = bold, color = limegreen];    //Kotomi
+    Kotomi_39 [shape = Mrecord, label = "<a1>Say \"There's no choice but to give up.\"|<a2>Say \"Don't give up\"."];    //TODO: didnt see this answer set...
+    Kotomi_38:a2 -> Kotomi_39:a2 [style = bold, color = limegreen];    //Kotomi
     
-    Kotomi_40 [shape = Mrecord, label = "<a>Persevere"];
-    Kotomi_39:a -> Kotomi_40:a [style = bold, color = limegreen];    //Kotomi
+    Kotomi_40 [shape = Mrecord, label = "<a1>Stop this|<a2>Persevere"];
+    Kotomi_39:a2 -> Kotomi_40:a2 [style = bold, color = limegreen];    //Kotomi
     
     Kotomi_END [label = "Kotomi's Good Ending"];
-    Kotomi_40:a -> Kotomi_END [style = bold, color = limegreen];    //Kotomi
+    Kotomi_40:a2 -> Kotomi_END [style = bold, color = limegreen];    //Kotomi
     
-    
-    
+    Kotomi_BAD_END [label = "Kotomi's Bad Ending"];
+    Kotomi_38:a1 -> Kotomi_BAD_END;
+    Kotomi_39:a1 -> Kotomi_BAD_END;
+    Kotomi_40:a1 -> Kotomi_BAD_END;
     
     //Mei_1 [shape = Mrecord, label = "<a>Don't do anything"];
     Start -> SEEN0414_q1:a2 [style = bold, color = darkorange];    //Mei
