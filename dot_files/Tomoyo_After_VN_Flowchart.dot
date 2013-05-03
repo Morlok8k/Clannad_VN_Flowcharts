@@ -21,7 +21,18 @@ digraph Tomoyo_After_PC {
     // The Definitive Tomoyo After Visual Novel Flowchart
 
     graph [label = "\n\n\n\nThe Definitive Tomoyo After Visual Novel Flowchart\nby Morlok8k, Version 0.1 alpha, April 2013\nhttps://github.com/Morlok8k/Clannad_VN_Flowcharts\n--------------------\nCopyright © 2013\nThis work is free. You can redistribute it and/or modify it under the\nterms of the Do What The Fuck You Want To Public License, Version 2,\nas published by Sam Hocevar. See http://www.wtfpl.net/ for more details.\n\nLogo is Copyright © Key / Visual Art's" ];
-   ranksep=1.25;
+    colorscheme=X11;
+    ranksep=1.25;
+    compound=true;
+    node [fontsize=16];
+    fontname="Arial";
+    
+    //bgcolor=white;
+    //edge [arrowsize=1, color=black];
+    concentrate=false;
+    //splines=ortho;
+    splines=true;
+
 
 /*
 TODO:
