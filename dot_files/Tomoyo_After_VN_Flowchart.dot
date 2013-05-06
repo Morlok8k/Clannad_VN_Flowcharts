@@ -24,8 +24,9 @@ digraph Tomoyo_After_PC {
     colorscheme=X11;
     ranksep=1.25;
     compound=true;
-    node [fontsize=16];
+    node [fontname="Arial", fontsize=10];
     fontname="Arial";
+    fontsize=10;
     
     //bgcolor=white;
     //edge [arrowsize=1, color=black];
