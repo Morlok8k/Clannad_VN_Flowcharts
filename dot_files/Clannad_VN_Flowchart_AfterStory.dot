@@ -304,7 +304,7 @@ digraph Clannad {
     YOSHINO_LIGHT -> AF_SUMMER_BREAK [style = bold, color = green];
     AF_YOSHINO -> AF_SUMMER_BREAK [label = "Yoshino's\nflag\n= false"];
 
-    AF_JULY4_q1 [shape = Mrecord, label = "<a1>Pop's treasured porn book|<a2>Sanae-san's underwear|<a3>DonÃ¢â?¬â?¢t want either"];
+    AF_JULY4_q1 [shape = Mrecord, label = "<a1>Pop's treasured porn book|<a2>Sanae-san's underwear|<a3>Don't want either"];
     AF_SUMMER_BREAK -> AF_JULY4_q1:a1;
     AF_SUMMER_BREAK -> AF_JULY4_q1:a2;
     AF_SUMMER_BREAK -> AF_JULY4_q1:a3 [style = bold, color = cornflowerblue];
@@ -324,7 +324,7 @@ digraph Clannad {
     SUMMER_END -> AF_DEC1_q1:a1 [style = bold, color = cornflowerblue];
     SUMMER_END -> AF_DEC1_q1:a2 [style = bold, color = green];
 
-    AF_DEC1_q2 [shape = Mrecord, label = "<a1>I am|<a2>IÃ¢â?¬â?¢m not"];
+    AF_DEC1_q2 [shape = Mrecord, label = "<a1>I am|<a2>I'm not"];
     AF_DEC1_q1:a1 -> AF_DEC1_q2:a2 [style = bold, color = cornflowerblue];
     AF_DEC1_q1:a1 -> AF_DEC1_q2:a1;
 
