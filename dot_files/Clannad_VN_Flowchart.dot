@@ -29,7 +29,7 @@ digraph Clannad {
     fontsize=10;
     
     //bgcolor=white;
-    //edge [arrowsize=1, color=black];
+    edge [fontname="Arial", fontsize=10, arrowsize=1, color=black];
     concentrate=false;
     //splines=ortho;
     splines=true;
