@@ -232,7 +232,6 @@ sleep!
         Nagisa_48;
         Nagisa_49;
         Fuko_34;
-        Mei_17;
         Yukine_22;
         Yukine_23;
     }
@@ -253,6 +252,7 @@ sleep!
         Fuko_41;
         Fuko_42;
         Mei_18;
+        BAD_END_52;
     }
 
     subgraph cluster_April_22_23 {
@@ -281,6 +281,13 @@ sleep!
         Kyou_Ryou_27;
         Fuko_47;
         Fuko_48;
+        Light_gun_game;
+        Light1;
+        Light2;
+        Light4;
+        Light5;
+        Light6;
+        Light7;
     }
 
     subgraph cluster_April_26 {
@@ -294,6 +301,7 @@ sleep!
         Fuko_50;
         Fuko_51;
         Fuko_52;
+        Light3;
     }
 
     subgraph cluster_April_27 {
@@ -1684,11 +1692,11 @@ sleep!
     //Mei_16 [shape = Mrecord, label = "<a>Wake up completely"];
     Nagisa_39:a1 -> Misae_19:a [style = bold, color = darkorange];    //Mei
     
-    Mei_17 [shape = Mrecord, label = "<a>Say, \"Good Day\""];
-    Misae_19:a -> Mei_17:a [style = bold, color = darkorange];    //Mei
+    //Mei_17 [shape = Mrecord, label = "<a>Say, \"Good Day\""];
+    Misae_19:a -> Tomoyo_44:a1 [style = bold, color = darkorange];    //Mei
     
     Mei_18 [shape = Mrecord, label = "<a>Say it like Ikkoku Dou"];
-    Mei_17:a -> Mei_18:a [style = bold, color = darkorange];    //Mei
+    Tomoyo_44:a1 -> Mei_18:a [style = bold, color = darkorange];    //Mei
     
     //Mei_19 [shape = Mrecord, label = "<a>Talk to her instead"];
     Mei_18:a -> Kyou_Ryou_24:a1 [style = bold, color = darkorange];    //Mei
@@ -2079,11 +2087,11 @@ sleep!
     //BAD_END_50 [shape = Mrecord, label = "<a>Yeah, you are"];
     Tomoyo_40:a1 -> Tomoyo_41:a1 [style = bold, color = yellowgreen];    //BAD_END
 
-    BAD_END_51 [shape = Mrecord, label = "<a>Say \"Good day\""];
-    Tomoyo_41:a1 -> BAD_END_51:a [style = bold, color = yellowgreen];    //BAD_END
+    //BAD_END_51 [shape = Mrecord, label = "<a>Say \"Good day\""];
+    Tomoyo_41:a1 -> Tomoyo_44:a1 [style = bold, color = yellowgreen];    //BAD_END
     
     BAD_END_52 [shape = Mrecord, label = "<a>Yeah"];
-    BAD_END_51:a -> BAD_END_52:a [style = bold, color = yellowgreen];    //BAD_END
+    Tomoyo_44:a1 -> BAD_END_52:a [style = bold, color = yellowgreen];    //BAD_END
 
     BAD_END_END [label = "Sunohara's Bad Ending"];
     BAD_END_52:a -> BAD_END_END [style = bold, color = yellowgreen];    //BAD_END
